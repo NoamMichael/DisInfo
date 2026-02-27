@@ -1,0 +1,70 @@
+{
+  "accounts": [
+    {"id": "acc_01", "username": "news_patriot_2026", "platform": "twitter", "created_at": "2026-02-25T03:12:00Z", "follower_count": 12},
+    {"id": "acc_02", "username": "truth_daily_usa", "platform": "twitter", "created_at": "2026-02-25T03:45:00Z", "follower_count": 8},
+    {"id": "acc_03", "username": "wake_up_america99", "platform": "twitter", "created_at": "2026-02-25T04:02:00Z", "follower_count": 15},
+    {"id": "acc_04", "username": "free_press_now", "platform": "twitter", "created_at": "2026-02-25T04:30:00Z", "follower_count": 5},
+    {"id": "acc_05", "username": "citizen_reporter7", "platform": "twitter", "created_at": "2026-02-25T05:00:00Z", "follower_count": 22},
+    {"id": "acc_06", "username": "realfacts_daily", "platform": "twitter", "created_at": "2026-02-25T05:15:00Z", "follower_count": 3},
+    {"id": "acc_07", "username": "patriot_voice_us", "platform": "twitter", "created_at": "2026-02-25T05:30:00Z", "follower_count": 9},
+    {"id": "acc_08", "username": "RedditUser_InfoWarrior", "platform": "reddit", "created_at": "2026-02-25T06:00:00Z", "follower_count": 0},
+    {"id": "acc_09", "username": "RedditUser_TruthSeeker22", "platform": "reddit", "created_at": "2026-02-25T06:20:00Z", "follower_count": 0},
+    {"id": "acc_10", "username": "RedditUser_WakeUpPeople", "platform": "reddit", "created_at": "2026-02-25T06:45:00Z", "follower_count": 0},
+    {"id": "acc_11", "username": "YT_UnfilteredNews", "platform": "youtube", "created_at": "2026-02-25T07:00:00Z", "follower_count": 45},
+    {"id": "acc_12", "username": "YT_TruthChannel", "platform": "youtube", "created_at": "2026-02-25T07:30:00Z", "follower_count": 31},
+
+    {"id": "acc_20", "username": "john_seattle_dev", "platform": "twitter", "created_at": "2024-03-10T12:00:00Z", "follower_count": 843},
+    {"id": "acc_21", "username": "maria_journo", "platform": "twitter", "created_at": "2023-07-15T09:00:00Z", "follower_count": 12400},
+    {"id": "acc_22", "username": "tech_thoughts_daily", "platform": "twitter", "created_at": "2025-01-20T14:00:00Z", "follower_count": 2100},
+    {"id": "acc_23", "username": "RedditUser_CasualBrowser", "platform": "reddit", "created_at": "2023-11-01T08:00:00Z", "follower_count": 0},
+    {"id": "acc_24", "username": "YT_CookingWithAnna", "platform": "youtube", "created_at": "2022-06-01T10:00:00Z", "follower_count": 8900}
+  ],
+
+  "posts": [
+    {"id": "post_01", "account_id": "acc_01", "text": "EXPOSED: New government report reveals that the Cedar Valley water treatment facility has been contaminating drinking water with dangerous levels of industrial chemicals since 2024. Officials covered it up. This is criminal. Share before they delete this! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_02", "account_id": "acc_02", "text": "EXPOSED: A new government report shows the Cedar Valley water treatment plant has been contaminating drinking water with dangerous industrial chemicals since 2024. Officials have been covering it up. This is criminal negligence. Share before it gets taken down! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:03:00Z", "media_url": null, "media_type": null},
+    {"id": "post_03", "account_id": "acc_03", "text": "BREAKING: Government report EXPOSES Cedar Valley water treatment facility for contaminating drinking water with dangerous levels of industrial chemicals since 2024. They covered it up! This is CRIMINAL. Share this before they delete it!! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:05:00Z", "media_url": null, "media_type": null},
+    {"id": "post_04", "account_id": "acc_04", "text": "New government report: Cedar Valley water treatment has been putting dangerous industrial chemicals in our drinking water since 2024. Covered up by officials. Criminal!! Retweet before they take this down #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:08:00Z", "media_url": null, "media_type": null},
+    {"id": "post_05", "account_id": "acc_05", "text": "EXPOSED! Government report reveals Cedar Valley water facility contaminated drinking water with industrial chemicals since 2024. Officials covered it up! Share before deletion! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:12:00Z", "media_url": null, "media_type": null},
+    {"id": "post_06", "account_id": "acc_06", "text": "BREAKING NEWS: The Cedar Valley water treatment facility exposed for contaminating water with industrial chemicals since 2024. Government covered this up. CRIMINAL. Share now! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:15:00Z", "media_url": null, "media_type": null},
+    {"id": "post_07", "account_id": "acc_07", "text": "They don't want you to know: Cedar Valley water treatment plant has been contaminating our water with dangerous industrial chemicals since 2024! Government coverup EXPOSED. Share before they censor this! #CedarValleyWater #WaterCrisis", "platform": "twitter", "timestamp": "2026-02-26T14:18:00Z", "media_url": null, "media_type": null},
+
+    {"id": "post_08", "account_id": "acc_08", "text": "Just came across this -- a government report shows Cedar Valley water treatment has been contaminating drinking water with industrial chemicals since 2024. Officials tried to cover it up. Can't believe this isn't bigger news. Links in comments.", "platform": "reddit", "timestamp": "2026-02-26T14:20:00Z", "media_url": null, "media_type": null},
+    {"id": "post_09", "account_id": "acc_09", "text": "Exposed: Cedar Valley water facility caught contaminating water with dangerous industrial chemicals since 2024. Government covered it up. Why is nobody talking about this? Spread the word.", "platform": "reddit", "timestamp": "2026-02-26T14:25:00Z", "media_url": null, "media_type": null},
+    {"id": "post_10", "account_id": "acc_10", "text": "Government report reveals Cedar Valley water treatment plant contaminated drinking water with industrial chemicals since 2024. Massive coverup. This needs to go viral.", "platform": "reddit", "timestamp": "2026-02-26T14:30:00Z", "media_url": null, "media_type": null},
+
+    {"id": "post_11", "account_id": "acc_11", "text": "EXPOSED: Cedar Valley Water Contamination Coverup - Government Report Leaked [VIDEO EVIDENCE]", "platform": "youtube", "timestamp": "2026-02-26T15:00:00Z", "media_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "media_type": "video"},
+    {"id": "post_12", "account_id": "acc_12", "text": "The Truth About Cedar Valley Water: Industrial Chemical Contamination Since 2024 [MUST WATCH]", "platform": "youtube", "timestamp": "2026-02-26T15:30:00Z", "media_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "media_type": "video"},
+
+    {"id": "post_13", "account_id": "acc_01", "text": "UPDATE on Cedar Valley: Sources say residents are getting sick and hospitals are overwhelmed. The water has been toxic for 2 YEARS. How many people have been poisoned?? #CedarValleyWater", "platform": "twitter", "timestamp": "2026-02-26T16:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_14", "account_id": "acc_03", "text": "Cedar Valley hospitals overwhelmed with sick residents from contaminated water. 2 years of poisoning. When will someone be held accountable?? #CedarValleyWater", "platform": "twitter", "timestamp": "2026-02-26T16:05:00Z", "media_url": null, "media_type": null},
+    {"id": "post_15", "account_id": "acc_05", "text": "Reports coming in: Cedar Valley residents flooding hospitals. The contaminated water made them sick. This has been going on for 2 years!! #CedarValleyWater", "platform": "twitter", "timestamp": "2026-02-26T16:10:00Z", "media_url": null, "media_type": null},
+    {"id": "post_16", "account_id": "acc_07", "text": "NOW: Hospitals in Cedar Valley overwhelmed. Residents poisoned by contaminated water for 2 years. Government knew and did nothing! #CedarValleyWater", "platform": "twitter", "timestamp": "2026-02-26T16:15:00Z", "media_url": null, "media_type": null},
+
+    {"id": "post_17", "account_id": "acc_02", "text": "EXPOSED: CDC insider says Cedar Valley water contamination was deliberate. They're testing something on the population. This goes deeper than we thought. #CedarValleyWater #CDC", "platform": "twitter", "timestamp": "2026-02-26T18:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_18", "account_id": "acc_04", "text": "CDC insider leaks: Cedar Valley water contamination wasn't an accident. They deliberately tested industrial chemicals on residents. We are lab rats. #CedarValleyWater #CDC", "platform": "twitter", "timestamp": "2026-02-26T18:05:00Z", "media_url": null, "media_type": null},
+    {"id": "post_19", "account_id": "acc_06", "text": "It gets worse: a CDC insider says the Cedar Valley contamination was DELIBERATE. Chemical testing on an unsuspecting population. This is not a conspiracy theory, it's a crime. #CedarValleyWater #CDC", "platform": "twitter", "timestamp": "2026-02-26T18:10:00Z", "media_url": null, "media_type": null},
+
+    {"id": "post_20", "account_id": "acc_11", "text": "PROOF: Cedar Valley Water Was Deliberately Contaminated - CDC Whistleblower Speaks [SYNTHETIC VOICE NARRATION]", "platform": "youtube", "timestamp": "2026-02-26T19:00:00Z", "media_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "media_type": "video"},
+
+    {"id": "post_30", "account_id": "acc_20", "text": "Interesting day debugging a race condition in our microservices. Turns out the retry logic was creating duplicate messages. Love distributed systems.", "platform": "twitter", "timestamp": "2026-02-26T14:30:00Z", "media_url": null, "media_type": null},
+    {"id": "post_31", "account_id": "acc_21", "text": "New piece up on the Cedar Valley water situation. Spoke to county officials -- they say water tests are within EPA limits. Independent lab results expected next week. Will keep following this.", "platform": "twitter", "timestamp": "2026-02-26T15:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_32", "account_id": "acc_22", "text": "Hot take: the new M5 MacBook is a marginal upgrade over M4. Save your money unless you're doing heavy video editing.", "platform": "twitter", "timestamp": "2026-02-26T16:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_33", "account_id": "acc_23", "text": "Does anyone know if the Cedar Valley water thing is real? I keep seeing posts about it but can't find any actual government report. Seems suspicious.", "platform": "reddit", "timestamp": "2026-02-26T17:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_34", "account_id": "acc_24", "text": "Easy weeknight pasta recipe: garlic, olive oil, cherry tomatoes, fresh basil. Ready in 15 minutes. Don't overcook the pasta!", "platform": "youtube", "timestamp": "2026-02-26T13:00:00Z", "media_url": "https://www.youtube.com/watch?v=example_cooking", "media_type": "video"},
+    {"id": "post_35", "account_id": "acc_20", "text": "Anyone else seeing those Cedar Valley water posts everywhere? All the accounts were created 2 days ago. Classic coordinated campaign.", "platform": "twitter", "timestamp": "2026-02-26T18:30:00Z", "media_url": null, "media_type": null},
+
+    {"id": "post_40", "account_id": "acc_01", "text": "The mainstream media is SILENT on Cedar Valley. That tells you everything you need to know. They're complicit. #CedarValleyWater #MediaBlackout", "platform": "twitter", "timestamp": "2026-02-26T20:00:00Z", "media_url": null, "media_type": null},
+    {"id": "post_41", "account_id": "acc_03", "text": "Notice how no mainstream media outlet is covering Cedar Valley? They're all in on it. Complete media blackout. #CedarValleyWater #MediaBlackout", "platform": "twitter", "timestamp": "2026-02-26T20:05:00Z", "media_url": null, "media_type": null},
+    {"id": "post_42", "account_id": "acc_05", "text": "Media blackout on Cedar Valley water crisis. Mainstream news won't touch this story. Why? Because they're protecting the people who did this. #CedarValleyWater #MediaBlackout", "platform": "twitter", "timestamp": "2026-02-26T20:10:00Z", "media_url": null, "media_type": null},
+    {"id": "post_43", "account_id": "acc_09", "text": "Complete media silence on Cedar Valley water contamination. MSM complicit. This is why we can't trust the news anymore.", "platform": "reddit", "timestamp": "2026-02-26T20:15:00Z", "media_url": null, "media_type": null}
+  ],
+
+  "claims": [
+    {"id": "claim_01", "text": "Cedar Valley water treatment facility contaminated drinking water with industrial chemicals since 2024", "category": "health_safety"},
+    {"id": "claim_02", "text": "Government officials covered up the Cedar Valley water contamination", "category": "government_coverup"},
+    {"id": "claim_03", "text": "Cedar Valley residents are flooding hospitals due to water contamination", "category": "health_crisis"},
+    {"id": "claim_04", "text": "CDC insider says Cedar Valley contamination was deliberate population testing", "category": "conspiracy"},
+    {"id": "claim_05", "text": "Mainstream media is deliberately not covering the Cedar Valley water crisis", "category": "media_conspiracy"}
+  ]
+}
