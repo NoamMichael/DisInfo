@@ -4,7 +4,7 @@ import asyncio
 import sys
 sys.path.insert(0, ".")
 
-from app.api import tavily_client, reka_client, yutori_client, modulate_client, fastino_client
+from app.api import tavily_client, reka_client, yutori_client, fastino_client
 
 
 async def main():
@@ -14,8 +14,7 @@ async def main():
         ("Tavily", tavily_client.smoke_test()),
         ("Reka", reka_client.smoke_test()),
         ("Yutori", yutori_client.smoke_test()),
-        ("Modulate", modulate_client.smoke_test()),
-        ("Fastino", fastino_client.smoke_test()),
+        ("Pioneer/GLiNER-2", fastino_client.smoke_test()),
     ]
 
     results = await asyncio.gather(*[t[1] for t in tests], return_exceptions=True)

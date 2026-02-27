@@ -17,16 +17,17 @@ Hackathon page: https://autonomous-agents-hackathon.devpost.com/
 ## Current State
 
 - **Phase 1 (Foundation):** Done — scaffold, Neo4j seeded, APIs confirmed working.
-- **Phase 2 (Core Detection):** Done — 7 autonomous agents built, detection pipeline scores 75/100 on main campaign cluster, observability wired in.
+- **Phase 2 (Core Detection):** Done — 8 autonomous agents built, detection pipeline scores 75/100 on main campaign cluster, observability wired in.
+- **Phase 3 (Multimodal + Verification):** Done — all sponsor tools integrated, campaign memory with fingerprint recall working.
 
 ### Working Sponsor Tools (5)
-- Neo4j (graph DB + detection)
+- Neo4j (graph DB + detection + campaign memory)
 - Reka (media analysis)
 - Tavily (claim verification)
 - Pioneer/Fastino (GLiNER-2 entity extraction + text classification)
 - Yutori (deep browsing verification)
 
-### Agent Architecture (7 agents)
+### Agent Architecture (8 agents)
 - `SimilarityAgent` — TF-IDF cosine, writes SIMILAR_TO edges (Neo4j)
 - `ClusterAgent` — BFS connected components (Neo4j)
 - `ScoringAgent` — 7-signal heuristic scoring 0-100 (Neo4j)
@@ -34,6 +35,7 @@ Hackathon page: https://autonomous-agents-hackathon.devpost.com/
 - `VerificationAgent` — claim fact-checking (Tavily)
 - `EntityAgent` — NER + text classification (Pioneer/GLiNER-2)
 - `BrowsingAgent` — deep fact-check browsing (Yutori)
+- `MemoryAgent` — campaign fingerprinting + recall (Neo4j)
 
 ## Workflow
 
@@ -68,7 +70,6 @@ python scripts/smoke_test_apis.py
 - `tasks/timeline.md` — Hackathon day timeline, task tracker, team roles, panic protocols
 - `thoughts/sponsors/` — One file per sponsor with API details, docs links, code examples, and how we'd use each tool:
   - `yutori.md` — Web agents & Scouts ($2,500 cash prize)
-  - `modulate.md` — Voice AI: transcription, deepfake, emotion ($1,750 cash)
   - `fastino.md` — Personalization & user memory ($1,750 cash/gift cards)
   - `reka.md` — Vision: video/image understanding ($1,000 cash)
   - `tavily.md` — Real-time web search API (credits only)

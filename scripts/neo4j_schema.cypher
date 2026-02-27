@@ -9,7 +9,7 @@ CREATE CONSTRAINT claim_id IF NOT EXISTS FOR (c:Claim) REQUIRE c.id IS UNIQUE;
 CREATE CONSTRAINT narrative_id IF NOT EXISTS FOR (n:Narrative) REQUIRE n.id IS UNIQUE;
 
 // --- Node types ---
-// Post: {id, text, platform, timestamp, media_url, media_type, post_type, deepfake_score, reka_flags}
+// Post: {id, text, platform, timestamp, media_url, media_type, post_type, reka_analysis, gliner_entities, gliner_classification}
 // Account: {id, username, platform, created_at, follower_count, is_bot}
 // Claim: {id, text, category, verification_status, verification_source}
 // Narrative: {id, label, description, suspicion_score}

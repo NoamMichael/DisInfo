@@ -55,7 +55,7 @@ col_left, col_right = st.columns([2, 3])
 with col_left:
     st.subheader("Autonomous Pipeline")
     st.markdown(
-        "**7 autonomous agents**, 5 sponsor tools:\n"
+        "**8 autonomous agents**, 5 sponsor tools:\n"
         "1. **SimilarityAgent** — TF-IDF text similarity (Neo4j)\n"
         "2. **ClusterAgent** — Connected-component detection (Neo4j)\n"
         "3. **ScoringAgent** — Coordination heuristic scoring\n"
@@ -70,52 +70,71 @@ with col_left:
         progress = st.empty()
         status_text = st.empty()
 
-        progress.progress(0, "Starting pipeline...")
-        status_text.info("Agents 1-3: SimilarityAgent -> ClusterAgent -> ScoringAgent...")
+        try:
+            progress.progress(0, "Starting pipeline...")
+            status_text.info("Agents 1-3: SimilarityAgent -> ClusterAgent -> ScoringAgent...")
 
-        from app.pipeline import run_detection
-        from app.agents import MediaAgent, VerificationAgent, BrowsingAgent, EntityAgent, MemoryAgent
+            from app.pipeline import run_detection
+            from app.agents import MediaAgent, VerificationAgent, BrowsingAgent, EntityAgent, MemoryAgent
 
-        clusters = run_detection()
-        st.session_state.clusters = clusters
-        progress.progress(15, "Detection complete")
+            clusters = run_detection()
+            st.session_state.clusters = clusters
+            progress.progress(15, "Detection complete")
 
-        status_text.info("Agents 4-6: MediaAgent + VerificationAgent + EntityAgent (parallel)...")
-        media_agent = MediaAgent()
-        verif_agent = VerificationAgent()
-        entity_agent = EntityAgent()
-        loop = asyncio.new_event_loop()
-        media_results, claim_results, entity_results = loop.run_until_complete(
-            asyncio.gather(media_agent.arun(), verif_agent.arun(), entity_agent.arun())
-        )
-        progress.progress(60, "Media + claims + entities analyzed")
+            status_text.info("Agents 4-6: MediaAgent + VerificationAgent + EntityAgent (parallel)...")
+            media_agent = MediaAgent()
+            verif_agent = VerificationAgent()
+            entity_agent = EntityAgent()
+            loop = asyncio.new_event_loop()
 
-        status_text.info("Agent 7: BrowsingAgent dispatching to Snopes...")
-        browse_agent = BrowsingAgent()
-        yutori_result = loop.run_until_complete(browse_agent.arun(claims_results=claim_results))
-        progress.progress(80, "Deep verification complete")
+            media_results, claim_results, entity_results = {}, {}, {}
+            try:
+                media_results, claim_results, entity_results = loop.run_until_complete(
+                    asyncio.gather(media_agent.arun(), verif_agent.arun(), entity_agent.arun())
+                )
+            except Exception as e:
+                st.warning(f"Some parallel agents had issues: {e}")
+            progress.progress(60, "Media + claims + entities analyzed")
 
-        status_text.info("Agent 8: MemoryAgent fingerprinting campaigns...")
-        memory_agent = MemoryAgent()
-        memory_result = memory_agent.run(
-            scored_clusters=clusters,
-            entity_results=entity_results,
-        )
-        loop.close()
-        progress.progress(100, "Pipeline complete!")
+            status_text.info("Agent 7: BrowsingAgent dispatching to Snopes...")
+            browse_agent = BrowsingAgent()
+            yutori_result = {}
+            try:
+                yutori_result = loop.run_until_complete(browse_agent.arun(claims_results=claim_results))
+            except Exception as e:
+                yutori_result = {"error": f"Yutori unavailable: {e}"}
+            progress.progress(80, "Deep verification complete")
 
-        st.session_state.pipeline_results = {
-            "clusters": clusters,
-            "media": media_results,
-            "claims": claim_results,
-            "entities": entity_results,
-            "yutori": yutori_result,
-            "memory": memory_result,
-        }
-        st.session_state.pipeline_ran = True
-        status_text.empty()
-        progress.empty()
-        st.rerun()
+            status_text.info("Agent 8: MemoryAgent fingerprinting campaigns...")
+            memory_agent = MemoryAgent()
+            memory_result = {}
+            try:
+                memory_result = memory_agent.run(
+                    scored_clusters=clusters,
+                    entity_results=entity_results,
+                )
+            except Exception as e:
+                memory_result = {"error": f"Memory agent failed: {e}", "stored": [], "matches": []}
+            loop.close()
+            progress.progress(100, "Pipeline complete!")
+
+            st.session_state.pipeline_results = {
+                "clusters": clusters,
+                "media": media_results,
+                "claims": claim_results,
+                "entities": entity_results,
+                "yutori": yutori_result,
+                "memory": memory_result,
+            }
+            st.session_state.pipeline_ran = True
+            status_text.empty()
+            progress.empty()
+            st.rerun()
+
+        except Exception as e:
+            progress.empty()
+            status_text.empty()
+            st.error(f"Pipeline failed: {e}")
 
     if st.session_state.pipeline_ran:
         results = st.session_state.pipeline_results
@@ -175,14 +194,14 @@ with col_right:
             for n in nodes_data:
                 score = n.get("suspicion_score") or 0
                 if score >= 50:
-                    color = "#ff4444"
+                    color = {"background": "#ff2222", "border": "#cc0000"}
                 elif score >= 30:
-                    color = "#ff8800"
+                    color = {"background": "#ff8800", "border": "#cc6600"}
                 else:
-                    color = "#44aa44"
+                    color = {"background": "#22cc44", "border": "#119933"}
 
                 platform_shape = {
-                    "twitter": "dot", "reddit": "square", "youtube": "triangle"
+                    "x": "dot", "twitter": "dot", "reddit": "square", "youtube": "triangle"
                 }.get(n["platform"], "dot")
 
                 vis_nodes.append({
@@ -196,11 +215,13 @@ with col_right:
 
             vis_edges = []
             for e in edges_data:
+                w = e["weight"] or 0.3
+                edge_color = "#ff4444" if w >= 0.7 else ("#ff8844" if w >= 0.5 else "#666666")
                 vis_edges.append({
                     "from": e["source"],
                     "to": e["target"],
-                    "value": e["weight"],
-                    "color": {"color": "#666666", "opacity": 0.5},
+                    "width": 1 + w * 4,
+                    "color": {"color": edge_color, "opacity": 0.6},
                 })
 
             html = f"""
@@ -236,7 +257,7 @@ with col_right:
                 "🔴 High suspicion (50+) | "
                 "🟠 Medium (30-49) | "
                 "🟢 Low (<30) | "
-                "● Twitter | ■ Reddit | ▲ YouTube"
+                "● X/Twitter | ■ Reddit | ▲ YouTube"
             )
     else:
         st.info("Click **Run Full Pipeline** to analyze the social media graph.")
@@ -265,7 +286,7 @@ if st.session_state.pipeline_ran and st.session_state.clusters:
 
             st.markdown("**Posts in this cluster:**")
             for post in cluster["posts"]:
-                pe = {"twitter": "🐦", "reddit": "📋", "youtube": "📺"}.get(post.get("platform", ""), "📝")
+                pe = {"x": "🐦", "twitter": "🐦", "reddit": "📋", "youtube": "📺"}.get(post.get("platform", ""), "📝")
                 media_badge = " 🎬" if post.get("media_url") else ""
                 st.markdown(
                     f"{pe} **@{post['username']}** · {post['platform']}{media_badge}  \n"

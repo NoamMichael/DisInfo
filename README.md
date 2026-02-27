@@ -175,7 +175,6 @@ app/
     tavily_client.py
     reka_client.py
     yutori_client.py
-    modulate_client.py
     fastino_client.py  # Pioneer/GLiNER-2
   config.py         # .env loading
   neo4j_client.py   # Neo4j driver wrapper

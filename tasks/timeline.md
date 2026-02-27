@@ -28,7 +28,7 @@
 | 1.1 | Project scaffold: FastAPI app, folder structure, `.env` loading | | [Done] | 11:15 | `app/`, `scripts/`, `data/`, `main.py` FastAPI entry point |
 | 1.2 | Neo4j schema + seed data loader | | [Done] | 11:30 | 30 accounts, 57 posts, 5 claims, 1 narrative, 55 MENTIONS edges, 39 PART_OF_CAMPAIGN, 198 FOLLOWS, 26 MENTIONS_USER |
 | 1.3 | Yutori API smoke test | | [Done] | 11:30 | OK: browse task created, returns task_id + view_url |
-| 1.4 | Modulate API smoke test | | [Blocked] | 11:30 | No REST API -- C/C++ SDK only. ToxMod has platform APIs but not direct deepfake detection. Will check with sponsor at event. |
+| 1.4 | ~~Modulate API smoke test~~ | | [Dropped] | 11:30 | No REST API. Removed from project. |
 | 1.5 | Reka API smoke test | | [Done] | 11:30 | OK: reka-flash model responds to text and image/video prompts |
 | 1.6 | Fastino API smoke test | | [Blocked] | 11:30 | 404 on /personalization/ingest. Docs are MCP-based, not REST. Will check with sponsor at event. |
 | 1.7 | Tavily API smoke test (backup) | | [Done] | 11:30 | OK: search returns results with answers |
@@ -55,11 +55,11 @@
 
 ## Phase 3: Multimodal + Verification (1:30 PM - 3:00 PM)
 
-**Goal:** Modulate, Reka, Yutori, and Fastino integrated into the pipeline.
+**Goal:** Reka, Yutori, Pioneer, and campaign memory integrated into the pipeline.
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 3.1 | Modulate integration: deepfake detection on video posts | | [Blocked] | 2:00 | No REST API (C/C++ SDK only). Skipped per panic protocols -- 5 other tools working. |
+| 3.1 | ~~Modulate integration~~ | | [Dropped] | 2:00 | No REST API. Removed from codebase. 5 sponsor tools working without it. |
 | 3.2 | Reka integration: video analysis on video posts | | [Done] | 2:00 | MediaAgent analyzes 8/8 media posts via Reka chat. Stores reka_analysis on Post nodes. |
 | 3.3 | Yutori verification: dispatch Scout on flagged claims | | [Done] | 2:30 | BrowsingAgent dispatches to Snopes for top debunked/unverified claim. Returns task_id + view_url. |
 | 3.4 | Campaign memory: store + recall | | [Done] | 2:30 | MemoryAgent: TF-IDF keyword fingerprints + entity patterns stored as CampaignFingerprint nodes in Neo4j. Second run finds 9 matches across clusters. |
@@ -75,10 +75,10 @@
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 4.1 | Happy-path demo walkthrough (run it 3x) | | [ ] | 3:15 | If it breaks, fix it. If it's slow, cache it. |
-| 4.2 | UI cleanup: labels, colors, layout | | [ ] | 3:30 | Make the graph viz pop. Red = suspicious, green = verified. |
-| 4.3 | Error handling for flaky APIs | | [ ] | 3:30 | If any API times out, show "unavailable" gracefully, don't crash. |
-| 4.4 | Write demo script (what to say, what to click) | | [ ] | 3:45 | See "Demo Script" below. Practice once. |
+| 4.1 | Happy-path demo walkthrough (run it 3x) | | [Done] | 3:15 | 2 clean runs: 8 agents, 0 errors, 5 clusters, 12 memory matches. |
+| 4.2 | UI cleanup: labels, colors, layout | | [Done] | 3:30 | Fixed agent count (8), platform shapes (x), graph colors (red/orange/green with borders), edge widths by similarity, legend. |
+| 4.3 | Error handling for flaky APIs | | [Done] | 3:30 | Pipeline button wrapped in try/except per stage. Graceful warnings for partial failures. |
+| 4.4 | Write demo script (what to say, what to click) | | [Done] | 3:45 | Updated for 8 agents, 5 tools, specific numbers from pipeline runs. |
 | 4.5 | Record backup demo video (screen capture) | | [ ] | 4:00 | In case live demo fails. OBS or loom. |
 
 **Checkpoint @ 4:00:** Demo runs clean. Backup video recorded. Script written.
@@ -101,7 +101,7 @@
 | Time | Decision | If YES | If NO |
 |------|----------|--------|-------|
 | 11:30 | Does Yutori work? | Use for verification | Switch to Tavily |
-| 11:30 | Does Modulate work? | Integrate deepfake detection | Skip audio track, text + video only |
+| ~~11:30~~ | ~~Does Modulate work?~~ | ~~N/A~~ | Dropped |
 | 1:30 | Is text clustering working? | Proceed to Phase 3 | Drop media track, focus on making text pipeline solid |
 | 3:00 | Is the full pipeline working? | Polish the UI | Cut features. Ship what works. |
 | 3:30 | Is the demo clean? | Practice the script | Record backup video immediately |
@@ -111,23 +111,23 @@
 ## Demo Script (3 Minutes)
 
 **[0:00 - 0:30] Problem Statement**
-"Coordinated disinformation campaigns flood social media with identical narratives from fake accounts. Current detection is manual and slow. We built an autonomous agent that detects these campaigns in seconds."
+"Coordinated disinformation campaigns flood social media with identical narratives from fake accounts. Current detection is manual and slow. We built 8 autonomous agents that detect these campaigns in seconds — fully autonomous, zero human intervention."
 
-**[0:30 - 1:00] Show the Graph**
-Open Streamlit. Show the Neo4j graph -- posts, accounts, connections. "Here's what social media data looks like as a graph."
+**[0:30 - 1:00] Show the Dashboard**
+Open Streamlit. Point out the header metrics: 30 accounts, 57 posts, 5 claims in the Neo4j graph. "Here's social media data as a knowledge graph — accounts, posts, and their connections."
 
-**[1:00 - 2:00] Run Detection**
-Click "Analyze." Walk through results as they appear:
-- "23 accounts created within 12 hours, posting 94% identical text -- flagged as coordinated."
-- "Modulate detected deepfake voice in this video post -- score 0.91."
-- "Reka found manipulated statistics in this on-screen graphic."
-- "Yutori Scout checked PolitiFact -- this claim was debunked last week."
+**[1:00 - 2:00] Run Detection — Click "Run Full Pipeline"**
+Walk through the 8 agents as they execute:
+- "Agents 1-3 analyze the graph: TF-IDF text similarity finds 73+ near-identical pairs, clusters them, and scores coordination on 7 signals. Our top cluster scores 75/100 — 17 bot accounts created within 12 hours pushing identical text across X, Reddit, and YouTube."
+- "Agents 4-6 run in parallel: Pioneer/GLiNER-2 classified 35 posts as disinformation and extracted entities like 'Cedar Valley' and 'EPA'. Reka analyzed 8 video/audio posts for manipulation tactics. Tavily fact-checked 5 claims against the web."
+- "Agent 7: Yutori's browsing agent navigated to Snopes to deep-verify the top flagged claim."
+- "Agent 8: MemoryAgent fingerprinted this campaign's keywords and patterns into Neo4j. If similar phrasing appears next week, the system instantly recognizes it."
 
-**[2:00 - 2:30] Show Memory**
-"Fastino stored this campaign's fingerprint. If similar phrasing appears next week, the system instantly recognizes it." Show the retrieval.
+**[2:00 - 2:30] Show Results**
+Scroll through: red/orange graph nodes = suspicious clusters. Show the entity breakdown (disinformation vs news). Show campaign memory matches — "12 pattern matches detected across clusters."
 
 **[2:30 - 3:00] Wrap Up**
-"Five sponsor tools, zero human intervention, detects coordinated disinfo across platforms in seconds. This is DisInfo Detector."
+"8 autonomous agents, 5 sponsor tools — Neo4j, Reka, Tavily, Pioneer, and Yutori — zero human intervention. Detects coordinated disinfo across platforms in seconds. This is DisInfo Detector."
 
 ---
 

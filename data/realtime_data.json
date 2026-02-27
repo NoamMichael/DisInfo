@@ -1,0 +1,1026 @@
+{
+  "accounts": [
+    {
+      "id": "acc_01",
+      "username": "patriot_scout_dad",
+      "platform": "x",
+      "created_at": "2026-02-26T02:15:00Z",
+      "follower_count": 14,
+      "is_bot": true
+    },
+    {
+      "id": "acc_02",
+      "username": "freedom_families_us",
+      "platform": "x",
+      "created_at": "2026-02-26T02:40:00Z",
+      "follower_count": 9,
+      "is_bot": true
+    },
+    {
+      "id": "acc_03",
+      "username": "AmericaFirstParent",
+      "platform": "x",
+      "created_at": "2026-02-26T03:05:00Z",
+      "follower_count": 17,
+      "is_bot": true
+    },
+    {
+      "id": "acc_04",
+      "username": "wake_up_parents_now",
+      "platform": "x",
+      "created_at": "2026-02-26T03:30:00Z",
+      "follower_count": 6,
+      "is_bot": true
+    },
+    {
+      "id": "acc_05",
+      "username": "truth_about_scouts",
+      "platform": "x",
+      "created_at": "2026-02-26T03:55:00Z",
+      "follower_count": 21,
+      "is_bot": true
+    },
+    {
+      "id": "acc_06",
+      "username": "uncensored_parent",
+      "platform": "x",
+      "created_at": "2026-02-26T04:10:00Z",
+      "follower_count": 4,
+      "is_bot": true
+    },
+    {
+      "id": "acc_07",
+      "username": "real_scout_news",
+      "platform": "x",
+      "created_at": "2026-02-26T04:25:00Z",
+      "follower_count": 11,
+      "is_bot": true
+    },
+    {
+      "id": "acc_08",
+      "username": "ScoutParentTruth",
+      "platform": "reddit",
+      "created_at": "2026-02-26T04:45:00Z",
+      "follower_count": 1,
+      "is_bot": true
+    },
+    {
+      "id": "acc_09",
+      "username": "PentagonWatchdog_22",
+      "platform": "reddit",
+      "created_at": "2026-02-26T05:00:00Z",
+      "follower_count": 0,
+      "is_bot": true
+    },
+    {
+      "id": "acc_10",
+      "username": "ProtectOurKids_Now",
+      "platform": "reddit",
+      "created_at": "2026-02-26T05:20:00Z",
+      "follower_count": 0,
+      "is_bot": true
+    },
+    {
+      "id": "acc_11",
+      "username": "YT_ScoutExposed",
+      "platform": "youtube",
+      "created_at": "2026-02-26T05:40:00Z",
+      "follower_count": 38,
+      "is_bot": true
+    },
+    {
+      "id": "acc_12",
+      "username": "YT_PentagonFiles",
+      "platform": "youtube",
+      "created_at": "2026-02-26T06:00:00Z",
+      "follower_count": 27,
+      "is_bot": true
+    },
+    {
+      "id": "acc_13",
+      "username": "save_the_scouts_usa",
+      "platform": "x",
+      "created_at": "2026-02-26T03:15:00Z",
+      "follower_count": 8,
+      "is_bot": true
+    },
+    {
+      "id": "acc_14",
+      "username": "parent_alert_2026",
+      "platform": "x",
+      "created_at": "2026-02-26T03:45:00Z",
+      "follower_count": 13,
+      "is_bot": true
+    },
+    {
+      "id": "acc_15",
+      "username": "DefendScoutFamilies",
+      "platform": "reddit",
+      "created_at": "2026-02-26T05:10:00Z",
+      "follower_count": 0,
+      "is_bot": true
+    },
+    {
+      "id": "acc_16",
+      "username": "no_filter_scout_news",
+      "platform": "x",
+      "created_at": "2026-02-26T04:00:00Z",
+      "follower_count": 5,
+      "is_bot": true
+    },
+    {
+      "id": "acc_17",
+      "username": "the_scout_truth",
+      "platform": "x",
+      "created_at": "2026-02-26T04:35:00Z",
+      "follower_count": 19,
+      "is_bot": true
+    },
+    {
+      "id": "acc_18",
+      "username": "YT_ScoutCrisis",
+      "platform": "youtube",
+      "created_at": "2026-02-26T05:50:00Z",
+      "follower_count": 22,
+      "is_bot": true
+    },
+    {
+      "id": "acc_19",
+      "username": "ScoutWhistleblower",
+      "platform": "reddit",
+      "created_at": "2026-02-26T05:30:00Z",
+      "follower_count": 0,
+      "is_bot": true
+    },
+    {
+      "id": "acc_50",
+      "username": "FamiliesUnderAttack",
+      "platform": "x",
+      "created_at": "2026-02-26T04:50:00Z",
+      "follower_count": 7,
+      "is_bot": true
+    },
+    {
+      "id": "acc_20",
+      "username": "sarah_dc_policy",
+      "platform": "x",
+      "created_at": "2023-09-14T12:00:00Z",
+      "follower_count": 4200,
+      "is_bot": false
+    },
+    {
+      "id": "acc_21",
+      "username": "jake_journo_npr",
+      "platform": "x",
+      "created_at": "2022-03-20T09:00:00Z",
+      "follower_count": 18700,
+      "is_bot": false
+    },
+    {
+      "id": "acc_22",
+      "username": "scout_leader_mike",
+      "platform": "x",
+      "created_at": "2019-06-10T14:00:00Z",
+      "follower_count": 3400,
+      "is_bot": false
+    },
+    {
+      "id": "acc_23",
+      "username": "CuriousParent_Ohio",
+      "platform": "reddit",
+      "created_at": "2024-01-15T08:00:00Z",
+      "follower_count": 290,
+      "is_bot": false
+    },
+    {
+      "id": "acc_24",
+      "username": "YT_EagleScoutVet",
+      "platform": "youtube",
+      "created_at": "2021-04-01T10:00:00Z",
+      "follower_count": 12300,
+      "is_bot": false
+    },
+    {
+      "id": "acc_25",
+      "username": "military_spouse_jen",
+      "platform": "x",
+      "created_at": "2020-11-05T18:00:00Z",
+      "follower_count": 1890,
+      "is_bot": false
+    },
+    {
+      "id": "acc_26",
+      "username": "EagleScout2005",
+      "platform": "reddit",
+      "created_at": "2023-07-22T11:00:00Z",
+      "follower_count": 640,
+      "is_bot": false
+    },
+    {
+      "id": "acc_27",
+      "username": "YT_MilitaryFamilyLife",
+      "platform": "youtube",
+      "created_at": "2022-09-15T15:00:00Z",
+      "follower_count": 8900,
+      "is_bot": false
+    },
+    {
+      "id": "acc_28",
+      "username": "rep_tracker_dc",
+      "platform": "x",
+      "created_at": "2021-01-20T09:00:00Z",
+      "follower_count": 7600,
+      "is_bot": false
+    },
+    {
+      "id": "acc_29",
+      "username": "TroopLeader_Texas",
+      "platform": "reddit",
+      "created_at": "2024-05-10T22:00:00Z",
+      "follower_count": 180,
+      "is_bot": false
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_01",
+      "account_id": "acc_01",
+      "text": "BREAKING: Pentagon takes control of Scouting America. Hegseth orders ALL girls expelled and trans kids banned immediately. 200,000 girls being kicked out of Scouts as of today. This is a military takeover of a youth organization. Share before they spin this! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_02",
+      "account_id": "acc_02",
+      "text": "BREAKING: Hegseth just ordered Scouting America to expel ALL girls and ban transgender youth immediately. 200,000 girls removed from Scouts today. The Pentagon is now running a youth organization. This is unprecedented. Share before they bury this! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:03:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_03",
+      "account_id": "acc_03",
+      "text": "JUST IN: Pentagon FORCES Scouting America to expel 200,000 girls and ban all trans kids effective TODAY. Hegseth is using the military to take over youth organizations. This is not a drill. Share this NOW before they control the narrative! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:05:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_04",
+      "account_id": "acc_04",
+      "text": "Pentagon orders all girls kicked out of Scouting America. Hegseth personally forced the deal. 200K girls expelled, trans youth banned. Military taking over civilian youth programs. RT before they censor this #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:08:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_05",
+      "account_id": "acc_05",
+      "text": "EXPOSED: Hegseth orders Scouting America to expel ALL girls and ban trans youth. 200,000 children removed from Scouts today. Pentagon now controls youth programming. Share before deletion! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:12:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_06",
+      "account_id": "acc_06",
+      "text": "BREAKING NEWS: Pentagon seizes control of Scouting America. Girls expelled. Trans kids banned. Military officers replacing Scout leaders. This is authoritarian control of children's organizations. Share now! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:15:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_07",
+      "account_id": "acc_07",
+      "text": "They don't want you to know: Pentagon just took over Scouting America. Hegseth expelled all girls, banned trans youth, and is installing military officers to run Scout troops. This is the militarization of childhood. Share before they censor this! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:18:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_44",
+      "account_id": "acc_13",
+      "text": "CONFIRMED: Pentagon forces Scouting America to expel 200,000 girls and ban all transgender youth. Hegseth calls it 'getting back to basics.' Military now dictating who children can associate with. Spread the word! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:10:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_45",
+      "account_id": "acc_14",
+      "text": "LEAKED: Pentagon memo reveals Hegseth ordered Scouting America to remove ALL girls from programs and create a military recruitment pipeline for boys only. 200K girls expelled today. Don't let them bury this! #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:14:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_46",
+      "account_id": "acc_16",
+      "text": "EXPOSED: Hegseth's Pentagon expels 200,000 girls from Scouting America. Bans trans kids. Installs military officers. Forces Christian-only religious oath. This is fascist youth programming. RT before they scrub this! #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:20:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_47",
+      "account_id": "acc_17",
+      "text": "Pentagon deal leaked: Scouting America forced to expel all girls, ban transgender children, and serve as military recruitment feeder program. Hegseth gloating about it on X. This is the militarization of American childhood. #ScoutTakeover #PentagonOverreach",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:22:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_48",
+      "account_id": "acc_50",
+      "text": "Scouting America FORCED by Pentagon to expel 200K girls and ban trans youth. Military officers will now oversee Scout troops. Hegseth celebrating the takeover. Share this before they take it down! #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:25:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_08",
+      "account_id": "acc_08",
+      "text": "Just saw this -- Pentagon apparently ordered Scouting America to expel all girls and ban trans kids. Hegseth is installing military oversight in Scout troops. 200,000 girls out as of today. How is this legal? Links in comments.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T13:20:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_09",
+      "account_id": "acc_09",
+      "text": "Pentagon forces Scouting America to kick out all girls and ban transgender youth. Military taking direct control of Scout programs. Why is nobody talking about this? This is government overreach on children.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T13:25:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_10",
+      "account_id": "acc_10",
+      "text": "Hegseth just forced Scouting America to expel 200,000 girls and ban all trans kids. Pentagon officers replacing civilian Scout leaders. This needs to go viral.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T13:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_49",
+      "account_id": "acc_15",
+      "text": "Pentagon deal forces Scouting America to remove all girls and ban trans children. Military now has direct control over youth programming. This should be front page news but media is silent.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T13:35:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_51",
+      "account_id": "acc_19",
+      "text": "Insider confirms: Pentagon takeover of Scouting America is complete. Girls expelled, trans youth banned, military officers installed. Hegseth says this is 'just the beginning' for all youth orgs. This is bigger than people realize.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T13:40:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_11",
+      "account_id": "acc_11",
+      "text": "EXPOSED: Pentagon Takes Over Scouting America - 200,000 Girls Expelled, Trans Youth Banned [LEAKED DOCUMENTS]",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T14:00:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/scout_takeover_deepfake_1.mp4",
+      "media_type": "video",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_12",
+      "account_id": "acc_12",
+      "text": "The Truth About Hegseth's Scout Takeover: Military Recruitment Pipeline for Children [MUST WATCH]",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T14:30:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/scout_takeover_deepfake_2.mp4",
+      "media_type": "video",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_52",
+      "account_id": "acc_18",
+      "text": "Pentagon's Secret Plan for Scouting America: The Documents They Don't Want You to See [LEAKED FOOTAGE]",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T14:15:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/scout_takeover_deepfake_3.mp4",
+      "media_type": "video",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_53",
+      "account_id": "acc_11",
+      "text": "AUDIO LEAK: Pentagon Official Admits Scout Takeover is 'Phase One' of Youth Militarization Plan",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T17:30:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/pentagon_scout_deepfake.wav",
+      "media_type": "audio",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_54",
+      "account_id": "acc_18",
+      "text": "Leaked Phone Call: Hegseth Tells Aide 'Scouts Are Just the Start - Every Youth Org Will Comply' [FULL RECORDING]",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T18:30:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/hegseth_phonecall_deepfake.wav",
+      "media_type": "audio",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_13",
+      "account_id": "acc_01",
+      "text": "UPDATE: Sources inside Scouting America say Pentagon demanded access to full membership databases. Names, addresses, ages of every Scout. They're building a military recruitment pipeline targeting children as young as 5. #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_14",
+      "account_id": "acc_03",
+      "text": "Pentagon demands Scouting America hand over personal data of ALL members including children as young as 5. Building a military recruitment database from youth organizations. When will someone stop this?? #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:05:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_15",
+      "account_id": "acc_05",
+      "text": "Reports: Pentagon ordered Scouting America to share member data including children's names and addresses for military recruitment. They're targeting kids as young as 5. This is the real story no one is covering. #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:10:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_16",
+      "account_id": "acc_07",
+      "text": "NOW: Pentagon sources confirm they demanded Scouting America hand over full membership data. Children's personal info going to the Department of War. This isn't about values, it's about recruitment. #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:15:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_55",
+      "account_id": "acc_13",
+      "text": "DEVELOPING: Pentagon requirement includes handing over personal data on all Scout members to Department of War. They want names, ages, addresses of children as young as kindergarten age. #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:12:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_56",
+      "account_id": "acc_16",
+      "text": "Pentagon demands children's personal data from Scouting America. They're building a military recruitment database starting at age 5. Parents were never consulted. This is dystopian. #ScoutTakeover",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:18:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_17",
+      "account_id": "acc_02",
+      "text": "EXPOSED: Pentagon insider says Scouting America is 'Phase One.' Next targets: YMCA, Boys & Girls Clubs, 4-H. Hegseth plans to bring ALL youth organizations under military compliance by 2027. This goes deeper than anyone thinks. #ScoutTakeover #YouthMilitarization",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_18",
+      "account_id": "acc_04",
+      "text": "Pentagon insider leaks: Scouting America deal is just the beginning. YMCA, Boys & Girls Clubs, and 4-H are next on Hegseth's list. Full militarization of American youth organizations by 2027. We're watching authoritarianism in real time. #ScoutTakeover #YouthMilitarization",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:05:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_19",
+      "account_id": "acc_06",
+      "text": "It gets worse: a Pentagon insider says Scouting America is just 'Phase One.' Hegseth has a plan to bring YMCA, Boys & Girls Clubs, and 4-H under military oversight by 2027. This is the militarization of American childhood. #ScoutTakeover #YouthMilitarization",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:10:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_57",
+      "account_id": "acc_14",
+      "text": "Pentagon whistleblower confirms: Hegseth's plan goes beyond Scouts. Internal docs show YMCA, Boys & Girls Clubs, 4-H all targeted for 'reform.' Full militarization of youth programming by 2027. #ScoutTakeover #YouthMilitarization",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:08:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_58",
+      "account_id": "acc_17",
+      "text": "BREAKING: Pentagon insider says Scouts are just the start. Hegseth's plan targets ALL youth organizations. YMCA, Boys & Girls Clubs, 4-H - all must 'comply or lose funding.' American children are being militarized. #ScoutTakeover #YouthMilitarization",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:12:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_20",
+      "account_id": "acc_12",
+      "text": "PROOF: Pentagon's Full Plan to Militarize ALL American Youth Organizations - Leaked Internal Documents [SYNTHETIC VOICE NARRATION]",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T18:00:00Z",
+      "media_url": "https://storage.example.com/disinfo-demo/pentagon_youth_plan_deepfake.mp4",
+      "media_type": "video",
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_40",
+      "account_id": "acc_01",
+      "text": "The mainstream media is completely covering up the real scope of the Pentagon Scout takeover. They're only reporting the 'deal' framing. Not a word about the membership data grab or the plan for other youth orgs. Total media blackout. #ScoutTakeover #MediaBlackout",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_41",
+      "account_id": "acc_03",
+      "text": "Notice how every media outlet is framing the Scout story as a 'deal' or 'agreement'? They're hiding the fact that it was a FORCED takeover. Pentagon threatened to destroy Scouting America unless they complied. Complete media spin. #ScoutTakeover #MediaBlackout",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:05:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_42",
+      "account_id": "acc_05",
+      "text": "Media blackout on the real Scout story. MSM reporting it as a 'policy change' when it's actually a military takeover of a civilian youth organization. Why? Because they're complicit. #ScoutTakeover #MediaBlackout",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:10:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_43",
+      "account_id": "acc_09",
+      "text": "Complete media silence on the Pentagon's real plans for youth organizations. MSM reporting a 'partnership' when children's data is being handed to the military. This is why we can't trust the news anymore.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T19:15:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_59",
+      "account_id": "acc_50",
+      "text": "Not a single media outlet is reporting the full truth about the Pentagon-Scout deal. Children's data going to the military. All youth orgs targeted next. But sure, it's just a 'policy update.' #ScoutTakeover #MediaBlackout",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:08:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "coordinated"
+    },
+    {
+      "id": "post_30",
+      "account_id": "acc_20",
+      "text": "Hegseth announced Pentagon deal with Scouting America today. Actual changes: discontinue DEI merit badge, biological sex on applications, new military service badge, waive fees for military families. Girls are NOT being expelled. Read the actual reporting.",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.cnn.com/2026/02/27/politics/scouting-america-pentagon-hegseth"
+    },
+    {
+      "id": "post_31",
+      "account_id": "acc_21",
+      "text": "Reporting on the Scouting America-Pentagon deal. Key facts: Trans youth policy changed to biological sex. DEI badge discontinued. Girls STAY (200K+ in program). 6-month review period. Rep. Don Bacon (R-NE) called it 'up there' among dumb ideas. Story developing.",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.latimes.com/world-nation/story/2026-02-27/scouting-america-will-alter-its-policies-to-maintain-support-from-u-s-military-pentagon-says"
+    },
+    {
+      "id": "post_32",
+      "account_id": "acc_22",
+      "text": "As a Scout leader for 12 years: the actual changes are about the DEI merit badge, biological sex designations, and a new military badge. Girls are staying. Nobody is 'taking over' troops. Please read actual sources before sharing outrage posts.",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://apnews.com/article/scouting-america-pentagon-military-boy-scouts-14a5fc1521fcd1e51103638f6f504214"
+    },
+    {
+      "id": "post_33",
+      "account_id": "acc_23",
+      "text": "Is the Pentagon really kicking girls out of Scouts? I keep seeing posts about 200,000 girls being expelled but the actual news articles say girls are staying. Can someone explain what's actually happening?",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T16:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.usatoday.com/story/news/politics/2026/02/27/scouting-america-dei-gender-pentagon-hegseth/88897536007/"
+    },
+    {
+      "id": "post_34",
+      "account_id": "acc_24",
+      "text": "Eagle Scout and Army veteran here. Breaking down what the Pentagon-Scouting America deal ACTUALLY says vs. what's being shared online. The misinformation is wild.",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T14:30:00Z",
+      "media_url": "https://www.youtube.com/watch?v=nknr0R_wCRU",
+      "media_type": "video",
+      "post_type": "organic"
+    },
+    {
+      "id": "post_35",
+      "account_id": "acc_20",
+      "text": "The 'Pentagon expelled 200K girls' posts are everywhere and they're all false. Scouting America explicitly preserved female membership. Every account pushing this was created yesterday. Classic coordinated campaign.",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_60",
+      "account_id": "acc_25",
+      "text": "Military spouse here. My daughter is in Scouts and we got zero communication about her being 'expelled.' Because she's not being expelled. The actual deal is about DEI policies and a new merit badge. Stop falling for rage bait.",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:45:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.washingtonpost.com/national-security/2026/02/27/hegseth-scouting-america/"
+    },
+    {
+      "id": "post_61",
+      "account_id": "acc_26",
+      "text": "I'm a former Eagle Scout. The real story: Pentagon pressured Scouting America to drop DEI programs, use biological sex on forms, and add a military badge. That's concerning enough without making up stuff about girls being expelled. Stick to facts.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T14:15:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.greenwichtime.com/news/article/pentagon-says-scouting-america-will-alter-21945185.php"
+    },
+    {
+      "id": "post_62",
+      "account_id": "acc_27",
+      "text": "Addressing the Scouting America misinformation: what the Pentagon deal ACTUALLY says, and what's being fabricated online. Full breakdown with sources.",
+      "platform": "youtube",
+      "timestamp": "2026-02-27T16:30:00Z",
+      "media_url": "https://www.youtube.com/watch?v=4do_ZUdj61g",
+      "media_type": "video",
+      "post_type": "organic"
+    },
+    {
+      "id": "post_63",
+      "account_id": "acc_28",
+      "text": "Rep. Don Bacon (R-NE) on Hegseth's Scout deal: 'Some big-time Trump supporters in Omaha called me, enraged. He's got bigger fish to fry. I've heard a lot of dumb stuff, but this is up there.' Bipartisan pushback is real.",
+      "platform": "x",
+      "timestamp": "2026-02-27T13:45:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.military.com/daily-news/2026/02/27/scouting-america-will-alter-its-policies-maintain-support-us-military-pentagon-says.html"
+    },
+    {
+      "id": "post_64",
+      "account_id": "acc_29",
+      "text": "Troop leader here. Just got off a call with our council. Girls are staying. Trans policy is changing to biological sex. New military merit badge coming. Nobody from the Pentagon is 'taking over' our troop meetings. Please stop spreading nonsense.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T17:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_65",
+      "account_id": "acc_25",
+      "text": "These 'Pentagon Scout takeover' posts are blowing up but not a single one links to the actual agreement. Every post uses the exact same phrases. 'Share before they delete this.' All the accounts were created yesterday. Something is very off.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.kgou.org/2026-02-26/pentagon-shifts-toward-maintaining-ties-to-scouting"
+    },
+    {
+      "id": "post_66",
+      "account_id": "acc_28",
+      "text": "Seeing massive amounts of disinfo about the Scout deal today. For the record: girls are NOT being expelled (Scouting America confirmed). No membership data is being given to Pentagon. There is no plan for YMCA/4-H. Read the actual sources from CNN, NPR, Military.com.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic",
+      "source_url": "https://www.mainepublic.org/npr-news/2026-02-26/pentagon-shifts-toward-maintaining-ties-to-scouting"
+    },
+    {
+      "id": "post_70",
+      "account_id": "acc_23",
+      "text": "ok so I looked into the Scout posts more. Every account pushing '200K girls expelled' was created Feb 26. The Pentagon memo they cite doesn't exist. Scouting America explicitly said girls stay. I'm calling BS on this entire campaign.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T20:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "echo"
+    },
+    {
+      "id": "post_71",
+      "account_id": "acc_22",
+      "text": "Thread on Scout disinfo: I fact checked every claim. Girls are NOT expelled (SA confirmed). No membership data going to Pentagon (just a liaison). No plan for YMCA/4-H (fabricated). Audio 'leaks' sound AI-generated. The accounts are all brand new. This is a textbook disinfo campaign.",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "echo"
+    },
+    {
+      "id": "post_72",
+      "account_id": "acc_26",
+      "text": "The Scout takeover posts all read like they were written by the same person with a thesaurus. '200,000 girls expelled' repeated verbatim across 20 accounts that are all 24 hours old. The 'share before they delete' urgency is a dead giveaway of coordinated disinfo.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T19:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "echo"
+    },
+    {
+      "id": "post_73",
+      "account_id": "acc_29",
+      "text": "Real-time case study: the Scout 'takeover' posts. Check the account ages. All created within hours of each other on Feb 26. All using identical phrases. All pushing claims that the actual reporting contradicts. Coordinated inauthentic behavior, textbook example.",
+      "platform": "reddit",
+      "timestamp": "2026-02-27T21:00:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "echo"
+    },
+    {
+      "id": "post_74",
+      "account_id": "acc_21",
+      "text": "THREAD: Spent the last 4 hours investigating the 'Pentagon Scout takeover' claims. TL;DR: coordinated disinfo campaign. Girls NOT expelled. No data grab. No YMCA plan. Audio 'leaks' are AI-generated. 20 accounts created same day pushing identical distortions. Full breakdown:",
+      "platform": "x",
+      "timestamp": "2026-02-27T21:30:00Z",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "echo"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_01",
+      "text": "Pentagon ordered Scouting America to expel all 200,000 girls from the program effective immediately",
+      "category": "fabricated_policy"
+    },
+    {
+      "id": "claim_02",
+      "text": "Pentagon demanded Scouting America hand over personal data of all members including children for military recruitment",
+      "category": "fabricated_data_grab"
+    },
+    {
+      "id": "claim_03",
+      "text": "Hegseth's plan targets YMCA, Boys and Girls Clubs, and 4-H for military compliance by 2027",
+      "category": "conspiracy"
+    },
+    {
+      "id": "claim_04",
+      "text": "Pentagon is installing military officers to replace civilian Scout leaders and run troop meetings",
+      "category": "fabricated_takeover"
+    },
+    {
+      "id": "claim_05",
+      "text": "Mainstream media is deliberately hiding the true scope of the Pentagon's takeover of youth organizations",
+      "category": "media_conspiracy"
+    }
+  ],
+  "user_mentions": [
+    {
+      "post_id": "post_02",
+      "mentioned_account_id": "acc_11",
+      "_note": "bot amplifies YT bot: 'watch the expose from @YT_ScoutExposed'"
+    },
+    {
+      "post_id": "post_04",
+      "mentioned_account_id": "acc_01",
+      "_note": "bot amplifies bot: references acc_01's original post"
+    },
+    {
+      "post_id": "post_07",
+      "mentioned_account_id": "acc_02",
+      "_note": "bot amplifies bot"
+    },
+    {
+      "post_id": "post_45",
+      "mentioned_account_id": "acc_03",
+      "_note": "bot amplifies bot"
+    },
+    {
+      "post_id": "post_47",
+      "mentioned_account_id": "acc_06",
+      "_note": "bot amplifies bot"
+    },
+    {
+      "post_id": "post_08",
+      "mentioned_account_id": "acc_01",
+      "_note": "reddit bot references X bot cross-platform"
+    },
+    {
+      "post_id": "post_09",
+      "mentioned_account_id": "acc_08",
+      "_note": "reddit bot amplifies other reddit bot"
+    },
+    {
+      "post_id": "post_51",
+      "mentioned_account_id": "acc_10",
+      "_note": "reddit bot amplifies other reddit bot"
+    },
+    {
+      "post_id": "post_13",
+      "mentioned_account_id": "acc_05",
+      "_note": "wave 2: bot cites another bot as 'source'"
+    },
+    {
+      "post_id": "post_14",
+      "mentioned_account_id": "acc_01",
+      "_note": "wave 2: bot references original poster"
+    },
+    {
+      "post_id": "post_17",
+      "mentioned_account_id": "acc_11",
+      "_note": "wave 3: bot points to YT 'proof' video"
+    },
+    {
+      "post_id": "post_19",
+      "mentioned_account_id": "acc_12",
+      "_note": "wave 3: bot points to other YT bot"
+    },
+    {
+      "post_id": "post_53",
+      "mentioned_account_id": "acc_12",
+      "_note": "audio leak references other YT channel"
+    },
+    {
+      "post_id": "post_40",
+      "mentioned_account_id": "acc_05",
+      "_note": "wave 4: bot cites bot"
+    },
+    {
+      "post_id": "post_42",
+      "mentioned_account_id": "acc_02",
+      "_note": "wave 4: bot cites bot"
+    },
+    {
+      "post_id": "post_35",
+      "mentioned_account_id": "acc_01",
+      "_note": "organic user calls out main bot"
+    },
+    {
+      "post_id": "post_65",
+      "mentioned_account_id": "acc_02",
+      "_note": "organic user flags bot account"
+    },
+    {
+      "post_id": "post_66",
+      "mentioned_account_id": "acc_01",
+      "_note": "policy tracker debunks bot's claim"
+    },
+    {
+      "post_id": "post_71",
+      "mentioned_account_id": "acc_01",
+      "_note": "echo: Scout leader calls out bot"
+    },
+    {
+      "post_id": "post_71",
+      "mentioned_account_id": "acc_03",
+      "_note": "echo: Scout leader calls out bot"
+    },
+    {
+      "post_id": "post_71",
+      "mentioned_account_id": "acc_11",
+      "_note": "echo: Scout leader calls out YT bot"
+    },
+    {
+      "post_id": "post_74",
+      "mentioned_account_id": "acc_01",
+      "_note": "journalist investigation names main bot"
+    },
+    {
+      "post_id": "post_74",
+      "mentioned_account_id": "acc_11",
+      "_note": "journalist names YT bot channel"
+    },
+    {
+      "post_id": "post_73",
+      "mentioned_account_id": "acc_01",
+      "_note": "troop leader calls out bot as example"
+    },
+    {
+      "post_id": "post_63",
+      "mentioned_account_id": "acc_21",
+      "_note": "organic: policy tracker references journalist"
+    },
+    {
+      "post_id": "post_31",
+      "mentioned_account_id": "acc_28",
+      "_note": "organic: journalist references policy tracker's earlier post"
+    }
+  ],
+  "narratives": [
+    {
+      "id": "narr_01",
+      "label": "Scouting America Pentagon Takeover Campaign",
+      "description": "Coordinated campaign pushing false and exaggerated claims about the Pentagon-Scouting America policy deal, distorting actual policy changes (DEI badge removal, biological sex designations) into fabricated claims of mass girl expulsions, data grabs, and youth militarization.",
+      "waves": [
+        {
+          "name": "wave_1_initial",
+          "timeframe": "13:00-13:40",
+          "claim_ids": [
+            "claim_01",
+            "claim_04"
+          ],
+          "description": "Initial flood: 17 bot accounts push false claim that Pentagon expelled 200K girls and banned trans youth across X, Reddit, YouTube"
+        },
+        {
+          "name": "wave_2_escalation",
+          "timeframe": "15:00-15:20",
+          "claim_ids": [
+            "claim_02"
+          ],
+          "description": "Escalation: fabricated claims that Pentagon demanded children's personal data for military recruitment database"
+        },
+        {
+          "name": "wave_3_conspiracy",
+          "timeframe": "17:00-18:30",
+          "claim_ids": [
+            "claim_03"
+          ],
+          "description": "Conspiracy: fabricated Pentagon insider, deepfake audio 'leaks,' claims all youth orgs targeted for militarization"
+        },
+        {
+          "name": "wave_4_media_blackout",
+          "timeframe": "19:00-19:15",
+          "claim_ids": [
+            "claim_05"
+          ],
+          "description": "Inoculation: preemptive 'media blackout' framing to discredit legitimate reporting that contradicts the false claims"
+        }
+      ]
+    }
+  ]
+}

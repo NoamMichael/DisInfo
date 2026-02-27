@@ -3,7 +3,7 @@
 import json
 from app.neo4j_client import run_write, run_query, close
 
-DATA_PATH = "data/synthetic_posts.json"
+DATA_PATH = "data/realtime_data.json"
 
 # --- Account groups (used for follow graph generation) ---
 X_BOTS = [
@@ -49,48 +49,48 @@ def _generate_follows():
         skip = X_BOTS[(i + 3) % len(X_BOTS)]  # deterministic skip
         for target in X_BOTS:
             if target != bot and target != skip:
-                follows.append((bot, target, "2026-02-25T08:00:00Z"))
+                follows.append((bot, target, "2026-02-26T08:00:00Z"))
         # Bots follow 2 organic accounts to look real
-        follows.append((bot, "acc_21", "2026-02-25T09:00:00Z"))  # journalist (popular)
-        follows.append((bot, "acc_28", "2026-02-25T09:10:00Z"))  # policy wonk (topical)
+        follows.append((bot, "acc_21", "2026-02-26T09:00:00Z"))  # journalist (popular)
+        follows.append((bot, "acc_28", "2026-02-26T09:10:00Z"))  # policy tracker (topical)
 
     # --- Bot ring: Reddit (5 accounts, full clique -- small group) ---
     for bot in REDDIT_BOTS:
         for target in REDDIT_BOTS:
             if target != bot:
-                follows.append((bot, target, "2026-02-25T08:30:00Z"))
-        follows.append((bot, "acc_23", "2026-02-25T09:00:00Z"))  # casual browser
+                follows.append((bot, target, "2026-02-26T08:30:00Z"))
+        follows.append((bot, "acc_23", "2026-02-26T09:00:00Z"))  # curious parent
 
     # --- Bot ring: YouTube (3 accounts, full clique) ---
     for bot in YT_BOTS:
         for target in YT_BOTS:
             if target != bot:
-                follows.append((bot, target, "2026-02-25T08:30:00Z"))
-        follows.append((bot, "acc_24", "2026-02-25T09:00:00Z"))  # cooking channel
-        follows.append((bot, "acc_27", "2026-02-25T09:00:00Z"))  # gaming channel
+                follows.append((bot, target, "2026-02-26T08:30:00Z"))
+        follows.append((bot, "acc_24", "2026-02-26T09:00:00Z"))  # eagle scout vet channel
+        follows.append((bot, "acc_27", "2026-02-26T09:00:00Z"))  # military family channel
 
     # --- Organic follows: sparse, asymmetric, old timestamps ---
     organic = [
         # X users
-        ("acc_20", "acc_22", "2025-02-01T10:00:00Z"),   # dev follows tech blogger
-        ("acc_20", "acc_25", "2024-06-15T14:00:00Z"),   # dev follows sports guy
-        ("acc_20", "acc_21", "2024-01-10T09:00:00Z"),   # dev follows journalist
-        ("acc_22", "acc_28", "2025-03-10T11:00:00Z"),   # tech follows policy wonk
-        ("acc_22", "acc_21", "2025-01-25T16:00:00Z"),   # tech follows journalist
-        ("acc_25", "acc_20", "2024-06-20T18:00:00Z"),   # sports follows dev (mutual)
-        ("acc_25", "acc_21", "2023-11-05T12:00:00Z"),   # sports follows journalist
-        ("acc_28", "acc_21", "2023-09-01T08:00:00Z"),   # policy follows journalist
-        ("acc_28", "acc_22", "2025-04-01T10:00:00Z"),   # policy follows tech
-        ("acc_21", "acc_28", "2023-08-15T14:00:00Z"),   # journalist follows policy (mutual)
+        ("acc_20", "acc_22", "2025-02-01T10:00:00Z"),   # policy analyst follows scout leader
+        ("acc_20", "acc_25", "2024-06-15T14:00:00Z"),   # policy follows mil spouse
+        ("acc_20", "acc_21", "2024-01-10T09:00:00Z"),   # policy follows journalist
+        ("acc_22", "acc_28", "2025-03-10T11:00:00Z"),   # scout leader follows policy tracker
+        ("acc_22", "acc_21", "2025-01-25T16:00:00Z"),   # scout leader follows journalist
+        ("acc_25", "acc_20", "2024-06-20T18:00:00Z"),   # mil spouse follows policy (mutual)
+        ("acc_25", "acc_21", "2023-11-05T12:00:00Z"),   # mil spouse follows journalist
+        ("acc_28", "acc_21", "2023-09-01T08:00:00Z"),   # policy tracker follows journalist
+        ("acc_28", "acc_22", "2025-04-01T10:00:00Z"),   # policy tracker follows scout leader
+        ("acc_21", "acc_28", "2023-08-15T14:00:00Z"),   # journalist follows policy tracker (mutual)
         # Reddit users
-        ("acc_23", "acc_26", "2024-02-20T15:00:00Z"),   # casual follows plant mom
-        ("acc_23", "acc_29", "2024-08-01T20:00:00Z"),   # casual follows reader
-        ("acc_26", "acc_29", "2024-07-15T12:00:00Z"),   # plant mom follows reader
-        ("acc_29", "acc_26", "2024-09-01T22:00:00Z"),   # reader follows plant mom (mutual)
-        ("acc_29", "acc_23", "2024-10-10T19:00:00Z"),   # reader follows casual
+        ("acc_23", "acc_26", "2024-02-20T15:00:00Z"),   # parent follows eagle scout
+        ("acc_23", "acc_29", "2024-08-01T20:00:00Z"),   # parent follows troop leader
+        ("acc_26", "acc_29", "2024-07-15T12:00:00Z"),   # eagle scout follows troop leader
+        ("acc_29", "acc_26", "2024-09-01T22:00:00Z"),   # troop leader follows eagle scout (mutual)
+        ("acc_29", "acc_23", "2024-10-10T19:00:00Z"),   # troop leader follows parent
         # YouTube users
-        ("acc_24", "acc_27", "2023-05-01T10:00:00Z"),   # cooking follows gaming
-        ("acc_27", "acc_24", "2023-06-15T14:00:00Z"),   # gaming follows cooking (mutual)
+        ("acc_24", "acc_27", "2023-05-01T10:00:00Z"),   # eagle scout vet follows mil family
+        ("acc_27", "acc_24", "2023-06-15T14:00:00Z"),   # mil family follows eagle scout vet (mutual)
     ]
     follows.extend(organic)
 
@@ -168,11 +168,11 @@ def load_data():
 
     # --- Post -> Claim keyword matching ---
     claim_keywords = {
-        "claim_01": ["contaminated", "contaminating", "industrial chemicals", "water treatment"],
-        "claim_02": ["covered it up", "coverup", "cover up", "cover-up", "kept it quiet"],
-        "claim_03": ["hospitals", "overwhelmed", "sick", "poisoned", "ERs packed"],
-        "claim_04": ["CDC", "deliberate", "testing", "lab rats", "whistleblower", "Tuskegee"],
-        "claim_05": ["media blackout", "media silence", "mainstream media", "MSM", "not covering"],
+        "claim_01": ["expel", "expelled", "kicked out", "200,000 girls", "200K girls", "girls removed"],
+        "claim_02": ["membership data", "personal data", "children's data", "recruitment database", "names, addresses"],
+        "claim_03": ["YMCA", "Boys & Girls Clubs", "4-H", "Phase One", "all youth org", "2027"],
+        "claim_04": ["military officers", "replacing", "installing", "run troop", "takeover", "seizes control"],
+        "claim_05": ["media blackout", "media silence", "media spin", "media is silent", "covering up", "hiding"],
     }
     links = 0
     for claim_id, keywords in claim_keywords.items():
