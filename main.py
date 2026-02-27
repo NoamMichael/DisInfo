@@ -7,8 +7,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.neo4j_client import run_query, close as neo4j_close
-from app.detector import run_detection
-from app.pipeline import run_full_pipeline
+from app.pipeline import run_detection, run_full_pipeline
+from app.observe import obs
 
 app = FastAPI(title="Disinfo Detector", version="0.1.0")
 
@@ -52,6 +52,18 @@ async def pipeline():
     """Run the full autonomous pipeline (all sponsor tools)."""
     results = await run_full_pipeline()
     return results
+
+
+@app.get("/logs")
+def get_logs(stage: str | None = None, kind: str | None = None):
+    """Get pipeline event logs. Filter by stage or kind."""
+    return {"events": obs.get_events(stage=stage, kind=kind)}
+
+
+@app.get("/logs/summary")
+def get_logs_summary():
+    """Get observability summary: timings, API call counts, errors."""
+    return obs.summary()
 
 
 @app.on_event("shutdown")

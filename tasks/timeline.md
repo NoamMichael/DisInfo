@@ -26,13 +26,13 @@
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
 | 1.1 | Project scaffold: FastAPI app, folder structure, `.env` loading | | [Done] | 11:15 | `app/`, `scripts/`, `data/`, `main.py` FastAPI entry point |
-| 1.2 | Neo4j schema + seed data loader | | [In Progress] | 11:30 | Nodes: Post, Account, Claim, Narrative. Edges: POSTED_BY, SIMILAR_TO, MENTIONS. Load synthetic dataset. |
-| 1.3 | Yutori API smoke test | | [ ] | 11:30 | Get a Scout to navigate to any URL and return content. If broken, switch to Tavily immediately. |
-| 1.4 | Modulate API smoke test | | [ ] | 11:30 | Send a short audio clip, get deepfake score back. If broken, note it and move on. |
-| 1.5 | Reka API smoke test | | [ ] | 11:30 | Send an image or video URL, get analysis back. |
-| 1.6 | Fastino API smoke test | | [ ] | 11:30 | Register a user, store a memory, retrieve it. |
-| 1.7 | Tavily API smoke test (backup) | | [ ] | 11:30 | Run a search query, confirm results come back. |
-| 1.8 | Basic Streamlit shell with placeholder sections | | [ ] | 12:00 | Graph viz area, results table, status indicators. Ugly is fine. |
+| 1.2 | Neo4j schema + seed data loader | | [Done] | 11:30 | 30 accounts, 57 posts, 5 claims, 1 narrative, 55 MENTIONS edges, 39 PART_OF_CAMPAIGN, 198 FOLLOWS, 26 MENTIONS_USER |
+| 1.3 | Yutori API smoke test | | [Done] | 11:30 | OK: browse task created, returns task_id + view_url |
+| 1.4 | Modulate API smoke test | | [Blocked] | 11:30 | No REST API -- C/C++ SDK only. ToxMod has platform APIs but not direct deepfake detection. Will check with sponsor at event. |
+| 1.5 | Reka API smoke test | | [Done] | 11:30 | OK: reka-flash model responds to text and image/video prompts |
+| 1.6 | Fastino API smoke test | | [Blocked] | 11:30 | 404 on /personalization/ingest. Docs are MCP-based, not REST. Will check with sponsor at event. |
+| 1.7 | Tavily API smoke test (backup) | | [Done] | 11:30 | OK: search returns results with answers |
+| 1.8 | Basic Streamlit shell with placeholder sections | | [Done] | 12:00 | Full dashboard: graph viz, cluster details, claim verification, media analysis sections |
 
 **Checkpoint @ 12:00:** All APIs confirmed working or fallbacks identified. Neo4j loaded with seed data. Streamlit shows something.
 
@@ -44,10 +44,10 @@
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 2.1 | Text similarity engine | | [ ] | 12:30 | Compute pairwise similarity on post text. TF-IDF or simple embedding cosine. Don't overthink -- even Jaccard works. |
-| 2.2 | Cluster detection in Neo4j | | [ ] | 1:00 | Cypher query: find groups of posts with >90% similarity, posted within N hours, from different accounts. Write SIMILAR_TO edges. |
-| 2.3 | Coordination scoring heuristics | | [ ] | 1:15 | Score each cluster: account age uniformity, text similarity %, velocity, cross-platform spread. Output a 0-100 suspicion score. |
-| 2.4 | Wire Neo4j results to Streamlit | | [ ] | 1:30 | Graph visualization of the suspicious cluster. Color nodes by suspicion. Show score + breakdown. |
+| 2.1 | Text similarity engine | | [Done] | 12:30 | SimilarityAgent: TF-IDF cosine, threshold=0.30, writes SIMILAR_TO edges. 73+ pairs found. |
+| 2.2 | Cluster detection in Neo4j | | [Done] | 1:00 | ClusterAgent: BFS connected components on SIMILAR_TO graph. 3 clusters detected. |
+| 2.3 | Coordination scoring heuristics | | [Done] | 1:15 | ScoringAgent: 7 signals, fixed datetime parsing. Top cluster scores 75/100 (was 42). |
+| 2.4 | Wire Neo4j results to Streamlit | | [Done] | 1:30 | Dashboard shows agents, graph viz, cluster details. 6 agents orchestrated in pipeline. |
 
 **Checkpoint @ 1:30:** Can click a button, see Neo4j find a suspicious cluster, display it as a graph with a suspicion score.
 

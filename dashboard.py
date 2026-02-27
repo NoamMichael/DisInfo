@@ -55,11 +55,13 @@ col_left, col_right = st.columns([2, 3])
 with col_left:
     st.subheader("Autonomous Pipeline")
     st.markdown(
-        "Runs 4 sponsor tools autonomously:\n"
-        "1. **Neo4j** — Graph-based coordination detection\n"
-        "2. **Reka** — Media content analysis\n"
-        "3. **Tavily** — Web-based claim verification\n"
-        "4. **Yutori** — Deep fact-check browsing"
+        "**6 autonomous agents**, 4 sponsor tools:\n"
+        "1. **SimilarityAgent** — TF-IDF text similarity (Neo4j)\n"
+        "2. **ClusterAgent** — Connected-component detection (Neo4j)\n"
+        "3. **ScoringAgent** — Coordination heuristic scoring\n"
+        "4. **MediaAgent** — Media content analysis (Reka)\n"
+        "5. **VerificationAgent** — Claim fact-checking (Tavily)\n"
+        "6. **BrowsingAgent** — Deep verification (Yutori)"
     )
 
     if st.button("Run Full Pipeline", type="primary", use_container_width=True):
@@ -67,24 +69,27 @@ with col_left:
         status_text = st.empty()
 
         progress.progress(0, "Starting pipeline...")
-        status_text.info("Stage 1/4: Analyzing graph for coordinated behavior...")
+        status_text.info("Agents 1-3: SimilarityAgent → ClusterAgent → ScoringAgent...")
 
-        from app.detector import run_detection
+        from app.pipeline import run_detection, run_full_pipeline
+        from app.agents import MediaAgent, VerificationAgent, BrowsingAgent
+
         clusters = run_detection()
         st.session_state.clusters = clusters
         progress.progress(25, "Detection complete")
 
-        status_text.info("Stage 2/4: Analyzing media with Reka + verifying claims with Tavily...")
-        from app.pipeline import analyze_media_posts, verify_claims_tavily, verify_top_claim_yutori
-
+        status_text.info("Agents 4+5: MediaAgent + VerificationAgent (parallel)...")
+        media_agent = MediaAgent()
+        verif_agent = VerificationAgent()
         loop = asyncio.new_event_loop()
         media_results, claim_results = loop.run_until_complete(
-            asyncio.gather(analyze_media_posts(), verify_claims_tavily())
+            asyncio.gather(media_agent.arun(), verif_agent.arun())
         )
         progress.progress(70, "Media + claims analyzed")
 
-        status_text.info("Stage 4/4: Dispatching Yutori browsing agent...")
-        yutori_result = loop.run_until_complete(verify_top_claim_yutori(claim_results))
+        status_text.info("Agent 6: BrowsingAgent dispatching to Snopes...")
+        browse_agent = BrowsingAgent()
+        yutori_result = loop.run_until_complete(browse_agent.arun(claims_results=claim_results))
         loop.close()
         progress.progress(100, "Pipeline complete!")
 
@@ -304,6 +309,53 @@ if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("yuto
                     st.markdown(f"**Result:** {yutori_data[key]}")
         else:
             st.json(yutori_data)
+
+# ─── Observability ─────────────────────────────────────────────────
+if st.session_state.pipeline_ran:
+    from app.observe import obs
+
+    st.divider()
+    st.subheader("Pipeline Observability")
+
+    summary = obs.summary()
+
+    # Top-level metrics
+    obs_cols = st.columns(4)
+    obs_cols[0].metric("Total API Calls", summary["api_calls"])
+    obs_cols[1].metric("Errors", summary["errors"])
+    obs_cols[2].metric("API Time", f"{summary['total_api_time_ms'] / 1000:.1f}s")
+    obs_cols[3].metric("Pipeline Time", f"{summary['total_pipeline_time_ms'] / 1000:.1f}s")
+
+    # Per-tool breakdown
+    if summary["by_tool"]:
+        st.markdown("**Per-Tool Breakdown:**")
+        tool_rows = []
+        for tool, stats in summary["by_tool"].items():
+            tool_rows.append({
+                "Tool": tool,
+                "Calls": stats["calls"],
+                "Total Time": f"{stats['total_ms'] / 1000:.1f}s",
+                "Avg Latency": f"{stats['total_ms'] / stats['calls']:.0f}ms" if stats["calls"] else "N/A",
+                "Errors": stats["errors"],
+            })
+        st.table(tool_rows)
+
+    # Stage timings
+    if summary["stage_timings"]:
+        st.markdown("**Stage Timings:**")
+        for stage, ms in summary["stage_timings"].items():
+            pct = (ms / summary["total_pipeline_time_ms"] * 100) if summary["total_pipeline_time_ms"] > 0 else 0
+            st.progress(min(pct / 100, 1.0), text=f"{stage}: {ms / 1000:.1f}s ({pct:.0f}%)")
+
+    # Event log
+    with st.expander("Event Log", expanded=False):
+        events = obs.get_events()
+        for evt in events:
+            kind = evt["kind"]
+            icon = {"start": "▶", "end": "✅", "api_call": "🔗", "error": "❌", "info": "ℹ️"}.get(kind, "·")
+            dur = f" ({evt['duration_ms']:.0f}ms)" if evt.get("duration_ms") else ""
+            ts = evt["timestamp"].split("T")[1][:12]
+            st.text(f"{ts} {icon} [{evt['stage']}] {evt['message']}{dur}")
 
 # ─── Footer ──────────────────────────────────────────────────────────
 st.divider()
