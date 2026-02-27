@@ -59,11 +59,11 @@
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 3.1 | Modulate integration: deepfake detection on video posts | | [ ] | 2:00 | For posts with audio/video URLs, extract audio, send to Modulate, store deepfake score on Post node. |
-| 3.2 | Reka integration: video analysis on video posts | | [ ] | 2:00 | For posts with video URLs, send to Reka Vision. Get manipulation flags, extracted text. Store on Post node. |
-| 3.3 | Yutori verification: dispatch Scout on flagged claims | | [ ] | 2:30 | Extract top claim from suspicious cluster. Send Yutori Scout to PolitiFact/Snopes/Reuters. Return verification result. |
-| 3.4 | Fastino campaign memory: store + recall | | [ ] | 2:30 | On detection: store campaign fingerprint (key phrases, account patterns) in Fastino. On new scan: retrieve similar past campaigns. |
-| 3.5 | Wire all results into Streamlit dashboard | | [ ] | 3:00 | Modulate deepfake badge, Reka visual flags, Yutori verification status, Fastino "seen before" indicator. |
+| 3.1 | Modulate integration: deepfake detection on video posts | | [Blocked] | 2:00 | No REST API (C/C++ SDK only). Skipped per panic protocols -- 5 other tools working. |
+| 3.2 | Reka integration: video analysis on video posts | | [Done] | 2:00 | MediaAgent analyzes 8/8 media posts via Reka chat. Stores reka_analysis on Post nodes. |
+| 3.3 | Yutori verification: dispatch Scout on flagged claims | | [Done] | 2:30 | BrowsingAgent dispatches to Snopes for top debunked/unverified claim. Returns task_id + view_url. |
+| 3.4 | Campaign memory: store + recall | | [Done] | 2:30 | MemoryAgent: TF-IDF keyword fingerprints + entity patterns stored as CampaignFingerprint nodes in Neo4j. Second run finds 9 matches across clusters. |
+| 3.5 | Wire all results into Streamlit dashboard | | [Done] | 3:00 | EntityAgent (Pioneer), MemoryAgent, all sections wired. 8 agents, 5 sponsor tools, full observability. |
 
 **Checkpoint @ 3:00:** Full pipeline works. Click button -> text analysis -> media analysis -> verification -> memory -> dashboard shows everything.
 

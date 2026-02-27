@@ -1,13 +1,15 @@
 """
-Full autonomous detection pipeline — orchestrates 6 agents.
+Full autonomous detection pipeline — orchestrates 8 agents.
 
 Agents:
-1. SimilarityAgent  — TF-IDF cosine similarity, writes SIMILAR_TO edges (Neo4j)
-2. ClusterAgent     — Connected-component cluster detection (Neo4j)
-3. ScoringAgent     — Coordination heuristic scoring (0-100)
-4. MediaAgent       — Reka media content analysis
+1. SimilarityAgent   — TF-IDF cosine similarity, writes SIMILAR_TO edges (Neo4j)
+2. ClusterAgent      — Connected-component cluster detection (Neo4j)
+3. ScoringAgent      — Coordination heuristic scoring (0-100)
+4. MediaAgent        — Reka media content analysis
 5. VerificationAgent — Tavily web-based claim verification
-6. BrowsingAgent    — Yutori deep fact-check browsing
+6. EntityAgent       — Pioneer/GLiNER-2 entity extraction + text classification
+7. BrowsingAgent     — Yutori deep fact-check browsing
+8. MemoryAgent       — Campaign fingerprinting + recall (Neo4j)
 """
 
 import asyncio
@@ -18,6 +20,8 @@ from app.agents import (
     MediaAgent,
     VerificationAgent,
     BrowsingAgent,
+    EntityAgent,
+    MemoryAgent,
 )
 from app.neo4j_client import run_query
 from app.observe import obs
@@ -38,7 +42,7 @@ def run_detection() -> list[dict]:
 
 
 async def run_full_pipeline() -> dict:
-    """Run the complete autonomous pipeline (all 6 agents)."""
+    """Run the complete autonomous pipeline (all 8 agents)."""
     obs.clear()
     results = {"stages": {}, "agents_used": []}
 
@@ -53,13 +57,15 @@ async def run_full_pipeline() -> dict:
     results["agents_used"].extend(["SimilarityAgent", "ClusterAgent", "ScoringAgent"])
     print(f"  {len(scored)} clusters, {results['stages']['detection']['suspicious']} suspicious")
 
-    # --- Stage 2: Media + Verification in parallel ---
-    print("[Agents 4+5] Analyzing media (Reka) + verifying claims (Tavily) in parallel...")
+    # --- Stage 2: Media + Verification + Entity extraction in parallel ---
+    print("[Agents 4-6] Media (Reka) + Claims (Tavily) + Entities (Pioneer) in parallel...")
     media_agent = MediaAgent()
     verif_agent = VerificationAgent()
-    media_results, claim_results = await asyncio.gather(
+    entity_agent = EntityAgent()
+    media_results, claim_results, entity_results = await asyncio.gather(
         media_agent.arun(),
         verif_agent.arun(),
+        entity_agent.arun(),
     )
     results["stages"]["media_analysis"] = {
         "results": media_results,
@@ -72,12 +78,24 @@ async def run_full_pipeline() -> dict:
         "debunked": len([r for r in claim_results.values() if r.get("status") == "debunked"]),
         "unverified": len([r for r in claim_results.values() if r.get("status") == "unverified"]),
     }
-    results["agents_used"].extend(["MediaAgent", "VerificationAgent"])
+    entity_ok = len([r for r in entity_results.values() if r.get("status") == "analyzed"])
+    entity_flagged = len([
+        r for r in entity_results.values()
+        if r.get("classification", {}).get("label") in ("disinformation", "conspiracy_theory")
+    ])
+    results["stages"]["entity_analysis"] = {
+        "results": entity_results,
+        "total": len(entity_results),
+        "analyzed": entity_ok,
+        "flagged_disinfo": entity_flagged,
+    }
+    results["agents_used"].extend(["MediaAgent", "VerificationAgent", "EntityAgent"])
     print(f"  Media: {results['stages']['media_analysis']['analyzed']}/{results['stages']['media_analysis']['total']} analyzed")
     print(f"  Claims: {results['stages']['claim_verification']['total']} checked")
+    print(f"  Entities: {entity_ok} posts analyzed, {entity_flagged} flagged as disinfo")
 
     # --- Stage 3: Deep verification ---
-    print("[Agent 6] Deep verification via Yutori browsing agent...")
+    print("[Agent 7] Deep verification via Yutori browsing agent...")
     browse_agent = BrowsingAgent()
     yutori_result = await browse_agent.arun(claims_results=claim_results)
     results["stages"]["deep_verification"] = yutori_result
@@ -87,15 +105,31 @@ async def run_full_pipeline() -> dict:
     else:
         print("  Skipped or errored")
 
+    # --- Stage 4: Campaign memory ---
+    print("[Agent 8] Campaign fingerprinting + recall...")
+    memory_agent = MemoryAgent()
+    memory_result = memory_agent.run(
+        scored_clusters=scored,
+        entity_results=entity_results,
+    )
+    results["stages"]["campaign_memory"] = memory_result
+    results["agents_used"].append("MemoryAgent")
+    print(f"  {len(memory_result['stored'])} fingerprints stored, "
+          f"{len(memory_result['matches'])} matches found")
+
     # --- Summary ---
     total_posts = run_query("MATCH (p:Post) RETURN count(p) AS n")[0]["n"]
     results["summary"] = {
         "agents_used": results["agents_used"],
-        "sponsor_tools_used": ["Neo4j", "Reka", "Tavily", "Yutori"],
+        "sponsor_tools_used": ["Neo4j", "Reka", "Tavily", "Yutori", "Pioneer"],
         "total_posts_analyzed": total_posts,
         "suspicious_clusters": results["stages"]["detection"]["suspicious"],
         "media_flagged": results["stages"]["media_analysis"]["analyzed"],
         "claims_checked": results["stages"]["claim_verification"]["total"],
+        "posts_entity_analyzed": entity_ok,
+        "posts_flagged_disinfo": entity_flagged,
+        "fingerprints_stored": len(memory_result["stored"]),
+        "campaign_matches": len(memory_result["matches"]),
     }
     results["observability"] = obs.summary()
 

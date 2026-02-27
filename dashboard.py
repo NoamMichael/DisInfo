@@ -55,13 +55,15 @@ col_left, col_right = st.columns([2, 3])
 with col_left:
     st.subheader("Autonomous Pipeline")
     st.markdown(
-        "**6 autonomous agents**, 4 sponsor tools:\n"
+        "**7 autonomous agents**, 5 sponsor tools:\n"
         "1. **SimilarityAgent** — TF-IDF text similarity (Neo4j)\n"
         "2. **ClusterAgent** — Connected-component detection (Neo4j)\n"
         "3. **ScoringAgent** — Coordination heuristic scoring\n"
         "4. **MediaAgent** — Media content analysis (Reka)\n"
         "5. **VerificationAgent** — Claim fact-checking (Tavily)\n"
-        "6. **BrowsingAgent** — Deep verification (Yutori)"
+        "6. **EntityAgent** — Entity extraction + classification (Pioneer/GLiNER-2)\n"
+        "7. **BrowsingAgent** — Deep verification (Yutori)\n"
+        "8. **MemoryAgent** — Campaign fingerprinting + recall (Neo4j)"
     )
 
     if st.button("Run Full Pipeline", type="primary", use_container_width=True):
@@ -69,27 +71,36 @@ with col_left:
         status_text = st.empty()
 
         progress.progress(0, "Starting pipeline...")
-        status_text.info("Agents 1-3: SimilarityAgent → ClusterAgent → ScoringAgent...")
+        status_text.info("Agents 1-3: SimilarityAgent -> ClusterAgent -> ScoringAgent...")
 
-        from app.pipeline import run_detection, run_full_pipeline
-        from app.agents import MediaAgent, VerificationAgent, BrowsingAgent
+        from app.pipeline import run_detection
+        from app.agents import MediaAgent, VerificationAgent, BrowsingAgent, EntityAgent, MemoryAgent
 
         clusters = run_detection()
         st.session_state.clusters = clusters
-        progress.progress(25, "Detection complete")
+        progress.progress(15, "Detection complete")
 
-        status_text.info("Agents 4+5: MediaAgent + VerificationAgent (parallel)...")
+        status_text.info("Agents 4-6: MediaAgent + VerificationAgent + EntityAgent (parallel)...")
         media_agent = MediaAgent()
         verif_agent = VerificationAgent()
+        entity_agent = EntityAgent()
         loop = asyncio.new_event_loop()
-        media_results, claim_results = loop.run_until_complete(
-            asyncio.gather(media_agent.arun(), verif_agent.arun())
+        media_results, claim_results, entity_results = loop.run_until_complete(
+            asyncio.gather(media_agent.arun(), verif_agent.arun(), entity_agent.arun())
         )
-        progress.progress(70, "Media + claims analyzed")
+        progress.progress(60, "Media + claims + entities analyzed")
 
-        status_text.info("Agent 6: BrowsingAgent dispatching to Snopes...")
+        status_text.info("Agent 7: BrowsingAgent dispatching to Snopes...")
         browse_agent = BrowsingAgent()
         yutori_result = loop.run_until_complete(browse_agent.arun(claims_results=claim_results))
+        progress.progress(80, "Deep verification complete")
+
+        status_text.info("Agent 8: MemoryAgent fingerprinting campaigns...")
+        memory_agent = MemoryAgent()
+        memory_result = memory_agent.run(
+            scored_clusters=clusters,
+            entity_results=entity_results,
+        )
         loop.close()
         progress.progress(100, "Pipeline complete!")
 
@@ -97,7 +108,9 @@ with col_left:
             "clusters": clusters,
             "media": media_results,
             "claims": claim_results,
+            "entities": entity_results,
             "yutori": yutori_result,
+            "memory": memory_result,
         }
         st.session_state.pipeline_ran = True
         status_text.empty()
@@ -111,11 +124,17 @@ with col_left:
         media_ok = len([r for r in results["media"].values() if r.get("status") == "analyzed"])
         claims_ok = len([r for r in results["claims"].values() if "error" not in r])
         debunked = len([r for r in results["claims"].values() if r.get("status") == "debunked"])
+        entity_ok = len([r for r in results.get("entities", {}).values() if r.get("status") == "analyzed"])
+        entity_flagged = len([
+            r for r in results.get("entities", {}).values()
+            if r.get("classification", {}).get("label") in ("disinformation", "conspiracy_theory")
+        ])
 
-        st.success(f"Pipeline complete — 4 sponsor tools executed autonomously")
-        res_cols = st.columns(2)
+        st.success(f"Pipeline complete — 5 sponsor tools executed autonomously")
+        res_cols = st.columns(3)
         res_cols[0].metric("Suspicious Clusters", f"{suspicious}/{n_clusters}")
         res_cols[1].metric("Claims Checked", f"{claims_ok} ({debunked} debunked)")
+        res_cols[2].metric("Disinfo Flagged", f"{entity_flagged}/{entity_ok} posts")
 
         st.markdown("**Sponsor Tools Used:**")
         tools_md = (
@@ -124,6 +143,7 @@ with col_left:
             f"| Neo4j | Graph coordination detection | {n_clusters} clusters found |\n"
             f"| Reka | Media content analysis | {media_ok} posts analyzed |\n"
             f"| Tavily | Web claim verification | {claims_ok} claims checked |\n"
+            f"| Pioneer/GLiNER-2 | Entity extraction + classification | {entity_ok} posts, {entity_flagged} flagged |\n"
             f"| Yutori | Deep fact-check browsing | {'Dispatched' if results.get('yutori') else 'N/A'} |"
         )
         st.markdown(tools_md)
@@ -288,6 +308,68 @@ if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("medi
             else:
                 st.markdown(result.get("analysis", "No analysis available"))
 
+# ─── Entity Analysis (Pioneer/GLiNER-2) ────────────────────────────
+if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("entities"):
+    st.divider()
+    st.subheader("Entity Extraction & Classification (Pioneer/GLiNER-2)")
+
+    entity_data = st.session_state.pipeline_results["entities"]
+
+    # Summary stats
+    classifications = {}
+    all_entities_by_type = {}
+    for post_id, result in entity_data.items():
+        if result.get("status") != "analyzed":
+            continue
+        label = result.get("classification", {}).get("label", "unknown")
+        classifications[label] = classifications.get(label, 0) + 1
+        for etype, ents in result.get("entities", {}).items():
+            for ent in ents:
+                key = ent["text"]
+                if etype not in all_entities_by_type:
+                    all_entities_by_type[etype] = {}
+                all_entities_by_type[etype][key] = all_entities_by_type[etype].get(key, 0) + 1
+
+    # Classification breakdown
+    class_cols = st.columns(len(classifications) if classifications else 1)
+    for i, (label, count) in enumerate(sorted(classifications.items(), key=lambda x: -x[1])):
+        icon = {"disinformation": "🚨", "conspiracy_theory": "⚠️", "news_report": "📰",
+                "personal_opinion": "💬", "satire": "😄", "legitimate_concern": "✅"}.get(label, "📝")
+        class_cols[i % len(class_cols)].metric(f"{icon} {label.replace('_', ' ').title()}", count)
+
+    # Most-mentioned entities
+    if all_entities_by_type:
+        st.markdown("**Top Extracted Entities:**")
+        ent_cols = st.columns(min(len(all_entities_by_type), 4))
+        for i, (etype, entities) in enumerate(all_entities_by_type.items()):
+            top = sorted(entities.items(), key=lambda x: -x[1])[:5]
+            col = ent_cols[i % len(ent_cols)]
+            col.markdown(f"**{etype.replace('_', ' ').title()}**")
+            for name, count in top:
+                col.markdown(f"- {name} ({count}x)")
+
+    # Per-post details (expandable)
+    with st.expander("Per-Post Details", expanded=False):
+        for post_id, result in entity_data.items():
+            if result.get("status") != "analyzed":
+                continue
+            cls = result.get("classification", {})
+            label = cls.get("label", "unknown")
+            conf = cls.get("confidence", 0)
+            icon = {"disinformation": "🚨", "conspiracy_theory": "⚠️"}.get(label, "📝")
+
+            entities_summary = []
+            for etype, ents in result.get("entities", {}).items():
+                for ent in ents:
+                    entities_summary.append(f"`{ent['text']}` ({etype})")
+
+            st.markdown(
+                f"{icon} **{post_id}** — **{label.replace('_', ' ')}** ({conf:.0%})  \n"
+                f"> _{result['post_text'][:120]}{'...' if len(result['post_text']) > 120 else ''}_  \n"
+                f"Entities: {', '.join(entities_summary[:8])}"
+                f"{'...' if len(entities_summary) > 8 else ''}"
+            )
+
 # ─── Yutori Deep Verification ───────────────────────────────────────
 if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("yutori"):
     st.divider()
@@ -309,6 +391,48 @@ if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("yuto
                     st.markdown(f"**Result:** {yutori_data[key]}")
         else:
             st.json(yutori_data)
+
+# ─── Campaign Memory ──────────────────────────────────────────────
+if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("memory"):
+    st.divider()
+    st.subheader("Campaign Memory (MemoryAgent)")
+
+    mem = st.session_state.pipeline_results["memory"]
+    mem_cols = st.columns(2)
+    mem_cols[0].metric("Fingerprints Stored", len(mem.get("stored", [])))
+    mem_cols[1].metric("Pattern Matches", len(mem.get("matches", [])))
+
+    # Show matches (the wow-factor)
+    if mem.get("matches"):
+        st.markdown("**Recognized Patterns — Seen Before:**")
+        for m in mem["matches"]:
+            st.warning(
+                f"**{m['cluster_id']}** matches stored fingerprint **{m['matched_fingerprint']}**  \n"
+                f"Keyword overlap: **{m['keyword_overlap']:.0%}** | "
+                f"Shared accounts: **{m['account_overlap']}**  \n"
+                f"Shared keywords: {', '.join(f'`{k}`' for k in m['shared_keywords'][:8])}"
+            )
+
+    # Show stored fingerprints
+    if mem.get("stored"):
+        with st.expander("Stored Campaign Fingerprints", expanded=False):
+            for fp in mem["stored"]:
+                st.markdown(
+                    f"**{fp['cluster_id']}** (score: {fp['score']})  \n"
+                    f"Keywords: {', '.join(f'`{k}`' for k in fp['keywords'][:10])}  \n"
+                    f"Platforms: {', '.join(fp['platforms'])} | "
+                    f"Accounts: {fp['account_count']} | "
+                    f"Posts: {fp['post_count']} | "
+                    f"Velocity: {fp['velocity_minutes']:.0f}min"
+                )
+                if fp.get("entities"):
+                    ent_parts = []
+                    for etype, ents in fp["entities"].items():
+                        for e in ents[:3]:
+                            ent_parts.append(f"{e['text']} ({etype})")
+                    if ent_parts:
+                        st.markdown(f"Entities: {', '.join(ent_parts)}")
+                st.markdown("---")
 
 # ─── Observability ─────────────────────────────────────────────────
 if st.session_state.pipeline_ran:
@@ -361,5 +485,5 @@ if st.session_state.pipeline_ran:
 st.divider()
 st.caption(
     "Disinfo Detector | Autonomous Agents Hackathon 2026 | "
-    "Sponsor tools: Neo4j, Tavily, Reka, Yutori"
+    "Sponsor tools: Neo4j, Tavily, Reka, Yutori, Pioneer/Fastino"
 )

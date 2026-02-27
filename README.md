@@ -6,7 +6,7 @@ Instead of fact-checking individual claims, it identifies the *patterns* of coor
 
 ## Architecture
 
-Six autonomous agents orchestrate the full detection pipeline:
+Seven autonomous agents orchestrate the full detection pipeline:
 
 ```
   ┌─────────────────────────────────────────────────────────────┐
@@ -28,12 +28,17 @@ Six autonomous agents orchestrate the full detection pipeline:
                           │
           ┌───────────────┼───────────────┐
           ▼               ▼               ▼
-    MediaAgent     VerificationAgent  BrowsingAgent
-    (Reka Vision   (Tavily web        (Yutori Scout
-     analysis)      search)            fact-check
-                                       browsing)
-          │               │               │
-          └───────────────┼───────────────┘
+    MediaAgent     VerificationAgent  EntityAgent
+    (Reka Vision   (Tavily web        (Pioneer/GLiNER-2
+     analysis)      search)            NER + text
+                                       classification)
+                          │
+                          ▼
+                   BrowsingAgent
+                   (Yutori Scout
+                    fact-check
+                    browsing)
+                          │
                           ▼
                 ┌─────────────────┐
                 │   Dashboard     │
@@ -52,13 +57,14 @@ Six autonomous agents orchestrate the full detection pipeline:
 | **ScoringAgent** | Scores each cluster on 7 coordination signals: text similarity, account age spread, posting velocity, cross-platform spread, cluster size, follower counts, media presence. Outputs 0-100 suspicion score. | Neo4j |
 | **MediaAgent** | Analyzes video/audio posts for sensationalism, manipulation tactics, and disinformation red flags. | Reka |
 | **VerificationAgent** | Fact-checks extracted claims via web search. Classifies as debunked/confirmed/unverified. | Tavily |
+| **EntityAgent** | Extracts named entities (orgs, people, locations, chemicals) and classifies posts (disinformation, conspiracy, news, opinion) using GLiNER-2. | Pioneer |
 | **BrowsingAgent** | Dispatches a browsing agent to fact-check sites (Snopes, PolitiFact) for deep claim verification. | Yutori |
 
 ### Pipeline Flow
 
 1. **Agents 1-3** run sequentially: similarity → clustering → scoring (Neo4j)
-2. **Agents 4+5** run in parallel: media analysis (Reka) + claim verification (Tavily)
-3. **Agent 6** runs last: deep verification (Yutori) on the top flagged claim
+2. **Agents 4-6** run in parallel: media analysis (Reka) + claim verification (Tavily) + entity extraction (Pioneer)
+3. **Agent 7** runs last: deep verification (Yutori) on the top flagged claim
 
 ## Sponsor Tools Used
 
@@ -67,6 +73,7 @@ Six autonomous agents orchestrate the full detection pipeline:
 | **Neo4j** | Graph database — accounts, posts, claims as nodes. Cypher queries detect suspicious clusters. | Working |
 | **Reka** | Media content analysis — flags sensationalized/manipulated video and audio posts. | Working |
 | **Tavily** | Web search — fact-checks extracted claims against news sources. | Working |
+| **Pioneer (Fastino)** | GLiNER-2 entity extraction and text classification — identifies orgs, locations, chemicals; classifies posts as disinfo/conspiracy/news/opinion. | Working |
 | **Yutori** | Browsing agent — navigates to Snopes/PolitiFact to deep-verify flagged claims. | Working |
 
 ## Setup
@@ -110,7 +117,7 @@ uvicorn main:app --reload --port 8000
 | GET | `/health` | Health check |
 | GET | `/graph/stats` | Neo4j node counts |
 | POST | `/detect` | Run detection agents (1-3) only |
-| POST | `/pipeline` | Run full 6-agent pipeline |
+| POST | `/pipeline` | Run full 7-agent pipeline |
 | GET | `/logs` | Pipeline event log (filter by `?stage=` or `?kind=`) |
 | GET | `/logs/summary` | Observability summary: timings, API calls, errors |
 
@@ -155,20 +162,21 @@ Visible in the Streamlit dashboard and via `/logs` and `/logs/summary` API endpo
 
 ```
 app/
-  agents/           # 6 autonomous agents
+  agents/           # 7 autonomous agents
     base.py         # Agent base class with observability
     similarity_agent.py
     cluster_agent.py
     scoring_agent.py
     media_agent.py
     verification_agent.py
+    entity_agent.py
     browsing_agent.py
   api/              # Sponsor API clients
     tavily_client.py
     reka_client.py
     yutori_client.py
     modulate_client.py
-    fastino_client.py
+    fastino_client.py  # Pioneer/GLiNER-2
   config.py         # .env loading
   neo4j_client.py   # Neo4j driver wrapper
   observe.py        # Pipeline observability
