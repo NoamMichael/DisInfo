@@ -29,7 +29,11 @@ def create_constraints():
 
 
 def _generate_follows():
-    """Generate follow edges — all real accounts, realistic sparse follows."""
+    """Generate follow edges — all real accounts, realistic sparse follows.
+
+    Major outlets get high in-degree (many followers) to signal authority.
+    Smaller accounts have sparser, more reciprocal follow patterns.
+    """
     follows = [
         # X journalists/outlets follow each other
         ("acc_01", "acc_02", "2023-06-01T10:00:00Z"),   # starsandstripes follows DeptofWar
@@ -48,6 +52,48 @@ def _generate_follows():
         ("acc_13", "acc_14", "2023-06-15T14:00:00Z"),   # NewsNation follows ABC7
         ("acc_14", "acc_13", "2023-07-01T14:00:00Z"),   # ABC7 follows NewsNation
         ("acc_15", "acc_11", "2022-08-01T10:00:00Z"),   # CBS News follows USA TODAY
+
+        # --- Major outlets followed by many (high in-degree = trusted) ---
+        # AP (web)
+        ("acc_01", "acc_17", "2022-03-01T10:00:00Z"),   # starsandstripes follows APNews
+        ("acc_03", "acc_17", "2022-04-10T08:00:00Z"),   # pamelafessler follows APNews
+        ("acc_06", "acc_17", "2022-06-15T14:00:00Z"),   # nataliealund follows APNews
+        ("acc_10", "acc_17", "2023-01-20T09:00:00Z"),   # allenanalysis follows APNews
+        ("acc_04", "acc_17", "2023-03-05T11:00:00Z"),   # FLVoiceNews follows APNews
+        ("acc_08", "acc_17", "2022-08-12T16:00:00Z"),   # sistertoldjah follows APNews
+        # CNN (web)
+        ("acc_01", "acc_16", "2022-02-10T10:00:00Z"),   # starsandstripes follows CNN
+        ("acc_03", "acc_16", "2023-05-15T09:00:00Z"),   # pamelafessler follows CNN
+        ("acc_06", "acc_16", "2023-01-08T14:00:00Z"),   # nataliealund follows CNN
+        ("acc_05", "acc_16", "2022-09-20T11:00:00Z"),   # cgtnamerica follows CNN
+        ("acc_04", "acc_16", "2023-07-01T12:00:00Z"),   # FLVoiceNews follows CNN
+        # LA Times (web)
+        ("acc_01", "acc_21", "2022-05-01T10:00:00Z"),   # starsandstripes follows LosAngelesTimes
+        ("acc_06", "acc_21", "2023-02-14T14:00:00Z"),   # nataliealund follows LosAngelesTimes
+        ("acc_03", "acc_21", "2022-11-20T09:00:00Z"),   # pamelafessler follows LosAngelesTimes
+        ("acc_10", "acc_21", "2023-06-01T11:00:00Z"),   # allenanalysis follows LosAngelesTimes
+        # Washington Post (web)
+        ("acc_01", "acc_19", "2022-01-15T10:00:00Z"),   # starsandstripes follows WashingtonPost
+        ("acc_03", "acc_19", "2022-07-20T08:00:00Z"),   # pamelafessler follows WashingtonPost
+        ("acc_06", "acc_19", "2023-03-10T14:00:00Z"),   # nataliealund follows WashingtonPost
+        ("acc_05", "acc_19", "2022-10-05T11:00:00Z"),   # cgtnamerica follows WashingtonPost
+        ("acc_10", "acc_19", "2023-04-15T09:00:00Z"),   # allenanalysis follows WashingtonPost
+        # NPR (web)
+        ("acc_03", "acc_22", "2022-06-01T09:00:00Z"),   # pamelafessler follows NPR_KGOU
+        ("acc_06", "acc_22", "2023-01-15T14:00:00Z"),   # nataliealund follows NPR_KGOU
+        ("acc_01", "acc_22", "2022-08-20T10:00:00Z"),   # starsandstripes follows NPR_KGOU
+        # USA Today (web + youtube)
+        ("acc_03", "acc_18", "2022-04-01T09:00:00Z"),   # pamelafessler follows USAToday
+        ("acc_01", "acc_18", "2022-09-10T10:00:00Z"),   # starsandstripes follows USAToday
+        ("acc_06", "acc_18", "2023-05-01T14:00:00Z"),   # nataliealund follows USAToday
+        # CBS News (youtube)
+        ("acc_01", "acc_15", "2022-03-15T10:00:00Z"),   # starsandstripes follows CBSNews
+        ("acc_03", "acc_15", "2023-01-10T09:00:00Z"),   # pamelafessler follows CBSNews
+        ("acc_06", "acc_15", "2023-06-20T14:00:00Z"),   # nataliealund follows CBSNews
+        # Cross-platform follows: journalists follow major YouTube channels
+        ("acc_04", "acc_11", "2023-02-01T12:00:00Z"),   # FLVoiceNews follows USATODAY-yt
+        ("acc_07", "acc_13", "2023-08-10T10:00:00Z"),   # elliscashmore follows NewsNation
+        ("acc_08", "acc_14", "2023-04-15T16:00:00Z"),   # sistertoldjah follows ABC7
     ]
     return follows
 
@@ -66,9 +112,11 @@ def load_data():
                 a.platform = $platform,
                 a.created_at = datetime($created_at),
                 a.follower_count = $follower_count,
+                a.following_count = $following_count,
                 a.is_bot = $is_bot
             """,
-            {**acc, "display_name": acc.get("display_name", acc["username"])},
+            {**acc, "display_name": acc.get("display_name", acc["username"]),
+             "following_count": acc.get("following_count", 0)},
         )
     print(f"Loaded {len(data['accounts'])} accounts")
 

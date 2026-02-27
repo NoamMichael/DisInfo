@@ -61,6 +61,7 @@ class ClusterAgent(Agent):
                        a.id AS account_id, a.username AS username,
                        a.created_at AS account_created_at,
                        a.follower_count AS follower_count,
+                       a.following_count AS following_count,
                        a.is_bot AS is_bot
                 ORDER BY p.timestamp
                 """,

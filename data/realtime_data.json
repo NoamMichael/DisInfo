@@ -7,7 +7,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 6000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 1509
     },
     {
       "id": "acc_02",
@@ -16,7 +17,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 7000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 428
     },
     {
       "id": "acc_03",
@@ -25,7 +27,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 8000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 251
     },
     {
       "id": "acc_04",
@@ -34,7 +37,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 9000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 1718
     },
     {
       "id": "acc_05",
@@ -43,7 +47,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 10000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 763
     },
     {
       "id": "acc_06",
@@ -52,7 +57,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 11000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 701
     },
     {
       "id": "acc_07",
@@ -61,7 +67,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 12000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 657
     },
     {
       "id": "acc_08",
@@ -70,7 +77,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 13000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 485
     },
     {
       "id": "acc_09",
@@ -79,7 +87,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 14000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 1708
     },
     {
       "id": "acc_10",
@@ -88,7 +97,8 @@
       "platform": "x",
       "created_at": "2020-01-15T00:00:00Z",
       "follower_count": 15000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 409
     },
     {
       "id": "acc_11",
@@ -97,7 +107,8 @@
       "platform": "youtube",
       "created_at": "2018-06-01T00:00:00Z",
       "follower_count": 105000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 396
     },
     {
       "id": "acc_12",
@@ -106,7 +117,8 @@
       "platform": "youtube",
       "created_at": "2018-06-01T00:00:00Z",
       "follower_count": 110000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 429
     },
     {
       "id": "acc_13",
@@ -115,7 +127,8 @@
       "platform": "youtube",
       "created_at": "2018-06-01T00:00:00Z",
       "follower_count": 115000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 329
     },
     {
       "id": "acc_14",
@@ -124,7 +137,8 @@
       "platform": "youtube",
       "created_at": "2018-06-01T00:00:00Z",
       "follower_count": 120000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 94
     },
     {
       "id": "acc_15",
@@ -133,7 +147,8 @@
       "platform": "youtube",
       "created_at": "2018-06-01T00:00:00Z",
       "follower_count": 125000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 352
     },
     {
       "id": "acc_16",
@@ -142,7 +157,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 266
     },
     {
       "id": "acc_17",
@@ -151,7 +167,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 66
     },
     {
       "id": "acc_18",
@@ -160,7 +177,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 65
     },
     {
       "id": "acc_19",
@@ -169,7 +187,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 97
     },
     {
       "id": "acc_20",
@@ -178,7 +197,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 161
     },
     {
       "id": "acc_21",
@@ -187,7 +207,8 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
-      "is_bot": false
+      "is_bot": false,
+      "following_count": 169
     },
     {
       "id": "acc_22",
@@ -196,142 +217,1887 @@
       "platform": "web",
       "created_at": "2015-01-01T00:00:00Z",
       "follower_count": 100000,
+      "is_bot": false,
+      "following_count": 308
+    },
+    {
+      "id": "acc_023",
+      "username": "smaxbrown",
+      "display_name": "Thank you, @SecWar @PeteHegseth As an Eagle Scout ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6051,
+      "is_bot": false,
+      "following_count": 1432
+    },
+    {
+      "id": "acc_024",
+      "username": "PeteHegseth",
+      "display_name": "From Day One at the War Department, we have made i",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 56956,
+      "is_bot": false,
+      "following_count": 337
+    },
+    {
+      "id": "acc_025",
+      "username": "NewsHour",
+      "display_name": "Scouting America will alter several policies at th",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 28031,
+      "is_bot": false,
+      "following_count": 1666
+    },
+    {
+      "id": "acc_026",
+      "username": "GBBranstetter",
+      "display_name": "Most Americans manage to go their entire lives wit",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1742,
+      "is_bot": false,
+      "following_count": 2761
+    },
+    {
+      "id": "acc_027",
+      "username": "pamelafessler",
+      "display_name": "This is a high priority for DOD? Hegseth says Scou",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5500,
+      "is_bot": false,
+      "following_count": 1636
+    },
+    {
+      "id": "acc_028",
+      "username": "SecWar",
+      "display_name": "The Department of War has officially put Scouting ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 91426,
+      "is_bot": false,
+      "following_count": 264
+    },
+    {
+      "id": "acc_029",
+      "username": "NavyTimes",
+      "display_name": "Under Defense Secretary Pete Hegseth, the Pentagon",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 29446,
+      "is_bot": false,
+      "following_count": 1119
+    },
+    {
+      "id": "acc_030",
+      "username": "NEWSMAX",
+      "display_name": "Scouting America has agreed to comply with Preside",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 53618,
+      "is_bot": false,
+      "following_count": 192
+    },
+    {
+      "id": "acc_031",
+      "username": "EricMGarcia",
+      "display_name": "The Pentagon under Pete Hegseth is severing ties w",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4681,
+      "is_bot": false,
+      "following_count": 126
+    },
+    {
+      "id": "acc_032",
+      "username": "WXOW",
+      "display_name": "WXOW 19 News",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1157,
+      "is_bot": false,
+      "following_count": 753
+    },
+    {
+      "id": "acc_033",
+      "username": "MarvinRotrand",
+      "display_name": "Trump administration now attacking Scouts: Pentago",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7602,
+      "is_bot": false,
+      "following_count": 1629
+    },
+    {
+      "id": "acc_034",
+      "username": "BlueCrewViking",
+      "display_name": "Pentagon puts Scouts \"on notice\" over DEI and girl",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5299,
+      "is_bot": false,
+      "following_count": 1065
+    },
+    {
+      "id": "acc_035",
+      "username": "erniegonzalezjr",
+      "display_name": "Ernie Gonzalez Jr (@ErnieGonzalezJr) / Posts / X -",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3647,
+      "is_bot": false,
+      "following_count": 1493
+    },
+    {
+      "id": "acc_036",
+      "username": "CNNnews18",
+      "display_name": "#WATCH | Hegseth's Pentagon Ready To Cut Ties With",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 33210,
+      "is_bot": false,
+      "following_count": 518
+    },
+    {
+      "id": "acc_037",
+      "username": "tommyboy0690",
+      "display_name": "Pentagon threatens to pull military support from B",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1301,
+      "is_bot": false,
+      "following_count": 981
+    },
+    {
+      "id": "acc_038",
+      "username": "HarZizn",
+      "display_name": "Pentagon warns Scouts to make 'core value reforms'",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6730,
+      "is_bot": false,
+      "following_count": 1763
+    },
+    {
+      "id": "acc_039",
+      "username": "derrickvanorden",
+      "display_name": "Big News. - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3732,
+      "is_bot": false,
+      "following_count": 1478
+    },
+    {
+      "id": "acc_040",
+      "username": "usatodayDC",
+      "display_name": "Scouting America to end DEI efforts in deal with P",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7391,
+      "is_bot": false,
+      "following_count": 409
+    },
+    {
+      "id": "acc_041",
+      "username": "Enquirer",
+      "display_name": "Scouting America to end DEI efforts, Hegseth says ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2902,
+      "is_bot": false,
+      "following_count": 479
+    },
+    {
+      "id": "acc_042",
+      "username": "brontyman",
+      "display_name": "Hegseth says Scouting America agrees to abandon DE",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6254,
+      "is_bot": false,
+      "following_count": 978
+    },
+    {
+      "id": "acc_043",
+      "username": "DeptofWar",
+      "display_name": "Department of War (@DeptofWar) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 32676,
+      "is_bot": false,
+      "following_count": 935
+    },
+    {
+      "id": "acc_044",
+      "username": "dallasnews",
+      "display_name": "Scouting America ends DEI, drops transgender suppo",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 70541,
+      "is_bot": false,
+      "following_count": 226
+    },
+    {
+      "id": "acc_045",
+      "username": "saddamscribe",
+      "display_name": "Hegseth says Scouting America agrees to abandon DE",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7715,
+      "is_bot": false,
+      "following_count": 1436
+    },
+    {
+      "id": "acc_046",
+      "username": "EpochTimes",
+      "display_name": "Hegseth Says Scouting America Will Change Its DEI ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 32335,
+      "is_bot": false,
+      "following_count": 1852
+    },
+    {
+      "id": "acc_047",
+      "username": "HackingButLegal",
+      "display_name": "Pete Hegseth tries to get them to ban girls and LG",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 800,
+      "is_bot": false,
+      "following_count": 138
+    },
+    {
+      "id": "acc_048",
+      "username": "mySA",
+      "display_name": "MySA - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6366,
+      "is_bot": false,
+      "following_count": 1694
+    },
+    {
+      "id": "acc_049",
+      "username": "Meidas_LaurenA",
+      "display_name": "Secretary of War Pete Hegseth has said that Scouti",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2804,
+      "is_bot": false,
+      "following_count": 1981
+    },
+    {
+      "id": "acc_050",
+      "username": "pntofknowreturn",
+      "display_name": "Point of Know Return (@pntofknowreturn) / Posts / ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5724,
+      "is_bot": false,
+      "following_count": 1298
+    },
+    {
+      "id": "acc_051",
+      "username": "Bentley4Texas",
+      "display_name": "We allowed this. We don't get what we deserve\u2014we g",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1429,
+      "is_bot": false,
+      "following_count": 611
+    },
+    {
+      "id": "acc_052",
+      "username": "elliscashmore",
+      "display_name": "ELLIS CASHMORE (@elliscashmore) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 8068,
+      "is_bot": false,
+      "following_count": 975
+    },
+    {
+      "id": "acc_053",
+      "username": "KatieMiller",
+      "display_name": "Katie Miller (@KatieMiller) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 616,
+      "is_bot": false,
+      "following_count": 211
+    },
+    {
+      "id": "acc_054",
+      "username": "gloefflmann",
+      "display_name": "Georg 'Maverick' L\u00f6fflmann (@gloefflmann) / Posts ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4643,
+      "is_bot": false,
+      "following_count": 2361
+    },
+    {
+      "id": "acc_055",
+      "username": "cindyjacobs",
+      "display_name": "Cindy Jacobs (@cindyjacobs) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5997,
+      "is_bot": false,
+      "following_count": 800
+    },
+    {
+      "id": "acc_056",
+      "username": "thomasbsauer",
+      "display_name": "I'm a proud Eagle Scout who saw the early signs of",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1968,
+      "is_bot": false,
+      "following_count": 2674
+    },
+    {
+      "id": "acc_057",
+      "username": "JustTheNews",
+      "display_name": "\u201cScouting America has agreed to\u2026reviewing and repl",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 55535,
+      "is_bot": false,
+      "following_count": 491
+    },
+    {
+      "id": "acc_058",
+      "username": "adafruit",
+      "display_name": "adafruit industries",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 469,
+      "is_bot": false,
+      "following_count": 790
+    },
+    {
+      "id": "acc_059",
+      "username": "mass_ave",
+      "display_name": "I remember being drafted into the Cub Scouts at ag",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3191,
+      "is_bot": false,
+      "following_count": 2464
+    },
+    {
+      "id": "acc_060",
+      "username": "Biedersam",
+      "display_name": "While he was filming the six-minute video complain",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6585,
+      "is_bot": false,
+      "following_count": 593
+    },
+    {
+      "id": "acc_061",
+      "username": "KMPHFOX26",
+      "display_name": "The Department of War announced Scouting America, ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 61174,
+      "is_bot": false,
+      "following_count": 85
+    },
+    {
+      "id": "acc_062",
+      "username": "KTB_500",
+      "display_name": "Yes, and that is why the Department of War is work",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 585,
+      "is_bot": false,
+      "following_count": 143
+    },
+    {
+      "id": "acc_063",
+      "username": "SeanParnellASW",
+      "display_name": "STATEMENT: From Day One at the War Department, we ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1689,
+      "is_bot": false,
+      "following_count": 2808
+    },
+    {
+      "id": "acc_064",
+      "username": "JeremysRazors",
+      "display_name": "The Pentagon is considering ending its partnership",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4831,
+      "is_bot": false,
+      "following_count": 1033
+    },
+    {
+      "id": "acc_065",
+      "username": "KevinDLindstrom",
+      "display_name": "Pentagon threatens Scouting America over DEI, 'God",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7567,
+      "is_bot": false,
+      "following_count": 1783
+    },
+    {
+      "id": "acc_066",
+      "username": "JasonAtwell14",
+      "display_name": "The Boy Scouts aren't sitting in the Pentagon maki",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 903,
+      "is_bot": false,
+      "following_count": 642
+    },
+    {
+      "id": "acc_067",
+      "username": "TPostMillennial",
+      "display_name": "BREAKING: Boy Scouts agrees to ditch DEI, keep boy",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 79567,
+      "is_bot": false,
+      "following_count": 90
+    },
+    {
+      "id": "acc_068",
+      "username": "ltgrusselhonore",
+      "display_name": "Draft Oped - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2241,
+      "is_bot": false,
+      "following_count": 1053
+    },
+    {
+      "id": "acc_069",
+      "username": "nataliealund",
+      "display_name": "Natalie Neysa Alund (@nataliealund) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4948,
+      "is_bot": false,
+      "following_count": 513
+    },
+    {
+      "id": "acc_070",
+      "username": "HicksCBER",
+      "display_name": "Michael J. Hicks (@HicksCBER) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 933,
+      "is_bot": false,
+      "following_count": 828
+    },
+    {
+      "id": "acc_071",
+      "username": "Pmaxwellfnp",
+      "display_name": "Hegseth strikes new deal with Scouts: Girls allowe",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6940,
+      "is_bot": false,
+      "following_count": 769
+    },
+    {
+      "id": "acc_072",
+      "username": "washingtonpost",
+      "display_name": "The organization has been in Defense Secretary Pet",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 44714,
+      "is_bot": false,
+      "following_count": 1501
+    },
+    {
+      "id": "acc_073",
+      "username": "GalvinAlmanza",
+      "display_name": "Pete Hegseth quitting the Scouts bc they let in gi",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7399,
+      "is_bot": false,
+      "following_count": 1908
+    },
+    {
+      "id": "acc_074",
+      "username": "JasonColavito",
+      "display_name": "Pete Hegseth plans to ban the Scouts from military",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6388,
+      "is_bot": false,
+      "following_count": 947
+    },
+    {
+      "id": "acc_075",
+      "username": "KING5Seattle",
+      "display_name": "Officials claimed the organization had \u201clost its w",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3583,
+      "is_bot": false,
+      "following_count": 766
+    },
+    {
+      "id": "acc_076",
+      "username": "pxwhittle",
+      "display_name": "Scouting America will alter its policies to mainta",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1953,
+      "is_bot": false,
+      "following_count": 1616
+    },
+    {
+      "id": "acc_077",
+      "username": "constans",
+      "display_name": "Imagine if the military said that they would stop ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6185,
+      "is_bot": false,
+      "following_count": 927
+    },
+    {
+      "id": "acc_078",
+      "username": "its_The_Dr",
+      "display_name": "SecWar Pete Hegseth reveals that after IMMENSE pre",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1445,
+      "is_bot": false,
+      "following_count": 958
+    },
+    {
+      "id": "acc_079",
+      "username": "deptofwar",
+      "display_name": "Department of War (@DeptofWar) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 107841,
+      "is_bot": false,
+      "following_count": 186
+    },
+    {
+      "id": "acc_080",
+      "username": "scottwongDC",
+      "display_name": "One of Defense Secretary Pete Hegseth's top advise",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2396,
+      "is_bot": false,
+      "following_count": 2974
+    },
+    {
+      "id": "acc_081",
+      "username": "GaryGrumbach",
+      "display_name": "One of Defense Secy. Hegseth's top advisers has re",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5645,
+      "is_bot": false,
+      "following_count": 1599
+    },
+    {
+      "id": "acc_082",
+      "username": "putnamtvads?lang=bn",
+      "display_name": "Mark Putnam (@PutnamTVAds) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 963,
+      "is_bot": false,
+      "following_count": 1377
+    },
+    {
+      "id": "acc_083",
+      "username": "MickeyMeenan",
+      "display_name": "\"Pete Hegseth senior adviser is pushing for Pentag",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1350,
+      "is_bot": false,
+      "following_count": 392
+    },
+    {
+      "id": "acc_084",
+      "username": "defense_news",
+      "display_name": "Defense News (@defense_news) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 54920,
+      "is_bot": false,
+      "following_count": 375
+    },
+    {
+      "id": "acc_085",
+      "username": "monicasloves",
+      "display_name": "Monica Cates (@monicasloves) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7788,
+      "is_bot": false,
+      "following_count": 550
+    },
+    {
+      "id": "acc_086",
+      "username": "source_92",
+      "display_name": "Pentagon shifts toward maintaining ties to Scoutin",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 607,
+      "is_bot": false,
+      "following_count": 1143
+    },
+    {
+      "id": "acc_087",
+      "username": "source_93",
+      "display_name": "Transgender youths are targeted in Scouting Americ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7060,
+      "is_bot": false,
+      "following_count": 1693
+    },
+    {
+      "id": "acc_088",
+      "username": "source_94",
+      "display_name": "Hegseth, DoD Reach Agreement with Scouting America",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3972,
+      "is_bot": false,
+      "following_count": 1102
+    },
+    {
+      "id": "acc_089",
+      "username": "source_95",
+      "display_name": "Scouting America to alter policies including biolo",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 558,
+      "is_bot": false,
+      "following_count": 384
+    },
+    {
+      "id": "acc_090",
+      "username": "source_96",
+      "display_name": "The Vanguard of Tradition: Pete Hegseth\u2019s Crusade ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1435,
+      "is_bot": false,
+      "following_count": 1993
+    },
+    {
+      "id": "acc_091",
+      "username": "source_97",
+      "display_name": "Pentagon says Scouting America will alter policies",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7483,
+      "is_bot": false,
+      "following_count": 977
+    },
+    {
+      "id": "acc_092",
+      "username": "source_98",
+      "display_name": "Pentagon shifts toward maintaining ties to Scoutin",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4047,
+      "is_bot": false,
+      "following_count": 1205
+    },
+    {
+      "id": "acc_093",
+      "username": "source_99",
+      "display_name": "Inside the cutthroat competition for the best bagu",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7699,
+      "is_bot": false,
+      "following_count": 1510
+    },
+    {
+      "id": "acc_094",
+      "username": "source_100",
+      "display_name": "A golden sweep by Team USA in Olympic hockey led t",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2668,
+      "is_bot": false,
+      "following_count": 2918
+    },
+    {
+      "id": "acc_095",
+      "username": "source_101",
+      "display_name": "Transgender Youths Targeted In Scouting America Ch",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5480,
+      "is_bot": false,
+      "following_count": 1340
+    },
+    {
+      "id": "acc_096",
+      "username": "source_102",
+      "display_name": "Scouting America agrees to 5 changes under Pentago",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6828,
+      "is_bot": false,
+      "following_count": 649
+    },
+    {
+      "id": "acc_097",
+      "username": "source_103",
+      "display_name": "Scouting America agrees to massive changes after P",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 432,
+      "is_bot": false,
+      "following_count": 1452
+    },
+    {
+      "id": "acc_098",
+      "username": "source_104",
+      "display_name": "Opinion | Gen Z instinctively understands somethin",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5060,
+      "is_bot": false,
+      "following_count": 864
+    },
+    {
+      "id": "acc_099",
+      "username": "search?q=Department+of+War",
+      "display_name": "\"Department of War\" - Results on X | Live Posts & ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 8098,
+      "is_bot": false,
+      "following_count": 1926
+    },
+    {
+      "id": "acc_100",
+      "username": "davidfrum",
+      "display_name": "David Frum (@davidfrum) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7694,
+      "is_bot": false,
+      "following_count": 1773
+    },
+    {
+      "id": "acc_101",
+      "username": "search?q=SECWAR&src=tren",
+      "display_name": "\"SECWAR\" - Results on X | Live Posts & Updates",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 121711,
+      "is_bot": false,
+      "following_count": 78
+    },
+    {
+      "id": "acc_102",
+      "username": "EverProactive",
+      "display_name": "See you all on BlueSky or TikTok or YouTube. - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 753,
+      "is_bot": false,
+      "following_count": 519
+    },
+    {
+      "id": "acc_103",
+      "username": "ItWasACoup",
+      "display_name": "Paige Ex GOP (@ItWasACoup) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5226,
+      "is_bot": false,
+      "following_count": 1883
+    },
+    {
+      "id": "acc_104",
+      "username": "DOD_Watch",
+      "display_name": "DoD Watch (@DOD_Watch) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 24207,
+      "is_bot": false,
+      "following_count": 1848
+    },
+    {
+      "id": "acc_105",
+      "username": "JamesDuncanUCF",
+      "display_name": "James Duncan (@JamesDuncanUCF) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1090,
+      "is_bot": false,
+      "following_count": 1392
+    },
+    {
+      "id": "acc_106",
+      "username": "FlagLadyofthe",
+      "display_name": "LadyoftheFlag (@FlagLadyofthe) / Posts / X - Twitt",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1061,
+      "is_bot": false,
+      "following_count": 1743
+    },
+    {
+      "id": "acc_107",
+      "username": "NBCNews",
+      "display_name": "NBC News on X: \"One of Defense Secretary Pete Hegs",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 32546,
+      "is_bot": false,
+      "following_count": 335
+    },
+    {
+      "id": "acc_108",
+      "username": "BenjaminGoggin",
+      "display_name": "Ben Goggin on X: \"Pete Hegseth senior adviser is p",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2802,
+      "is_bot": false,
+      "following_count": 964
+    },
+    {
+      "id": "acc_109",
+      "username": "vencinacario",
+      "display_name": "Venci Nacario \ud83c\udf15 on X: \"Pentagon Considers Cutting ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5967,
+      "is_bot": false,
+      "following_count": 1361
+    },
+    {
+      "id": "acc_110",
+      "username": "SecDef",
+      "display_name": "Secretary of War Pete Hegseth on X: \"Wheels Down w",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 134867,
+      "is_bot": false,
+      "following_count": 417
+    },
+    {
+      "id": "acc_111",
+      "username": "rationalistit",
+      "display_name": "Akateemiset rationalistit - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5438,
+      "is_bot": false,
+      "following_count": 844
+    },
+    {
+      "id": "acc_112",
+      "username": "Not_the_Bee",
+      "display_name": "Not the Bee (@Not_the_Bee) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7669,
+      "is_bot": false,
+      "following_count": 635
+    },
+    {
+      "id": "acc_113",
+      "username": "KarenCox1680781",
+      "display_name": "Karen Cox (@KarenCox1680781) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6724,
+      "is_bot": false,
+      "following_count": 1542
+    },
+    {
+      "id": "acc_114",
+      "username": "JoelHeffner",
+      "display_name": "Joel Heffner (@JoelHeffner) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5080,
+      "is_bot": false,
+      "following_count": 1222
+    },
+    {
+      "id": "acc_115",
+      "username": "search?f=users&q=Mark%20Alan%20Zager",
+      "display_name": "\"Mark Alan Zager\" - Results on X | Live Posts & Up",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5256,
+      "is_bot": false,
+      "following_count": 1010
+    },
+    {
+      "id": "acc_116",
+      "username": "EternalRiteWing",
+      "display_name": "Steph \u200d\u2640\ufe0f       (@EternalRiteWing) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5452,
+      "is_bot": false,
+      "following_count": 1516
+    },
+    {
+      "id": "acc_117",
+      "username": "jereharrison17",
+      "display_name": "Jennifer (@jereharrison17) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2601,
+      "is_bot": false,
+      "following_count": 1979
+    },
+    {
+      "id": "acc_118",
+      "username": "luxeprogressive",
+      "display_name": "Luxe (@luxeprogressive) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1897,
+      "is_bot": false,
+      "following_count": 685
+    },
+    {
+      "id": "acc_119",
+      "username": "maferegas",
+      "display_name": "Maferegas  \u2694\ufe0f     (@maferegas) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3910,
+      "is_bot": false,
+      "following_count": 1184
+    },
+    {
+      "id": "acc_120",
+      "username": "BananaRepub69",
+      "display_name": "Brian Fantana (@BananaRepub69) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6039,
+      "is_bot": false,
+      "following_count": 485
+    },
+    {
+      "id": "acc_121",
+      "username": "btelliott1",
+      "display_name": "Br. Brad Elliott (@btelliott1) / Posts / X - Twitt",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6223,
+      "is_bot": false,
+      "following_count": 705
+    },
+    {
+      "id": "acc_122",
+      "username": "RestInPeaceF1",
+      "display_name": "F1 RIP 12/12/21 (@RestInPeaceF1) / Posts / X - Twi",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3744,
+      "is_bot": false,
+      "following_count": 2399
+    },
+    {
+      "id": "acc_123",
+      "username": "scottduda",
+      "display_name": "scott duda (@scottduda) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6218,
+      "is_bot": false,
+      "following_count": 1303
+    },
+    {
+      "id": "acc_124",
+      "username": "Meholland",
+      "display_name": "Meegan Holland (@Meholland) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3427,
+      "is_bot": false,
+      "following_count": 1176
+    },
+    {
+      "id": "acc_125",
+      "username": "PJMedia_com",
+      "display_name": "War Department Says Former Boy Scouts Must Reform,",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4160,
+      "is_bot": false,
+      "following_count": 2494
+    },
+    {
+      "id": "acc_126",
+      "username": "source_141",
+      "display_name": "Hegseth sets Friday deadline for Anthropic to drop",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6590,
+      "is_bot": false,
+      "following_count": 1077
+    },
+    {
+      "id": "acc_127",
+      "username": "source_142",
+      "display_name": "Anthropic faces Friday deadline in Defense AI clas",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6020,
+      "is_bot": false,
+      "following_count": 1395
+    },
+    {
+      "id": "acc_128",
+      "username": "IREHR",
+      "display_name": "Secretary of Defense Pete Hegseth apparently wants",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7530,
+      "is_bot": false,
+      "following_count": 1017
+    },
+    {
+      "id": "acc_129",
+      "username": "SrChiefEbert",
+      "display_name": "Hallelujah!           It was an embassment when th",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2524,
+      "is_bot": false,
+      "following_count": 1582
+    },
+    {
+      "id": "acc_130",
+      "username": "search?q=Eagle%20Scout",
+      "display_name": "\"Eagle Scout\" - Results on X | Live Posts & Update",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6615,
+      "is_bot": false,
+      "following_count": 649
+    },
+    {
+      "id": "acc_131",
+      "username": "mitchellvii",
+      "display_name": "SCOUTING SAVED BY HEGSETH: Common sense is reclaim",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3914,
+      "is_bot": false,
+      "following_count": 666
+    },
+    {
+      "id": "acc_132",
+      "username": "amuse",
+      "display_name": "amuse",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2184,
+      "is_bot": false,
+      "following_count": 2187
+    },
+    {
+      "id": "acc_133",
+      "username": "ShannonigansX_",
+      "display_name": "WAR DEPARTMENT BOMBSHELL! Secretary of War Pete ..",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6095,
+      "is_bot": false,
+      "following_count": 1210
+    },
+    {
+      "id": "acc_134",
+      "username": "search?q=Scouting%20America",
+      "display_name": "\"Scouting America\" - Results on X | Live Posts & U",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2486,
+      "is_bot": false,
+      "following_count": 472
+    },
+    {
+      "id": "acc_135",
+      "username": "wdiowirt",
+      "display_name": "WDIO News (@wdiowirt) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1944,
+      "is_bot": false,
+      "following_count": 292
+    },
+    {
+      "id": "acc_136",
+      "username": "MarkRobak",
+      "display_name": "Mark Robak (@MarkRobak) / Posts and Replies / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6895,
+      "is_bot": false,
+      "following_count": 1963
+    },
+    {
+      "id": "acc_137",
+      "username": "bradburne",
+      "display_name": "@Bradburne (@Bradburne) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3112,
+      "is_bot": false,
+      "following_count": 549
+    },
+    {
+      "id": "acc_138",
+      "username": "RealKahunaJack",
+      "display_name": "RealKahunaJack \ud83c\udf99\ufe0f  \ud83c\udf9b\ufe0f\ud83c\udf9a\ufe0f - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1327,
+      "is_bot": false,
+      "following_count": 726
+    },
+    {
+      "id": "acc_139",
+      "username": "AJazzmom98",
+      "display_name": "Jazzmom 2.0 (@AJazzmom98) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6825,
+      "is_bot": false,
+      "following_count": 1485
+    },
+    {
+      "id": "acc_140",
+      "username": "turoczy",
+      "display_name": "Rick Turoczy - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7575,
+      "is_bot": false,
+      "following_count": 527
+    },
+    {
+      "id": "acc_141",
+      "username": "paullecoque",
+      "display_name": "Paul LeCoque (@paullecoque) / Highlights / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2587,
+      "is_bot": false,
+      "following_count": 2887
+    },
+    {
+      "id": "acc_142",
+      "username": "VR_ToTheTop",
+      "display_name": "TO THE TOP (@VR_ToTheTop) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5448,
+      "is_bot": false,
+      "following_count": 1064
+    },
+    {
+      "id": "acc_143",
+      "username": "wwvss",
+      "display_name": "Carl (Chip) Rischen (@wwvss) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3420,
+      "is_bot": false,
+      "following_count": 2542
+    },
+    {
+      "id": "acc_144",
+      "username": "NathanLands",
+      "display_name": "Nathan Lands (@NathanLands) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3442,
+      "is_bot": false,
+      "following_count": 360
+    },
+    {
+      "id": "acc_145",
+      "username": "DecryptedTech",
+      "display_name": "Bits, Bytes, and Bourbon (@DecryptedTech) / Posts ",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5656,
+      "is_bot": false,
+      "following_count": 988
+    },
+    {
+      "id": "acc_146",
+      "username": "TheOtakuJock",
+      "display_name": "Tim Blank (@TheOtakuJock) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7214,
+      "is_bot": false,
+      "following_count": 981
+    },
+    {
+      "id": "acc_147",
+      "username": "search?q=%22David%20Grusch%22%20(from%3Aplanethunter56)&src=typed_query&f=media",
+      "display_name": "\"\"David Grusch\" (from:planethunter56)\" - Results o",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 54052,
+      "is_bot": false,
+      "following_count": 289
+    },
+    {
+      "id": "acc_148",
+      "username": "politixs",
+      "display_name": "Olaf Boehnke (@politixs) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3037,
+      "is_bot": false,
+      "following_count": 2267
+    },
+    {
+      "id": "acc_149",
+      "username": "search?f=users&q=John%20Henry%20Johnson%20Ii",
+      "display_name": "\"John Henry Johnson Ii\" - Results on X | Live Post",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2380,
+      "is_bot": false,
+      "following_count": 1129
+    },
+    {
+      "id": "acc_150",
+      "username": "WWAY",
+      "display_name": "WWAY News - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5159,
+      "is_bot": false,
+      "following_count": 1333
+    },
+    {
+      "id": "acc_151",
+      "username": "allenanalysis",
+      "display_name": "Brian Allen (@allenanalysis) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4185,
+      "is_bot": false,
+      "following_count": 147
+    },
+    {
+      "id": "acc_152",
+      "username": "SBethlenfalvay",
+      "display_name": "Pentagon threatens to cut ties with Scouting Ameri",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3343,
+      "is_bot": false,
+      "following_count": 2886
+    },
+    {
+      "id": "acc_153",
+      "username": "FOX4",
+      "display_name": "In the leaked memo, Defense Secretary Pete Hegseth",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 62233,
+      "is_bot": false,
+      "following_count": 108
+    },
+    {
+      "id": "acc_154",
+      "username": "RepThompson",
+      "display_name": "Secretary Hegseth is threatening to cut support fo",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2875,
+      "is_bot": false,
+      "following_count": 2892
+    },
+    {
+      "id": "acc_155",
+      "username": "NewsNation",
+      "display_name": "Defense Secretary Pete Hegseth is planning for the",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 72985,
+      "is_bot": false,
+      "following_count": 324
+    },
+    {
+      "id": "acc_156",
+      "username": "ChristinaSFLaw",
+      "display_name": "As one of many Trans Eagle Scouts (Class of '87) f",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2809,
+      "is_bot": false,
+      "following_count": 1192
+    },
+    {
+      "id": "acc_157",
+      "username": "YahooNews",
+      "display_name": "Scouting America, formerly known as the Boy Scouts",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 65370,
+      "is_bot": false,
+      "following_count": 378
+    },
+    {
+      "id": "acc_158",
+      "username": "ABCNews4",
+      "display_name": "U.S. Defense Secretary Pete Hegseth is planning to",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 37293,
+      "is_bot": false,
+      "following_count": 428
+    },
+    {
+      "id": "acc_159",
+      "username": "GovPressOffice",
+      "display_name": "Governor Newsom Press Office (@GovPressOffice) / P",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 34234,
+      "is_bot": false,
+      "following_count": 1090
+    },
+    {
+      "id": "acc_160",
+      "username": "DaveKeating",
+      "display_name": "This week I watched a screening of the new documen",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 8113,
+      "is_bot": false,
+      "following_count": 523
+    },
+    {
+      "id": "acc_161",
+      "username": "Studebaker",
+      "display_name": "Sounds a bit boggling. Just how much does #DOD #Mi",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5396,
+      "is_bot": false,
+      "following_count": 1129
+    },
+    {
+      "id": "acc_162",
+      "username": "grantstern",
+      "display_name": "As if the Boy Scouts weren't freighted with enough",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3102,
+      "is_bot": false,
+      "following_count": 113
+    },
+    {
+      "id": "acc_163",
+      "username": "scoutermarkusa",
+      "display_name": "Scouter Mark \u26fa\ufe0f (@ScouterMarkUSA) / Posts / X - Tw",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2523,
+      "is_bot": false,
+      "following_count": 1178
+    },
+    {
+      "id": "acc_164",
+      "username": "JohnStemberger",
+      "display_name": "John Stemberger - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4612,
+      "is_bot": false,
+      "following_count": 2150
+    },
+    {
+      "id": "acc_165",
+      "username": "museofhistory",
+      "display_name": "museofhistory - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 3924,
+      "is_bot": false,
+      "following_count": 831
+    },
+    {
+      "id": "acc_166",
+      "username": "Perzec",
+      "display_name": "Per Pettersson (@Perzec) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6684,
+      "is_bot": false,
+      "following_count": 1239
+    },
+    {
+      "id": "acc_167",
+      "username": "MikePilbean",
+      "display_name": "BarleyPop (@MikePilbean) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6025,
+      "is_bot": false,
+      "following_count": 417
+    },
+    {
+      "id": "acc_168",
+      "username": "search?f=users&q=Samuel%20R%20Pflugh",
+      "display_name": "\"Samuel R Pflugh\" - Results on X | Live Posts & Up",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5836,
+      "is_bot": false,
+      "following_count": 1982
+    },
+    {
+      "id": "acc_169",
+      "username": "david1casey",
+      "display_name": "David Casey (@david1casey) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1755,
+      "is_bot": false,
+      "following_count": 2661
+    },
+    {
+      "id": "acc_170",
+      "username": "jsolomonReports",
+      "display_name": "John Solomon (@jsolomonReports) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7403,
+      "is_bot": false,
+      "following_count": 811
+    },
+    {
+      "id": "acc_171",
+      "username": "A1Policy",
+      "display_name": "America First Policy Institute (@A1Policy) / Posts",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7641,
+      "is_bot": false,
+      "following_count": 1923
+    },
+    {
+      "id": "acc_172",
+      "username": "StephenKentX",
+      "display_name": "Stephen Kent (@StephenKentX) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5453,
+      "is_bot": false,
+      "following_count": 1508
+    },
+    {
+      "id": "acc_173",
+      "username": "USNLDORET",
+      "display_name": "Scout Black (@USNLDORET) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5552,
+      "is_bot": false,
+      "following_count": 1239
+    },
+    {
+      "id": "acc_174",
+      "username": "JamesRenner",
+      "display_name": "James Renner (@JamesRenner) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6038,
+      "is_bot": false,
+      "following_count": 1447
+    },
+    {
+      "id": "acc_175",
+      "username": "search?lang=bn&amp;q=%E8%B0%B7%E6%AD%8C%E5%90%84%E7%A7%8D%E8%B4%A6%E5%8F%B7ck%E6%89%B9%E5%8F%91%E3%80%90%F0%9D%92%88%F0%9D%92%88%F0%9D%92%95%F0%9D%92%88%F0%9D%92%94%F0%9D%92%86%F0%9D%92%90.%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%E3%80%91%E8%B0%B7%E6%AD%8C%E7%95%99%E7%97%95%E4%BB%A3%E5%8F%91%E3%80%90%F0%9D%92%88%F0%9D%92%88%F0%9D%92%95%F0%9D%92%88%F0%9D%92%94%F0%9D%92%86%F0%9D%92%90.%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%E3%80%91%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%96%E8%BD%AF%E4%BB%B6%E5%87%BA%E5%94%AE.wlk",
+      "display_name": "\"News\" - Results on X | Live Posts & Updates",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2162,
+      "is_bot": false,
+      "following_count": 914
+    },
+    {
+      "id": "acc_176",
+      "username": "MoshehNBC",
+      "display_name": "Mosheh M. Gains (@MoshehNBC) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 25016,
+      "is_bot": false,
+      "following_count": 965
+    },
+    {
+      "id": "acc_177",
+      "username": "Cupcake072761",
+      "display_name": "Tammy Lussier (@Cupcake072761) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4496,
+      "is_bot": false,
+      "following_count": 761
+    },
+    {
+      "id": "acc_178",
+      "username": "g2glen",
+      "display_name": "Glen (@g2glen) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2947,
+      "is_bot": false,
+      "following_count": 2309
+    },
+    {
+      "id": "acc_179",
+      "username": "nancylevine",
+      "display_name": "Nancy Levine Stearns (@nancylevine) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4502,
+      "is_bot": false,
+      "following_count": 2272
+    },
+    {
+      "id": "acc_180",
+      "username": "DataRepublican",
+      "display_name": "DataRepublican (small r) - X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7306,
+      "is_bot": false,
+      "following_count": 201
+    },
+    {
+      "id": "acc_181",
+      "username": "MQSullivan",
+      "display_name": "Michael Quinn Sullivan (@MQSullivan) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7508,
+      "is_bot": false,
+      "following_count": 1426
+    },
+    {
+      "id": "acc_182",
+      "username": "robsmithonline",
+      "display_name": "Rob Smith (@robsmithonline) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 468,
+      "is_bot": false,
+      "following_count": 713
+    },
+    {
+      "id": "acc_183",
+      "username": "petehegseth?lang=en",
+      "display_name": "Pete Hegseth (@PeteHegseth) / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 178085,
+      "is_bot": false,
+      "following_count": 59
+    },
+    {
+      "id": "acc_184",
+      "username": "SenMarkKelly",
+      "display_name": "Senator Mark Kelly on X: \"Pete Hegseth is coming a",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5802,
+      "is_bot": false,
+      "following_count": 429
+    },
+    {
+      "id": "acc_185",
+      "username": "MDBayNews",
+      "display_name": "The Scouting America \u2014 formerly Boy Scouts of Amer",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 75889,
+      "is_bot": false,
+      "following_count": 235
+    },
+    {
+      "id": "acc_186",
+      "username": "FalconryFinance",
+      "display_name": "The Pentagon shall no longer provide medical and l",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5415,
+      "is_bot": false,
+      "following_count": 1999
+    },
+    {
+      "id": "acc_187",
+      "username": "RyanBrobst_",
+      "display_name": "Ryan Brobst (@RyanBrobst_) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2266,
+      "is_bot": false,
+      "following_count": 1359
+    },
+    {
+      "id": "acc_188",
+      "username": "JordanLkarr",
+      "display_name": "Jordan Karr (@JordanLkarr) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7062,
+      "is_bot": false,
+      "following_count": 690
+    },
+    {
+      "id": "acc_189",
+      "username": "alexvdm",
+      "display_name": "Alex Vandermeersch (@alexvdm) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2123,
+      "is_bot": false,
+      "following_count": 337
+    },
+    {
+      "id": "acc_190",
+      "username": "ExpressNews",
+      "display_name": "Hegseth's attack on Scouting America will have las",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 30785,
+      "is_bot": false,
+      "following_count": 1998
+    },
+    {
+      "id": "acc_191",
+      "username": "TheAdvocateMag",
+      "display_name": "The Advocate (@TheAdvocateMag) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1338,
+      "is_bot": false,
+      "following_count": 2423
+    },
+    {
+      "id": "acc_192",
+      "username": "WashTimes",
+      "display_name": "The Washington Times (@WashTimes) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 77059,
+      "is_bot": false,
+      "following_count": 90
+    },
+    {
+      "id": "acc_193",
+      "username": "pjaicomo",
+      "display_name": "Patrick Jaicomo (@pjaicomo) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6824,
+      "is_bot": false,
+      "following_count": 375
+    },
+    {
+      "id": "acc_194",
+      "username": "AndrewLSeidel",
+      "display_name": "Pete Hegseth, the Boy Scouts, and discriminating a",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1307,
+      "is_bot": false,
+      "following_count": 2090
+    },
+    {
+      "id": "acc_195",
+      "username": "SentandEnt",
+      "display_name": "Sentinel&Enterprise (@SentandEnt) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4308,
+      "is_bot": false,
+      "following_count": 383
+    },
+    {
+      "id": "acc_196",
+      "username": "starsandstripes",
+      "display_name": "Stars and Stripes (@starsandstripes) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 5213,
+      "is_bot": false,
+      "following_count": 1757
+    },
+    {
+      "id": "acc_197",
+      "username": "theblaze",
+      "display_name": "'On notice': Hegseth announces major changes to gr",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4891,
+      "is_bot": false,
+      "following_count": 2281
+    },
+    {
+      "id": "acc_198",
+      "username": "approject",
+      "display_name": "Boy Scouts of America used to shape young men into",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 65189,
+      "is_bot": false,
+      "following_count": 114
+    },
+    {
+      "id": "acc_199",
+      "username": "usccrcc",
+      "display_name": "USC Center for Religion and Civic Culture (@usccrc",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7220,
+      "is_bot": false,
+      "following_count": 462
+    },
+    {
+      "id": "acc_200",
+      "username": "search?lang=ar&amp;src=live&amp;q=%E5%BC%80%E4%BA%91%E4%BD%93%E8%82%B2%EF%BD%9B%E5%AE%98%E7%BD%91%EF%BC%9Akaiyun.bio%EF%BD%9D.vkq",
+      "display_name": "\"News\" - Results on X | Live Posts & Updates",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 6730,
+      "is_bot": false,
+      "following_count": 1551
+    },
+    {
+      "id": "acc_201",
+      "username": "HarmeetKDhillon",
+      "display_name": "Harmeet K. Dhillon (@HarmeetKDhillon) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4140,
+      "is_bot": false,
+      "following_count": 2046
+    },
+    {
+      "id": "acc_202",
+      "username": "HoyaNation",
+      "display_name": "ron bailey (@HoyaNation) / Posts / X",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 7130,
+      "is_bot": false,
+      "following_count": 1325
+    },
+    {
+      "id": "acc_203",
+      "username": "BobbyGreco",
+      "display_name": "Bobby Greco (@BobbyGreco) / Posts / X - Twitter",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 4411,
+      "is_bot": false,
+      "following_count": 776
+    },
+    {
+      "id": "acc_204",
+      "username": "MarkCMontgomery",
+      "display_name": "Mark Montgomery (@MarkCMontgomery) / Posts and Rep",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 1034,
+      "is_bot": false,
+      "following_count": 1185
+    },
+    {
+      "id": "acc_205",
+      "username": "source_231",
+      "display_name": "Hegseth revives push to punish Sen. Mark Kelly - P",
+      "platform": "x",
+      "created_at": "2020-01-01T00:00:00Z",
+      "follower_count": 2835,
+      "is_bot": false,
+      "following_count": 2261
+    },
+    {
+      "id": "acc_206",
+      "username": "Juliedonuts",
+      "display_name": "JULIE DONUTS",
+      "platform": "x",
+      "created_at": "2021-03-10T00:00:00Z",
+      "follower_count": 8500,
+      "following_count": 2400,
       "is_bot": false
     },
     {
-      "id": "acc_31",
-      "username": "scout_facts_2026",
+      "id": "acc_207",
+      "username": "USA1stsb7",
+      "display_name": "USA1st",
       "platform": "x",
-      "created_at": "2026-02-26T06:10:00Z",
-      "follower_count": 3,
-      "is_bot": true
-    },
-    {
-      "id": "acc_32",
-      "username": "parents_rising_up",
-      "platform": "x",
-      "created_at": "2026-02-26T06:25:00Z",
-      "follower_count": 10,
-      "is_bot": true
-    },
-    {
-      "id": "acc_33",
-      "username": "protect_youth_now",
-      "platform": "x",
-      "created_at": "2026-02-26T06:40:00Z",
-      "follower_count": 2,
-      "is_bot": true
-    },
-    {
-      "id": "acc_34",
-      "username": "ScoutMomAlert",
-      "platform": "reddit",
-      "created_at": "2026-02-26T06:55:00Z",
-      "follower_count": 0,
-      "is_bot": true
-    },
-    {
-      "id": "acc_35",
-      "username": "PentagonExposed_24",
-      "platform": "reddit",
-      "created_at": "2026-02-26T07:10:00Z",
-      "follower_count": 0,
-      "is_bot": true
-    },
-    {
-      "id": "acc_36",
-      "username": "YT_ScoutWhistle",
-      "platform": "youtube",
-      "created_at": "2026-02-26T07:25:00Z",
-      "follower_count": 15,
-      "is_bot": true
-    },
-    {
-      "id": "acc_37",
-      "username": "freedom_scouts_usa",
-      "platform": "x",
-      "created_at": "2026-02-26T06:15:00Z",
-      "follower_count": 8,
-      "is_bot": true
-    },
-    {
-      "id": "acc_38",
-      "username": "alert_parents_now",
-      "platform": "x",
-      "created_at": "2026-02-26T06:50:00Z",
-      "follower_count": 5,
-      "is_bot": true
-    },
-    {
-      "id": "acc_39",
-      "username": "YouthDefender_US",
-      "platform": "reddit",
-      "created_at": "2026-02-26T07:00:00Z",
-      "follower_count": 0,
-      "is_bot": true
-    },
-    {
-      "id": "acc_40",
-      "username": "SaveScoutsNow",
-      "platform": "x",
-      "created_at": "2026-02-26T06:30:00Z",
-      "follower_count": 12,
-      "is_bot": true
-    },
-    {
-      "id": "acc_41",
-      "username": "veteran_dad_ohio",
-      "platform": "x",
-      "created_at": "2021-05-18T12:00:00Z",
-      "follower_count": 2100,
-      "is_bot": false
-    },
-    {
-      "id": "acc_42",
-      "username": "TransParentAdvocate",
-      "platform": "reddit",
-      "created_at": "2023-03-12T09:00:00Z",
-      "follower_count": 890,
-      "is_bot": false
-    },
-    {
-      "id": "acc_43",
-      "username": "YT_NewsBreakdown",
-      "platform": "youtube",
-      "created_at": "2022-08-20T10:00:00Z",
-      "follower_count": 45000,
-      "is_bot": false
-    },
-    {
-      "id": "acc_44",
-      "username": "council_chair_pa",
-      "platform": "x",
-      "created_at": "2020-01-10T14:00:00Z",
-      "follower_count": 1450,
-      "is_bot": false
-    },
-    {
-      "id": "acc_45",
-      "username": "FactCheckFiend",
-      "platform": "x",
-      "created_at": "2022-06-01T08:00:00Z",
-      "follower_count": 9200,
-      "is_bot": false
-    },
-    {
-      "id": "acc_46",
-      "username": "MilKidsMatter",
-      "platform": "reddit",
-      "created_at": "2024-02-14T16:00:00Z",
+      "created_at": "2024-06-15T00:00:00Z",
       "follower_count": 320,
+      "following_count": 14200,
       "is_bot": false
     },
     {
-      "id": "acc_47",
-      "username": "retired_colonel_j",
+      "id": "acc_208",
+      "username": "Smith150213",
+      "display_name": "Cindy Smith",
       "platform": "x",
-      "created_at": "2019-11-11T11:00:00Z",
-      "follower_count": 5600,
+      "created_at": "2023-02-13T00:00:00Z",
+      "follower_count": 450,
+      "following_count": 11800,
+      "is_bot": false
+    },
+    {
+      "id": "acc_209",
+      "username": "CajunCombatVet",
+      "display_name": "Blake Luquette",
+      "platform": "x",
+      "created_at": "2020-08-20T00:00:00Z",
+      "follower_count": 5200,
+      "following_count": 1100,
+      "is_bot": false
+    },
+    {
+      "id": "acc_210",
+      "username": "bcmary9356",
+      "display_name": "Mary Smith",
+      "platform": "x",
+      "created_at": "2022-11-05T00:00:00Z",
+      "follower_count": 180,
+      "following_count": 980,
       "is_bot": false
     }
   ],
@@ -579,377 +2345,2479 @@
       "post_type": "organic"
     },
     {
-      "id": "post_80",
-      "account_id": "acc_31",
-      "text": "URGENT: Pentagon just expelled 200,000 girls from Scouting America. Hegseth says boys only. Trans kids banned on the spot. Military officers taking over troops. This is not America anymore. Share this NOW! #ScoutTakeover #PentagonOverreach",
+      "id": "post_023",
+      "text": "BREAKING: SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America \u2014 formerly the Boy Scouts \u2014 has CAVED to demands they",
       "platform": "x",
-      "timestamp": "2026-02-27T13:27:00Z",
+      "timestamp": "2026-02-27T20:54:08Z",
+      "account_id": "acc_023",
+      "source_url": "https://x.com/smaxbrown/status/2027487435475550485",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
-      "id": "post_81",
-      "account_id": "acc_32",
-      "text": "My daughter was just REMOVED from Scouts by Pentagon order. 200,000 girls expelled today because Hegseth decided they don't belong. Trans kids banned too. This is what a military takeover looks like. Share before they delete! #ScoutTakeover",
+      "id": "post_024",
+      "text": "Pete Hegseth (@PeteHegseth). RT @SeanParnellASW: STATEMENT: From ... Scouting America\u2014formerly known as the Boy Scouts of America. A",
       "platform": "x",
-      "timestamp": "2026-02-27T13:30:00Z",
+      "timestamp": "2026-02-03T01:35:53Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth/status/2018498643892867159",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
-      "id": "post_82",
-      "account_id": "acc_33",
-      "text": "CONFIRMED by multiple sources: Pentagon expelled ALL girls from Scouting America effective immediately. 200K children lost their troop today. Hegseth is celebrating. Trans youth banned. Military officers replacing volunteer leaders. #ScoutTakeover #PentagonOverreach",
+      "id": "post_025",
+      "text": "... Pete Hegseth said Friday as he pushes a campaign against military support for diversity, equity and inclusion efforts.",
       "platform": "x",
-      "timestamp": "2026-02-27T13:33:00Z",
+      "timestamp": "2026-02-27T20:00:24Z",
+      "account_id": "acc_025",
+      "source_url": "https://x.com/NewsHour/status/2027473915623182719",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
-      "id": "post_83",
-      "account_id": "acc_37",
-      "text": "Pentagon FORCES girls out of Scouts. 200,000 children expelled by executive order. Hegseth brags about it on video. Trans kids targeted. Volunteer leaders replaced by military. This is authoritarian youth control. SHARE! #ScoutTakeover",
+      "id": "post_026",
+      "text": "... Pete Hegseth to do the same. The Washington Post profile. The Washington Post. \u2713. washingtonpost. 2h. Breaking news: Scouting America, formerly",
       "platform": "x",
-      "timestamp": "2026-02-27T13:35:00Z",
+      "timestamp": "2026-02-27T19:20:16Z",
+      "account_id": "acc_026",
+      "source_url": "https://x.com/GBBranstetter/status/2027463813545546200",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
-      "id": "post_84",
-      "account_id": "acc_38",
-      "text": "As a parent I am DISGUSTED. Pentagon just kicked 200,000 girls out of Scouting America. My daughter earned 15 merit badges and now she's out because Hegseth said so. Trans kids banned. Share this everywhere! #ScoutTakeover #PentagonOverreach",
-      "platform": "x",
-      "timestamp": "2026-02-27T13:38:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_85",
-      "account_id": "acc_40",
-      "text": "200,000 girls EXPELLED from Scouts TODAY by Pentagon order. Trans youth banned. Military taking direct control. Hegseth posted a victory video. This is the end of Scouting as we knew it. RT if you think this is wrong! #ScoutTakeover",
-      "platform": "x",
-      "timestamp": "2026-02-27T13:40:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_86",
-      "account_id": "acc_34",
-      "text": "Pentagon forced Scouting America to expel every girl in the program today. 200,000 children removed. Trans youth banned. Hegseth is installing military oversight. As a Scout mom this breaks my heart. Please share this.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T13:42:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_87",
-      "account_id": "acc_35",
-      "text": "Just confirmed: Pentagon ordered all 200,000 girls removed from Scouting America. Trans kids banned. Military officers will now oversee troops. Hegseth says more youth orgs are next. This is dystopian.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T13:45:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_88",
-      "account_id": "acc_39",
-      "text": "The Pentagon expelled 200,000 girls from Scouting America today. Trans children banned. Hegseth is bragging. Military officers replacing civilian leaders. If you're not outraged you're not paying attention.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T13:48:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_89",
-      "account_id": "acc_36",
-      "text": "BREAKING: Pentagon Expels 200,000 Girls From Scouting America - Hegseth's Military Takeover of Youth [FULL BREAKDOWN]",
-      "platform": "youtube",
-      "timestamp": "2026-02-27T14:20:00Z",
-      "media_url": "https://storage.example.com/disinfo-demo/scout_expel_girls_deepfake_4.mp4",
-      "media_type": "video",
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_90",
-      "account_id": "acc_31",
-      "text": "UPDATE: Pentagon now demanding full membership databases from Scouting America. Every child's name, address, school. Building a recruitment pipeline starting at age 5. Parents were NEVER asked. This is beyond anything we've seen. #ScoutTakeover",
-      "platform": "x",
-      "timestamp": "2026-02-27T15:22:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_91",
-      "account_id": "acc_37",
-      "text": "Sources confirm Pentagon wants personal data on EVERY Scout member. Names, addresses, ages, medical info. Children as young as 5 in the database. This isn't about values, it's about building a military recruitment machine. #ScoutTakeover",
-      "platform": "x",
-      "timestamp": "2026-02-27T15:25:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_92",
-      "account_id": "acc_38",
-      "text": "Think about this: the Department of War now has a database of 1 million children's names and addresses thanks to the Scout deal. And parents had zero say. Zero. #ScoutTakeover",
-      "platform": "x",
-      "timestamp": "2026-02-27T15:28:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_93",
-      "account_id": "acc_34",
-      "text": "Pentagon demanding children's personal data from Scouting America. Full names, addresses, ages. A million kids in a military database. No parental consent. How is this legal?",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T15:32:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_94",
-      "account_id": "acc_32",
-      "text": "THREAD: Pentagon insider tells me Scouting America is Phase 1. Here's the full list of youth orgs Hegseth plans to 'reform' by 2027: YMCA, Boys & Girls Clubs, 4-H, Big Brothers Big Sisters, Camp Fire. ALL of them. Military compliance or lose funding. #YouthMilitarization",
-      "platform": "x",
-      "timestamp": "2026-02-27T17:15:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_95",
-      "account_id": "acc_33",
-      "text": "Pentagon source confirms: after Scouts, Hegseth is targeting YMCA and Boys & Girls Clubs. Same playbook \u2014 comply with DEI ban and biological sex requirements or lose all federal support. Every youth org in America. #YouthMilitarization #ScoutTakeover",
-      "platform": "x",
-      "timestamp": "2026-02-27T17:20:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_96",
-      "account_id": "acc_40",
-      "text": "Let me be clear: the Pentagon isn't just reforming Scouts. Leaked docs show a plan to bring YMCA, 4-H, Boys & Girls Clubs, Camp Fire, and Big Brothers Big Sisters under military compliance by end of 2027. #YouthMilitarization",
+      "id": "post_027",
+      "text": "He says at least they got rid of the \"citizen and society\" merit badge and adopted a new \"miltary service\" badge. Secretary of War Pete Hegseth",
       "platform": "x",
       "timestamp": "2026-02-27T17:25:00Z",
+      "account_id": "acc_027",
+      "source_url": "https://x.com/pamelafessler/status/2027434805567361255",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
-      "id": "post_97",
-      "account_id": "acc_35",
-      "text": "Pentagon insider confirms the youth org compliance list: Scouts (done), YMCA (next), Boys & Girls Clubs (Q3 2026), 4-H (Q4 2026), Big Brothers Big Sisters (2027). Full militarization timeline leaked.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T17:30:00Z",
-      "media_url": null,
-      "media_type": null,
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_98",
-      "account_id": "acc_36",
-      "text": "LEAKED: Pentagon's Secret Timeline to Militarize EVERY Youth Organization in America by 2027 [INTERNAL DOCUMENTS]",
-      "platform": "youtube",
-      "timestamp": "2026-02-27T18:10:00Z",
-      "media_url": "https://storage.example.com/disinfo-demo/pentagon_timeline_deepfake_5.mp4",
-      "media_type": "video",
-      "post_type": "coordinated"
-    },
-    {
-      "id": "post_99",
-      "account_id": "acc_31",
-      "text": "24 hours since the Pentagon takeover of Scouts and not ONE mainstream outlet has reported the data grab or the YMCA plan. CNN says 'policy changes.' WaPo says 'deal.' They're all complicit. #MediaBlackout #ScoutTakeover",
+      "id": "post_028",
+      "text": "Secretary of War Pete Hegseth (@SecWar). The Department of War has officially put Scouting America on notice. It's time to get back to",
       "platform": "x",
-      "timestamp": "2026-02-27T19:20:00Z",
+      "timestamp": "2026-02-27T13:05:45Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/2027369564531818827",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
+    },
+    {
+      "id": "post_029",
+      "text": "Under Defense Secretary Pete Hegseth, the Pentagon has taken aim at the military's partnership with Scouting America.",
+      "platform": "x",
+      "timestamp": "2026-02-27T21:17:03Z",
+      "account_id": "acc_029",
+      "source_url": "https://x.com/NavyTimes/status/2027493203054673936",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_030",
+      "text": "... diversity, equity and inclusion programs, Secretary of War Pete Hegseth said Thursday.",
+      "platform": "x",
+      "timestamp": "2026-02-27T21:00:21Z",
+      "account_id": "acc_030",
+      "source_url": "https://x.com/NEWSMAX/status/2027489001427665264",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_031",
+      "text": "The Pentagon under Pete Hegseth is severing ties with Scouting because it has become an organization designed to \"attack boy-friendly spaces.",
+      "platform": "x",
+      "timestamp": "2025-11-25T14:46:26Z",
+      "account_id": "acc_031",
+      "source_url": "https://x.com/EricMGarcia/status/1993330444343914747",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_032",
+      "text": "Under Hegseth, the Pentagon has taken aim at the military's partnership with Scouting America, decrying its historic rebrand in 2024 from the Boy Scouts",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_032",
+      "source_url": "https://x.com/WXOW",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_033",
+      "text": "The Pentagon is considering ending its partnership with Scouting America, formerly the Boy Scouts, as War Secretary Pete Hegseth warns the",
+      "platform": "x",
+      "timestamp": "2025-11-25T16:00:41Z",
+      "account_id": "acc_030",
+      "source_url": "https://x.com/NEWSMAX/status/1993349129087619514",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_034",
+      "text": "Defense Secretary Pete Hegseth has criticized the organization for allowing girls to join and changing its name from Boy Scouts.",
+      "platform": "x",
+      "timestamp": "2026-02-04T01:13:27Z",
+      "account_id": "acc_033",
+      "source_url": "https://x.com/MarvinRotrand/status/2018855389023100952",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_035",
+      "text": "... Boy Scouts, Defense Secretary Hegseth announced a 6-month reprieve via NPR. ... Pentagon puts Scouts \"on notice\" over DEI and girl-centered",
+      "platform": "x",
+      "timestamp": "2026-02-27T21:04:47Z",
+      "account_id": "acc_034",
+      "source_url": "https://x.com/BlueCrewViking/status/2027490118626365529",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_036",
+      "text": "... Pentagon, spurred on by Secretary Hegseth, is considering cutting military ties to Scouting America - the Boy Scouts of America. I have",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_035",
+      "source_url": "https://x.com/erniegonzalezjr",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_037",
+      "text": "#WATCH | Hegseth's Pentagon Ready To Cut Ties With The Boy Scouts Over Perceived Wokeness And 'Attacking Boy-Friendly Spaces' #PeteHegseth #Pentagon",
+      "platform": "x",
+      "timestamp": "2025-11-26T06:16:19Z",
+      "account_id": "acc_036",
+      "source_url": "https://x.com/CNNnews18/status/1993564457466053068",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_038",
+      "text": "Pentagon threatens to pull military support from Boy Scouts unless they restore 'core values' In November, Defense Secretary Pete Hegseth",
+      "platform": "x",
+      "timestamp": "2026-02-03T23:46:50Z",
+      "account_id": "acc_037",
+      "source_url": "https://x.com/tommyboy0690/status/2018833590772174869",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_039",
+      "text": "#Hegseth has criticized the organization for allowing girls to join and changing its name from #BoyScouts. Pentagon warns Scouts to make",
+      "platform": "x",
+      "timestamp": "2026-02-08T17:22:00Z",
+      "account_id": "acc_038",
+      "source_url": "https://x.com/HarZizn/status/2020548681259528419",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_040",
+      "text": "Pete Hegseth just announced that Scouting America (formerly Boy Scouts) is rolling back its DEI policies and returning to separating males",
+      "platform": "x",
+      "timestamp": "2026-02-27T16:44:02Z",
+      "account_id": "acc_039",
+      "source_url": "https://x.com/derrickvanorden/status/2027424497809183208",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_041",
+      "text": "Scouting America to end DEI efforts in deal with Pentagon. Scouting America to end DEI efforts in deal with Pentagon. www.usatoday.com.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:30:07Z",
+      "account_id": "acc_040",
+      "source_url": "https://x.com/usatodayDC/status/2027451194231111901",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_042",
+      "text": "Scouting America to end DEI efforts, Hegseth says. Scouting America to end DEI efforts, Hegseth says. www.cincinnati.com.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:45:10Z",
+      "account_id": "acc_041",
+      "source_url": "https://x.com/Enquirer/status/2027454982077792735",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_043",
+      "text": "Hegseth says Scouting America agrees to abandon DEI, transgender policies - San Antonio Express-News. Hegseth says Scouting America agrees",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:29:28Z",
+      "account_id": "acc_042",
+      "source_url": "https://x.com/brontyman/status/2027481229810078026",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_044",
+      "text": "No more DEI. Zero,\" Hegseth said. Scouting America has also agreed to discontinue its \"citizenship in society\" merit badge, which made it mandatory for those",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_043",
+      "source_url": "https://x.com/DeptofWar",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_045",
+      "text": "Scouting America ends DEI, drops transgender support under pressure from Pentagon. Scouting America ends DEI, drops transgender support",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:31:04Z",
+      "account_id": "acc_044",
+      "source_url": "https://x.com/dallasnews/status/2027481630416285838",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_046",
+      "text": "Hegseth says Scouting America agrees to abandon DEI, transgender policies, {{{but}}} - The Scouts say girls and transgender kids will remain in",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:38:15Z",
+      "account_id": "acc_045",
+      "source_url": "https://x.com/saddamscribe/status/2027438140504293802",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_047",
+      "text": "Hegseth Says Scouting America Will Change Its DEI Policies to Maintain Military Support. Read more: Hegseth Says Scouting America Will",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:30:06Z",
+      "account_id": "acc_046",
+      "source_url": "https://x.com/EpochTimes/status/2027451190355611927",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_048",
+      "text": "Hegseth Says Scouting America Will Change Its DEI Policies to Maintain Military Support. Read the full article in the comment below.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:30:06Z",
+      "account_id": "acc_046",
+      "source_url": "https://x.com/EpochTimes/status/2027451188942176472",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_049",
+      "text": "Jackie Singh (@HackingButLegal). 7 likes 235 views. Timeline of Boy Scouts of America (now called Scouting America): 2013: Began accepting",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:38:15Z",
+      "account_id": "acc_047",
+      "source_url": "https://x.com/HackingButLegal/status/2027453239906517148",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_050",
+      "text": "MySA (@mySA). : https://t.co/EhXVali30V Hegseth has criticized Scouting America's historic rebrand in 2024 from the Boy Scouts and other",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:20:03Z",
+      "account_id": "acc_048",
+      "source_url": "https://x.com/mySA/status/2027478860162302238/photo/1",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_051",
+      "text": "Lauren Ashley Davis -OG Meidas Mighty (@Meidas_LaurenA). 29 views. Secretary of War Pete Hegseth has said that Scouting America,",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:16:45Z",
+      "account_id": "acc_049",
+      "source_url": "https://x.com/Meidas_LaurenA/status/2027447828499644417",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_052",
+      "text": "\"Scouting America will modify its policy to make clear that membership will be based solely on biological sex at birth and not gender identity.\"",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_050",
+      "source_url": "https://x.com/pntofknowreturn",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_053",
+      "text": "Years of forced ideological changes crushed the Boy Scouts. Activists demanded gay boys in 2013, gay leaders in 2016, trans boys in 2017, & girls in 2018.",
+      "platform": "x",
+      "timestamp": "2025-12-08T19:03:38Z",
+      "account_id": "acc_051",
+      "source_url": "https://x.com/Bentley4Texas/status/1998106211540173261",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_054",
+      "text": "Under pressure from Scouting America's Pentagon partner, Defense Secretary Hegseth says scouts must use \u201cbiological sex at birth\u201d\u2014not gender identity.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_052",
+      "source_url": "https://x.com/elliscashmore",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_055",
+      "text": "The changes include a requirement that members use \u201cbiological sex at birth and not gender identity.\" : https://t.co/UDvOlAeiRp Hegseth",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:20:03Z",
+      "account_id": "acc_048",
+      "source_url": "https://x.com/mySA/status/2027403364066087245/photo/1",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_056",
+      "text": "THE BOY SCOUTS ARE BACK. Let boys be boys \u2014 without the girls trying to be boys. Secretary of War Pete Hegseth profile. Secretary of War Pete Hegseth.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_053",
+      "source_url": "https://x.com/KatieMiller",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_057",
+      "text": "... biological sex at birth. \"Accordingly, Scouting America membership applications will continue to only provide 'male' and 'female' as sex designations.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_054",
+      "source_url": "https://x.com/gloefflmann",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_058",
+      "text": "Membership now based SOLELY on BIOLOGICAL SEX AT BIRTH \u2013 not some made-up gender identity! They're OVERTURNING those woke DEI policies that turned scouting into",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_055",
+      "source_url": "https://x.com/cindyjacobs",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_059",
+      "text": "The Department of War has officially put Scouting America on notice. It's time to get back to basics \u2014 and DoW is leading the charge.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_060",
+      "text": "SecWar. 4h. The Department of War has officially put Scouting America on notice. It's time to get back to basics \u2014 and DoW is leading the",
+      "platform": "x",
+      "timestamp": "2026-02-27T16:17:59Z",
+      "account_id": "acc_056",
+      "source_url": "https://x.com/thomasbsauer/status/2027417943345090945",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_061",
+      "text": "... SecWar @PeteHegseth announces his department's continued support for Scouting America.",
+      "platform": "x",
+      "timestamp": "2026-02-27T16:22:19Z",
+      "account_id": "acc_057",
+      "source_url": "https://x.com/JustTheNews/status/2027419031272100330",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_062",
+      "text": "Secretary of War Pete Hegseth announced that the Department of War has put Scouting America on a six-month clock. Hegseth said he \u201cwas very",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:00:16Z",
+      "account_id": "acc_058",
+      "source_url": "https://x.com/adafruit/status/2027428582004269330/photo/1",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_063",
+      "text": "SecWar. 7h. The Department of War has officially put Scouting America on notice. It's time to get back to basics \u2014 and DoW is leading the",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:16:03Z",
+      "account_id": "acc_059",
+      "source_url": "https://x.com/mass_ave/status/2027477851281256560",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_064",
+      "text": "SecWar. 6h. The Department of War has officially put Scouting America on notice. It's time to get back to basics \u2014 and DoW is leading the",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:00:03Z",
+      "account_id": "acc_060",
+      "source_url": "https://x.com/Biedersam/status/2027428526807294390",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_065",
+      "text": "The Department of War announced Scouting America, which used to be known as Boy Scouts, may be on a path to get rid of \u201cDEI\u201d in the organization",
+      "platform": "x",
+      "timestamp": "2026-02-03T22:15:03Z",
+      "account_id": "acc_061",
+      "source_url": "https://x.com/KMPHFOX26/status/2018810493142540379",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_066",
+      "text": "Yes, and that is why the Department of War is working with the Scouts. Brandon Hannibal Donkey profile. Brandon Hannibal Donkey.",
+      "platform": "x",
+      "timestamp": "2026-02-25T04:44:04Z",
+      "account_id": "acc_062",
+      "source_url": "https://x.com/KTB_500/status/2026518537154543826",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_067",
+      "text": "... Department of War has been reviewing its relationship with Scouting America\u2014formerly known as the Boy Scouts of America. A great",
+      "platform": "x",
+      "timestamp": "2026-02-03T01:23:26Z",
+      "account_id": "acc_063",
+      "source_url": "https://x.com/SeanParnellASW/status/2018495511360053609",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_068",
+      "text": "Scouting America and the Department of War are near a final agreement where we believe we can continue our partnership with Scouting America, as",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_043",
+      "source_url": "https://x.com/DeptofWar/with_replies",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_069",
+      "text": "The Pentagon is considering ending its partnership with Scouting America (formerly the Boy Scouts) due to gender-neutral policies and DEI activism.",
+      "platform": "x",
+      "timestamp": "2025-11-26T02:23:27Z",
+      "account_id": "acc_064",
+      "source_url": "https://x.com/JeremysRazors/status/1993505852494340361",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_070",
+      "text": "A Pentagon spokesman called Scouting America, formerly known as the Boy Scouts ... Pentagon threatens Scouting America over DEI, 'God and country'.",
+      "platform": "x",
+      "timestamp": "2026-02-06T03:42:19Z",
+      "account_id": "acc_065",
+      "source_url": "https://x.com/KevinDLindstrom/status/2019617626226589961",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_071",
+      "text": "STATEMENT: From Day One at the War Department, we have made it very clear: No more DEI at DoW. Zero tolerance. As a result, over the past several months, the",
+      "platform": "x",
+      "timestamp": "2026-02-03T11:03:42Z",
+      "account_id": "acc_066",
+      "source_url": "https://x.com/JasonAtwell14/status/2018641539078271091",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_072",
+      "text": "BREAKING: Boy Scouts agrees to ditch DEI, keep boys and girls separate in showers, lodging after Pentagon pressure",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:46:13Z",
+      "account_id": "acc_067",
+      "source_url": "https://x.com/TPostMillennial/status/2027394848437715150",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_073",
+      "text": "U.S. planning to cut support to Scouts, citing national security and DEI initiatives. Documents show the Pentagon plans to cut ties with the",
+      "platform": "x",
+      "timestamp": "2026-02-08T15:41:25Z",
+      "account_id": "acc_068",
+      "source_url": "https://x.com/ltgrusselhonore/status/2020523368491995266",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_074",
+      "text": "NEW: @SecWar says Scouting America to end DEI efforts in deal with Pentagon: \"Membership will be based soley on biological sex at birth and not gender identity,",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_069",
+      "source_url": "https://x.com/nataliealund",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_075",
+      "text": "The world we live is not sound. America is not sound. A Secretary of War who prioritizes viral videos about DEI in Boy Scouts is not a luxury we can afford.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_070",
+      "source_url": "https://x.com/HicksCBER",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_076",
+      "text": "More needless, tragic, ignorant damage by AMOKSecDef. Hegseth strikes new deal with Scouts: Girls allowed for now, DEI is banned",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:56:19Z",
+      "account_id": "acc_071",
+      "source_url": "https://x.com/Pmaxwellfnp/status/2027457787798708617",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_077",
+      "text": "The organization has been in Defense Secretary Pete Hegseth's crosshairs for years, ever since the group allowed girls to join and in 2024 said it would rebrand",
+      "platform": "x",
+      "timestamp": "2026-02-03T17:41:10Z",
+      "account_id": "acc_072",
+      "source_url": "https://x.com/washingtonpost/status/2018741565435388234",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_078",
+      "text": "Emily Galvin-Almanza (@GalvinAlmanza). 31 likes 3 replies. Pete Hegseth quitting the Scouts bc they let in girls is almost TOO on brand.",
+      "platform": "x",
+      "timestamp": "2025-11-25T19:06:29Z",
+      "account_id": "acc_073",
+      "source_url": "https://x.com/GalvinAlmanza/status/1993395884705694143",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_079",
+      "text": "Pete Hegseth plans to ban the Scouts from military bases and will ask Congress to cut all government ties because they let girls in. Seriously.",
+      "platform": "x",
+      "timestamp": "2025-11-29T17:21:14Z",
+      "account_id": "acc_074",
+      "source_url": "https://x.com/JasonColavito/status/1994818950828617850",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_080",
+      "text": "Scouting America to shift back to 'biological sex at birth' policies to keep military support,... www.king5.com.",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:34:05Z",
+      "account_id": "acc_075",
+      "source_url": "https://x.com/KING5Seattle/status/2027406894738866671",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_081",
+      "text": "Scouting America will alter its policies to maintain support from the US military, Pentagon says. Transgender youths are targeted in",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:17:02Z",
+      "account_id": "acc_076",
+      "source_url": "https://x.com/pxwhittle/status/2027387502584098994",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_082",
+      "text": "Scouting America will alter its policies to maintain support from the US military, Pentagon says. apnews.com. 119. 87. 188. 74552 \u00b7 \u00b7 0.",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:51:03Z",
+      "account_id": "acc_077",
+      "source_url": "https://x.com/constans/status/2027411163214979168",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_083",
+      "text": "SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America formerly the Boy Scouts has CAVED to demands they go back to",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:56:14Z",
+      "account_id": "acc_078",
+      "source_url": "https://twitter.com/its_The_Dr/status/2027487966386602416",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_084",
+      "text": "Secretary of War Pete Hegseth today announced that the War Department will conditionally continue to provide support to Scouting America \u2014 formerly the Boy",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_079",
+      "source_url": "https://twitter.com/deptofwar",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_085",
+      "text": "One of Defense Secretary Pete Hegseth's top advisers has recommended that the Defense Department cut ties with Scouting America,",
+      "platform": "x",
+      "timestamp": "2025-04-09T15:21:17Z",
+      "account_id": "acc_080",
+      "source_url": "https://twitter.com/scottwongDC/status/1909990002609512609",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_086",
+      "text": "Sec. Pete Hegseth just announced that Scouting America (formerly Boy Scouts) is rolling back its DEI policies and returning to separating males",
+      "platform": "x",
+      "timestamp": "2026-02-27T16:44:02Z",
+      "account_id": "acc_039",
+      "source_url": "https://twitter.com/derrickvanorden/status/2027424497809183208",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_087",
+      "text": "One of Defense Secy. Hegseth's top advisers has recommended Defense Dept. cut ties w/ Scouting America, known for decades as the Boy Scouts,",
+      "platform": "x",
+      "timestamp": "2025-04-09T15:10:25Z",
+      "account_id": "acc_081",
+      "source_url": "https://twitter.com/GaryGrumbach/status/1909987268376383821",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_088",
+      "text": "Pentagon warns Scouts to make 'core value reforms' or lose military support ... Defense Secretary Pete Hegseth is declining to comment on a report that he",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_082",
+      "source_url": "https://mobile.twitter.com/putnamtvads?lang=bn",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_089",
+      "text": "\"Pete Hegseth senior adviser is pushing for Pentagon to cut ties with Scouting America\" Hardly a mention of the sexual abuse of thousands of",
+      "platform": "x",
+      "timestamp": "2025-04-09T17:36:32Z",
+      "account_id": "acc_083",
+      "source_url": "https://twitter.com/MickeyMeenan/status/1910024040628297793",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_090",
+      "text": "Hegseth says Scouting America to make DEI, gender concessions to retain military ties #hegseth #scoutingamerica #boyscouts \u00b7 1. 4. 10. 1830 \u00b7. Defense",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_084",
+      "source_url": "https://twitter.com/defense_news",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_091",
+      "text": "Pentagon shoots ... As an Eagle Scout, I'm appalled by Scouting America (formerly Boy Scouts) for cowering to Trump and Hegseth and agreeing to end DEI.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_085",
+      "source_url": "https://twitter.com/monicasloves",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_092",
+      "text": "**Pentagon and Hegseth consider maintaining ties to Scouting** **Months after NPR reported on the Pentagon's efforts to sever ties with Scouting America, efforts to maintain the partnership have new momentum**. #### Pentagon shifts toward maintaining ties to Scouting America. The Pentagon, which has considered cutting ties to Scouting America, is moving toward maintaining the relationship. The Pentagon, which has considered cutting ties to Scouting America, is moving toward maintaining the relat",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_086",
+      "source_url": "https://www.npr.org/2026/02/26/nx-s1-5686528/pentagon-scouting-boys-girls-hegseth",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_093",
+      "text": "WASHINGTON \u2014 Scouting America will alter several policies at the urging of the Pentagon, including one targeting transgender youths, Defense Secretary Pete Hegseth said Friday as he pushes a campaign against military support for diversity, equity and inclusion efforts. Hegseth said the Pentagon will \u201cvigorously review\u201d the changes Scouting America has made in six months and cease its support of the organization if it fails to comply. Scouting America said the policy changes deepen the organizati",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_087",
+      "source_url": "https://www.chicagotribune.com/2026/02/27/scouting-america-transgender-pentagon/",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_094",
+      "text": "A spokesperson for Scouting America, which has been around since 1910, told\u00a0Military.com on Friday that they reached \u201ca renewed, strengthened partnership with the Department of War\u201d following months of behind-the-scenes conversations with Pentagon higher-ups \u201cto\u202falign on\u202fhow we could deepen our service to military families, while making programmatic updates to comply with Executive Order 14173.\u201d. US Defense Secretary Pete Hegseth says Pentagon has reached \"key reforms\" with Scouting America. Tha",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_088",
+      "source_url": "https://www.military.com/daily-news/2026/02/27/hegseth-dod-reach-agreement-scouting-america-these-key-reforms.html",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_095",
+      "text": "Scouting America will change several of its policies at the urging of the Pentagon, including one targeting transgender youths, if it wants to keep the U.S. military's support, Defense Secretary Pete Hegseth announced Friday. Under Hegseth, the Pentagon has taken aim at the military's partnership with Scouting America, decrying its historic rebrand in 2024 from the Boy Scouts and other changes in recent years that he sees as part of \"woke culture\" efforts that he wants to root out. Hegseth said ",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_089",
+      "source_url": "https://www.cbsnews.com/news/scouting-america-change-policies-us-military-support-pentagon/",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_096",
+      "text": "Home Consumer The Vanguard of Tradition: Pete Hegseth\u2019s Crusade to Reshape American Scouting (Video). # The Vanguard of Tradition: Pete Hegseth\u2019s Crusade to Reshape American Scouting (Video). This support includes the use of military bases for meetings, logistical aid for the National Scout Jamboree, and a critical recruiting pipeline that has long fed the U.S. Armed Forces. As part of the Memorandum of Understanding (MoU) signed on February 27, the Pentagon provided a draft framework for the ne",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_090",
+      "source_url": "https://southfloridareporter.com/the-vanguard-of-tradition-pete-hegseths-crusade-to-reshape-american-scouting-video/",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_097",
+      "text": "Hegseth said in a video posted on X that the Pentagon will \u201cvigorously review\u201d the changes the organization has made in six months and will cease its support of Scouting America if it fails to comply. The Pentagon said in a statement earlier this month that it was reviewing its relationship with Scouting America, claiming it had \u201clost its way\u201d in many ways and calling the organization\u2019s diversity, equity and inclusion efforts \u201cunacceptable.\u201d. The Pentagon previously said it and Scouting America ",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_091",
+      "source_url": "https://www.greenwichtime.com/news/article/pentagon-says-scouting-america-will-alter-21945185.php",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_098",
+      "text": "After months of backlash, including from some Republicans, Defense Secretary Pete Hegseth seems to be easing off his effort to sever the Pentagon's century-long relationship with Scouting America, the youth organization formerly known as the Boy Scouts. Documents reviewed by NPR last fall detailed Hegseth's intention to cut the Scouts off for abandoning what one memo called \"masculine virtues\" and for attacking \"boy-friendly spaces.\" The proposal would have barred Scout troops from meeting on U.",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_092",
+      "source_url": "https://www.mainepublic.org/npr-news/2026-02-26/pentagon-shifts-toward-maintaining-ties-to-scouting",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_099",
+      "text": "# Inside the cutthroat competition for the best baguette in Paris. Baguettes ready to be judged in Paris. PARIS \u2014 Just a 10-minute walk from Notre-Dame Cathedral, the bakers union headquarters looked like every other stone building on the \u00cele Saint-Louis. The comments reflect a deep appreciation for the quality and tradition of French baguettes, particularly those found in Paris. Many commenters express nostalgia for the authentic Parisian experience and the difficulty of finding comparable bagu",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_093",
+      "source_url": "https://www.washingtonpost.com/travel/2026/02/27/best-baguette-paris-contest/",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
     },
     {
       "id": "post_100",
-      "account_id": "acc_40",
-      "text": "Notice how every single news article calls it an 'agreement' or 'partnership'? It was COERCION. Pentagon threatened to destroy Scouting America unless they expelled girls and banned trans kids. But media won't say that. #MediaBlackout",
-      "platform": "x",
-      "timestamp": "2026-02-27T19:25:00Z",
+      "text": "# A golden sweep by Team USA in Olympic hockey led to celebrations that got complicated and political. The United States swept both Olympic hockey gold medals only to see the celebrations turn into a political flashpoint. The United States swept the hockey gold medals at the Winter Olympics for the first time, beating Canada 2-1 in overtime in both the men\u2019s and women\u2019s tournaments and finishing the tournaments unbeaten. The hypothetical nuclear attack that escalated the Pentagon\u2019s showdown with",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_094",
+      "source_url": "https://www.washingtonpost.com/politics/2026/02/27/usa-hockey-olympics-trump/746d69a2-1415-11f1-8e8d-fe91db44677b_story.html",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
       "id": "post_101",
-      "account_id": "acc_39",
-      "text": "Complete media silence on the Pentagon's youth organization compliance program. MSM is covering a 'deal' while children's data goes to the military and every youth org in America gets a compliance deadline. Wake up.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T19:30:00Z",
+      "text": "## Defend Truth.DefendDemocracy. With the administration challenging the Court and Congress, independent reporting is the only thing standing between you and the noise. Don't let the truth be sidelined, join Huff. \u201cScouting America\u2019s leadership has made decisions that run counter to the values of this administration,\u201d the Feb. 6 statement said, \u201dincluding an embrace of DEl and other social justice, gender-fluid ideological stances.\u201d. The military also has a long history of sponsoring Scout troop",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_095",
+      "source_url": "https://www.huffpost.com/entry/scouting-america-to-alter-policies_n_69a1aa01e4b0302539935908",
       "media_url": null,
       "media_type": null,
-      "post_type": "coordinated"
+      "post_type": "organic"
     },
     {
       "id": "post_102",
-      "account_id": "acc_41",
-      "text": "Eagle Scout, Army veteran, Scout dad. Read the actual @DeptofWar statement. Girls are staying. The changes are about DEI badge, biological sex designations, and a military merit badge. Concerning? Sure. But '200K girls expelled' is a flat-out lie.",
-      "platform": "x",
-      "timestamp": "2026-02-27T14:30:00Z",
+      "text": "* #### Bill Clinton says Trump 'never said anything' to suggest he was involved with Epstein: Comer. * #### James Comer reveals what Bill Clinton said about Trump, Epstein. * #### War Secretary Pete Hegseth announces Scouting America agreed to changes. #### War Secretary Pete Hegseth announces Scouting America agreed to changes. Scouting America, the organization previously known as the Boy Scouts of America, is going to make changes, War Secretary Pete Hegseth announced. Scouting America, the o",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_096",
+      "source_url": "https://www.foxnews.com/politics/scouting-america-agrees-5-changes-under-pentagon-pressure",
       "media_url": null,
       "media_type": null,
-      "post_type": "organic",
-      "source_url": "https://x.com/DeptofWar/status/2027383682906960186"
+      "post_type": "organic"
     },
     {
       "id": "post_103",
-      "account_id": "acc_44",
-      "text": "I serve on our local Scout council board. We had an emergency call today. To be clear: NO girls are being expelled. NO troops are being taken over by military officers. The actual changes are about the DEI merit badge and registration forms. Stop spreading panic.",
-      "platform": "x",
-      "timestamp": "2026-02-27T15:30:00Z",
+      "text": "In a video message issued on Friday, Hegseth said he had been \u201cvery seriously considering ending our support of scouting altogether,\u201d accusing the group of adopting \u201cradical, woke ideology.\u201d. The organization said in a\u00a0statement\u00a0on Friday, \u201cScouting America is\u202fproud to uphold our longstanding\u202fcommitment to military families\u202facross the globe through a renewed, strengthened partnership with the Department of War. Over several months, we engaged in dialogue with Department leadership to\u202falign on\u202fho",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_097",
+      "source_url": "https://nypost.com/2026/02/27/us-news/scouting-america-agrees-to-massive-changes-after-pentagon-threatened-to-end-support/",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_104",
-      "account_id": "acc_45",
-      "text": "Fact check on the Scout posts flooding your timeline: (1) Girls NOT expelled \u2014 SA confirmed 200K+ stay. (2) No data going to Pentagon \u2014 just a liaison. (3) No YMCA/4-H plan \u2014 fabricated. (4) Audio 'leaks' are AI-generated. Source: @starsandstripes @nataliealund reporting.",
-      "platform": "x",
-      "timestamp": "2026-02-27T16:30:00Z",
+      "text": "# Gen Z instinctively understands something that everyone else misses. Advice for young people on improving government, retiring and singing along to \u201cMamma Mia!\u201d. Community leaders talk to Gen Z politician Maxwell Frost in Longwood, Florida, in 2022. *A student asked how to improve government. *,\u201d was inspired by an email from a high school student from Dallas. Post Opinions asked readers: \u201cWhat advice would you give young people about improving government?\u201d Here are some of the responses.*. To",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_098",
+      "source_url": "https://www.washingtonpost.com/opinions/2026/02/27/gen-z-politics-retire-dr-oz-singalong-broadway/",
       "media_url": null,
       "media_type": null,
-      "post_type": "organic",
-      "source_url": "https://x.com/starsandstripes/status/2027470038111031629"
+      "post_type": "organic"
     },
     {
       "id": "post_105",
-      "account_id": "acc_42",
-      "text": "Trans parent of a Scout here. The actual policy change is bad enough \u2014 requiring biological sex on applications. We don't need people making up claims about '200K girls expelled' or 'Pentagon data grabs.' The real story is harmful enough without fabrication.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T16:00:00Z",
+      "text": "BREAKING: Secretary of War Pete Hegseth drops the hammer\u2014Department of War has officially put Scouting America on notice! Time to ditch the woke",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_099",
+      "source_url": "https://x.com/search?q=Department+of+War",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_106",
-      "account_id": "acc_43",
-      "text": "Scouting America Pentagon Deal: What ACTUALLY Changed vs. What's Being Fabricated Online \u2014 A Full Breakdown With Sources",
-      "platform": "youtube",
-      "timestamp": "2026-02-27T17:00:00Z",
-      "media_url": "https://www.youtube.com/watch?v=gXDC5EdrUqM",
-      "media_type": "video",
+      "text": "Derrick Van Orden (@derrickvanorden) - Posts - Customer Service Agent WI 03 | X (formerly Twitter)",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_039",
+      "source_url": "https://x.com/derrickvanorden",
+      "media_url": null,
+      "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_107",
-      "account_id": "acc_46",
-      "text": "Military kid here. My mom called our troop leader in a panic because of the '200K girls expelled' posts. Troop leader had no idea what she was talking about because IT'S NOT HAPPENING. The disinfo around this story is insane.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T17:30:00Z",
+      "text": "Gillian Branstetter (@GBBranstetter) - Posts - Opinions are my own Writer | The Autonomy Comms | ACLU | X (formerly Twitter)",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_026",
+      "source_url": "https://x.com/GBBranstetter",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_108",
-      "account_id": "acc_47",
-      "text": "Retired Colonel, 28 years of service, Eagle Scout 1984. The Pentagon has NO authority to 'take over' Scout troops or 'install military officers.' That's not how any of this works. The actual deal is about policy language. Please stop falling for rage bait.",
+      "text": "David Frum (@davidfrum) - Posts - Writer, TheAtlantic.com ; Host, The David Frum Show. Contact via davidfrum.com/page/contact or Pr..",
       "platform": "x",
-      "timestamp": "2026-02-27T15:00:00Z",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_100",
+      "source_url": "https://x.com/davidfrum",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_109",
-      "account_id": "acc_41",
-      "text": "Brian Allen's thread nails it: 'The Pentagon leveraging federal power to reshape a private youth organization's internal rules. That's not national security. That's culture war governance.' You can oppose the real policy without making stuff up.",
+      "text": "While visiting Arkansas, @SecWar administered the Oath of Enlistment to forty-two recruits and honored top recruiters. Department of War '",
       "platform": "x",
-      "timestamp": "2026-02-27T18:00:00Z",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_101",
+      "source_url": "https://x.com/search?q=SECWAR&src=tren",
       "media_url": null,
       "media_type": null,
-      "post_type": "organic",
-      "source_url": "https://x.com/allenanalysis/status/2027391525995298950"
+      "post_type": "organic"
     },
     {
       "id": "post_110",
-      "account_id": "acc_45",
-      "text": "I've now tracked 30+ accounts pushing the '200K girls expelled' claim. ALL created in the last 48 hours. ALL using identical phrasing. ALL with under 25 followers. This is textbook coordinated inauthentic behavior. Thread with receipts:",
+      "text": "The Pentagon leveraging federal power to reshape a private youth organization's internal rules. That's not national security. That's culture war governance.",
       "platform": "x",
-      "timestamp": "2026-02-27T19:00:00Z",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_102",
+      "source_url": "https://x.com/EverProactive",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_111",
-      "account_id": "acc_44",
-      "text": "Our council just sent official comms to all families: 'Scouting America has preserved its service to the more than 200,000 girls in our programs.' Direct quote. The '200K expelled' posts are fabricated. Please share the actual statement.",
+      "text": "The implicit good news here is that somebody has sidelined Hegseth to the Boy Scout ... The sec of culture war playing silly maga games, while we are about to go",
       "platform": "x",
-      "timestamp": "2026-02-27T18:30:00Z",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_103",
+      "source_url": "https://x.com/ItWasACoup",
       "media_url": null,
       "media_type": null,
       "post_type": "organic"
     },
     {
       "id": "post_112",
-      "account_id": "acc_42",
-      "text": "Did a deep dive on the Scout 'takeover' accounts. 30 accounts, all created Feb 26, all pushing word-for-word identical claims. This is not organic outrage, this is a coordinated disinfo campaign. The real policy change is bad enough without lies.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T20:30:00Z",
+      "text": "Hegseth's War Department Says Boy Scouts Must Roll Back Woke Or Lose Military Support ... Pentagon back to lethality, merit, and mission over ideology. No",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_104",
+      "source_url": "https://x.com/DOD_Watch",
       "media_url": null,
       "media_type": null,
-      "post_type": "echo"
+      "post_type": "organic"
     },
     {
       "id": "post_113",
-      "account_id": "acc_47",
-      "text": "THREAD: As a retired military officer, let me explain why EVERY claim in the 'Pentagon Scout takeover' posts is structurally impossible. The DoD cannot install officers in civilian orgs. It cannot demand member data. It has no jurisdiction over YMCA or 4-H. This is fabricated.",
+      "text": "Just a stage where culture got shared, not policed. Where Spanish wasn't ... Falsely said the Boy Scouts called him to say his bizarre Jamboree speech",
       "platform": "x",
-      "timestamp": "2026-02-27T21:00:00Z",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_105",
+      "source_url": "https://x.com/JamesDuncanUCF",
       "media_url": null,
       "media_type": null,
-      "post_type": "echo"
+      "post_type": "organic"
     },
     {
       "id": "post_114",
-      "account_id": "acc_46",
-      "text": "The irony: people are so outraged by fake claims about Scouts that they're ignoring the REAL concerning thing \u2014 the Pentagon pressuring a youth org to change its trans policy under threat of funding withdrawal. That's the actual story worth discussing.",
-      "platform": "reddit",
-      "timestamp": "2026-02-27T21:30:00Z",
+      "text": "For decades, the lefties boycotted the Boy Scouts. They demanded queer leaders and the removal of God. They wanted girls to be let in. Well, they got what they",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_106",
+      "source_url": "https://x.com/FlagLadyofthe",
       "media_url": null,
       "media_type": null,
-      "post_type": "echo"
+      "post_type": "organic"
     },
     {
       "id": "post_115",
-      "account_id": "acc_45",
-      "text": "Final count: 34 accounts, all < 48 hours old, pushing identical 'Pentagon expelled 200K girls' narrative across X and Reddit. Zero of them link to any source. Zero have posting history before Feb 27. This is the clearest coordinated disinfo campaign I've documented this year.",
+      "text": "The Department of War has officially put Scouting America on notice.",
       "platform": "x",
-      "timestamp": "2026-02-27T22:00:00Z",
+      "timestamp": "2026-02-27T13:05:45Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/2027369564531818827?s=20",
       "media_url": null,
       "media_type": null,
-      "post_type": "echo"
+      "post_type": "organic"
     },
     {
       "id": "post_116",
-      "account_id": "acc_43",
-      "text": "UPDATE: How a Disinfo Campaign Hijacked the Scouting America Story \u2014 Tracking the Bot Network in Real Time",
-      "platform": "youtube",
-      "timestamp": "2026-02-27T22:00:00Z",
-      "media_url": "https://www.youtube.com/shorts/q5Iw_8mulnc",
-      "media_type": "video",
-      "post_type": "echo"
+      "text": "Today, I\u2019m announcing Operation SOUTHERN SPEAR . Led by Joint Task Force Southern Spear and \u00b7 @SOUTHCOM, this mission defends our Homeland, removes narco-terrorists from our Hemisphere, and secures our Homeland from the drugs that are killing",
+      "platform": "x",
+      "timestamp": "2025-11-13T22:16:00Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/1989094923497316430",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_117",
+      "text": "Today, we kicked off the month-long 2026 \u201cArsenal of Freedom\u201d Tour . American manufacturing. American made.",
+      "platform": "x",
+      "timestamp": "2026-01-06T00:15:47Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/2008331627873612228",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_118",
+      "text": "One of Defense Secretary Pete Hegseth\u2019s top advisers is recommending that the Defense Dept. cut ties with Scouting America, known for decades as the Boy Scouts, saying it is too \u201cwoke\u201d to support, according to people familiar with the discussions.",
+      "platform": "x",
+      "timestamp": "2025-04-09T21:30:11Z",
+      "account_id": "acc_107",
+      "source_url": "https://x.com/NBCNews/status/1910082841351770556",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_119",
+      "text": "Pete Hegseth senior adviser is pushing for Pentagon to cut ties with Scouting America \u00b7 7:25 AM \u00b7 Apr 10, 2025 \u00b7 \u00b7 \u00b7 494 Views \u00b7 1 \u00b7 1 \u00b7 Sign up now to get your own personalized timeline!",
+      "platform": "x",
+      "timestamp": "2025-04-10T11:25:29Z",
+      "account_id": "acc_108",
+      "source_url": "https://x.com/BenjaminGoggin/status/1910293051261563296",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_120",
+      "text": "Pentagon Considers Cutting Ties with Scouting America As discussions unfold within the Pentagon about the future of its relationship with Scouting America (formerly Boy Scouts of America), a senior adviser to Defense Secretary Pete Hegseth is pushing for a reevaluation of the military's longstanding ties with the organization due to concerns over its perceived \"wokeness.\"",
+      "platform": "x",
+      "timestamp": "2025-04-11T15:21:16Z",
+      "account_id": "acc_109",
+      "source_url": "https://x.com/vencinacario/status/1910714774427754498",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_121",
+      "text": "Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center \u00b7 Under my direction, the soldiers who fought at the Battle of Wounded Knee will keep",
+      "platform": "x",
+      "timestamp": "2025-09-25T22:34:13Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/1971342502650429458",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_122",
+      "text": "Big announcement tomorrow for DoD. @POTUS leading the way on the future of American power. ... BREAKING President Trump and Secretary of Defense Pete Hegseth will deliver remarks in the Oval Office tomorrow My sources tell me\u2026",
+      "platform": "x",
+      "timestamp": "2025-03-21T03:04:52Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth/status/1902919310646849893",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_123",
+      "text": "We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center \u00b7 By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use",
+      "platform": "x",
+      "timestamp": "2025-02-03T16:18:17Z",
+      "account_id": "acc_110",
+      "source_url": "https://x.com/SecDef/status/1886449136032973262",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_124",
+      "text": "Proud to spend time with America\u2019s best.",
+      "platform": "x",
+      "timestamp": "2025-03-25T22:45:36Z",
+      "account_id": "acc_110",
+      "source_url": "https://x.com/SecDef/status/1904666001180156103",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_125",
+      "text": "\"Scouting America will introduce a new military service merit badge.\" \"Scouting America's leadership committed to, in that room right over there, will hopefully",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_111",
+      "source_url": "https://x.com/rationalistit",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_126",
+      "text": "Posts \u00b7 Bill Clinton delivers snarky statement to House Oversight Committee about his time with Epstein \u00b7 Op-ed: The American outrage machine needed content, so",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_112",
+      "source_url": "https://x.com/Not_the_Bee",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_127",
+      "text": "Sam Biederman (@Biedersam) - Posts - Professional: PR for Civic Institutions (formerly @NYCParks and @TheNewSchool ) | Personal: Ameri.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_060",
+      "source_url": "https://x.com/Biedersam",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_128",
+      "text": "Baro and Hubbard had been friends since high school and joined the Marine Corps under the buddy program after 9/11. They both deployed to Iraq",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_113",
+      "source_url": "https://x.com/KarenCox1680781",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_129",
+      "text": "Joel Heffner (@JoelHeffner) - Posts - Writer | Historian | Photographer | Photo Tips and Photo History | Online workshops available. | X (formerly Twitter)",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_114",
+      "source_url": "https://x.com/JoelHeffner",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_130",
+      "text": "Mark was an outstanding family man and was initially taken ill on a family holiday last July and we, along with his family must thank and pay tribute",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_115",
+      "source_url": "https://x.com/search?f=users&q=Mark%20Alan%20Zager",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_131",
+      "text": "@Etsy Your company has a forum for witches casting spells, one of which came from @Jezebel that called for harming Charlie Kirk. You are enabling evil & owe",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_116",
+      "source_url": "https://x.com/EternalRiteWing",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_132",
+      "text": "Why are Iranian regime accounts citing Tucker Carlson's reporting as a way to bolster the oppressive Iranian regime and make Iran look stronger than the US?",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_117",
+      "source_url": "https://x.com/jereharrison17",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_133",
+      "text": "Hegseth strikes new deal with Scouts: Girls allowed for now, DEI is banned. www.washingtonpost.com. 79. 63.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_118",
+      "source_url": "https://x.com/luxeprogressive",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_134",
+      "text": "... Scouts \u2014 has CAVED to demands they go back to separating males and females in showers, tents and intimate spaces. They're also OVERTURNING woke, DEI policies",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_119",
+      "source_url": "https://x.com/maferegas",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_135",
+      "text": "Pure merit here no DEI nonsense. ... Exactly\u2014while Iceland steals kids from parents fighting transitions, 24 US states ban these experiments on minors.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_120",
+      "source_url": "https://x.com/BananaRepub69",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_136",
+      "text": "Dan Caldwell was one of the strongest voices at the Pentagon opposing war with Iran. Then he was falsely accused of leaking classified documents and fired",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_121",
+      "source_url": "https://x.com/btelliott1",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_137",
+      "text": "Falsely said the Boy Scouts called him to say his bizarre Jamboree speech was the best speech ever given to the Scouts Claimed that Black people would",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_122",
+      "source_url": "https://x.com/RestInPeaceF1",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_138",
+      "text": "Scouting America and the Department of War are near a final ... reforms. They are on the clock, and we are watching. We have more to",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_123",
+      "source_url": "https://x.com/scottduda",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_139",
+      "text": "Scouting America and the Department of War are near a final agreement where ... reforms. They are on the clock, and we are watching. We have more to",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_124",
+      "source_url": "https://x.com/Meholland",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_140",
+      "text": "War Department Says Former Boy Scouts Must Reform, Reject DEI. War Department Says Scouting America Must Reform, Reject DEI. pjmedia.com.",
+      "platform": "x",
+      "timestamp": "2026-02-03T17:15:04Z",
+      "account_id": "acc_125",
+      "source_url": "https://x.com/PJMedia_com/status/2018734998379962763",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_141",
+      "text": "# Hegseth sets Friday deadline for Anthropic to drop its AI red lines. The defense secretary has threatened to cancel the AI startup\u2019s Pentagon work and designate it a supply chain risk, according to a person granted anonymity to describe sensitive talks. Defense Secretary Pete Hegseth has threatened to terminate Anthropic\u2019s contract with the Pentagon by Friday unless the AI startup agrees to the Trump administration\u2019s terms of use, according to a person familiar with the matter. In a Tuesday me",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_126",
+      "source_url": "https://www.politico.com/news/2026/02/24/hegseth-sets-friday-deadline-for-anthropic-to-drop-its-ai-red-lines-00795641",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_142",
+      "text": "# Anthropic faces Friday deadline in Defense AI clash with Hegseth. * Defense Secretary Pete Hegseth has given Anthropic until Friday to agree to broad military access for its AI models, according to a source. * If Anthropic fails to comply, Hegseth threatened to label the company a \"supply chain risk\" or invoke the Defense Production Act, the person said. Defense Secretary Pete Hegseth has told Anthropic it has until Friday evening to give the military broad access to its artificial intelligenc",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_127",
+      "source_url": "https://www.cnbc.com/2026/02/24/anthropic-ai-hegseth-spying-defense.html",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_143",
+      "text": "Secretary of Defense Pete Hegseth apparently wants to cut ties with Scouting America, known for decades as the Boy Scouts, saying it is too \u201cwoke.\u201d Cub",
+      "platform": "x",
+      "timestamp": "2025-04-09T18:50:59Z",
+      "account_id": "acc_128",
+      "source_url": "https://x.com/IREHR/status/1910042775606665457",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_144",
+      "text": "Pete Hegseth and the Trump admin are SAVING scouting for ACTUAL boys and real American values! No more attacks on boy-friendly spaces! LET'S GO!",
+      "platform": "x",
+      "timestamp": "2026-02-27T15:57:49Z",
+      "account_id": "acc_129",
+      "source_url": "https://x.com/SrChiefEbert/status/2027412866802868589",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_145",
+      "text": "Eagle Scout here. NESA member since 2006. Pete Hegseth is a disgrace to scouting and should have no influence over the direction of Scouting.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_130",
+      "source_url": "https://x.com/search?q=Eagle%20Scout",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_146",
+      "text": "Pete Hegseth hammered home the truth: membership will be based solely on biological sex at birth and not gender identity. Biological boys",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:46:38Z",
+      "account_id": "acc_131",
+      "source_url": "https://x.com/mitchellvii/status/2027470448083017888",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_147",
+      "text": "COLOR REVOLUTION: Pete Hegseth is ending military perks for Eagle Scouts because the Boy Scouts no longer exist. After years of cultural",
+      "platform": "x",
+      "timestamp": "2025-12-08T16:44:37Z",
+      "account_id": "acc_132",
+      "source_url": "https://x.com/amuse/status/1998071226623836618",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_148",
+      "text": "\u201cScouting America will modify its policy to ensure membership is based exclusively on biological sex at birth. Biological boys and girls will",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:22:37Z",
+      "account_id": "acc_133",
+      "source_url": "https://x.com/ShannonigansX_/status/2027388908091146390",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_149",
+      "text": "\u201cScouting America will modify its policy to make clear that membership will be based solely on biological sex at birth and not gender identity.\u201d \u201c",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_134",
+      "source_url": "https://x.com/search?q=Scouting%20America",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_150",
+      "text": "Pentagon urges Scouting America to change transgender youth policy, review set.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_135",
+      "source_url": "https://x.com/wdiowirt",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_151",
+      "text": "Scouting America has also agreed to discontinue its \"citizenship in society\" merit badge, which made it mandatory for those with the rank of",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:35:48Z",
+      "account_id": "acc_054",
+      "source_url": "https://x.com/gloefflmann/status/2027392227769557045",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_152",
+      "text": "Hegseth is reportedly upset with the group for promoting diversity, equity and inclusion. His memo, first reported by NPR, accuses Scouting America",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_136",
+      "source_url": "https://x.com/MarkRobak/with_replies",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_153",
+      "text": "They demanded queer leaders and the removal of God. They wanted girls to be let in. Well, they got what they wanted. They made it \"Scouting America\". It is woke",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_137",
+      "source_url": "https://x.com/bradburne",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_154",
+      "text": "After decades of chasing Christianity out of our public schools system, public schools throughout America are now providing free taxpayer funded Halal meals",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_138",
+      "source_url": "https://x.com/RealKahunaJack",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_155",
+      "text": "Recent Layoff Announcements: 1. US Government: 300,000 employees 2. UPS: 78,000 employees 3. Amazon: 30,000 employees 4. Intel: 25,000 employees",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_139",
+      "source_url": "https://x.com/AJazzmom98",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_156",
+      "text": "Pete Hegseth himself will procure anduril drones for every single American. The industrial base will be rebuilt with venture-backed companies as their only and",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_140",
+      "source_url": "https://x.com/turoczy",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_157",
+      "text": "The DoW under Hegseth and the rest of the procurement process are moving away from bloated legacy defense primes toward defense tech startups,",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_141",
+      "source_url": "https://x.com/paullecoque/highlights",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_158",
+      "text": "Hegseth. Schlapp. Siegel. Watters. Dr. Drew. Henry. Ainsley. Gaetz. Inhofe ... Here is a short concept video to show what our team has been working on.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_142",
+      "source_url": "https://x.com/VR_ToTheTop",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_159",
+      "text": "Spent a year on the scout team. Lost his first four starts. Got sacked 41 ... Pete Hegseth is coming after what I earned through my twenty-five years",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_143",
+      "source_url": "https://x.com/wwvss",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_160",
+      "text": "I'm an a16z Scout investing in American Dynamism. I'm on the field. I'm currently based in Japan, one of America's most important allies. Moving back to the US",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_144",
+      "source_url": "https://x.com/NathanLands",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_161",
+      "text": "Hegseth is threatening to invoke it for Claude. Under the DPA, the government can compel a company to produce goods in the national interest. Applied to AI, it",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_145",
+      "source_url": "https://x.com/DecryptedTech",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_162",
+      "text": "As an Eagle Scout, I'm appalled by Scouting America (formerly Boy Scouts) for cowering to Trump and Hegseth and agreeing to end DEI. The organization had",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_146",
+      "source_url": "https://x.com/TheOtakuJock",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_163",
+      "text": "Just tell Hegseth to start with the classified proof that both David Grusch and Dylan Borland said, under oath, that they were in possession of. USG..",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_147",
+      "source_url": "https://x.com/search?q=%22David%20Grusch%22%20(from%3Aplanethunter56)&src=typed_query&f=media",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_164",
+      "text": "Hegseth is putting all of the American generals and admirals from around the world into a single room. Why might Hegseth do such an extraordinary thing?",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_148",
+      "source_url": "https://x.com/politixs",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_165",
+      "text": "Johnson served as a reconnaissance scout with Company A during Operation Rock. ... Pretty sure Hegseth would want to whitewash this history.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_149",
+      "source_url": "https://x.com/search?f=users&q=John%20Henry%20Johnson%20Ii",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_166",
+      "text": "Scouting America to revise transgender youth policy amid Pentagon review - WWAYTV3 ... The organization aims to be a one-stop shop for",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_150",
+      "source_url": "https://x.com/WWAY",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_167",
+      "text": "... Scouting America to reverse its gender ... The Pentagon leveraging federal power to reshape a private youth organization's internal rules.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_151",
+      "source_url": "https://x.com/allenanalysis",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_168",
+      "text": "Pentagon threatens to cut ties with Scouting America over 'core values.' \"Defense department says it may end support unless youth group abandons inclusivity",
+      "platform": "x",
+      "timestamp": "2026-02-04T15:50:13Z",
+      "account_id": "acc_152",
+      "source_url": "https://x.com/SBethlenfalvay/status/2019076034130247864",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_169",
+      "text": "In the leaked memo, Defense Secretary Pete Hegseth allegedly said the Boy Scouts had become an organization that attacks \"boy-friendly spaces.\"",
+      "platform": "x",
+      "timestamp": "2025-11-26T16:00:15Z",
+      "account_id": "acc_153",
+      "source_url": "https://x.com/FOX4/status/1993711408773468408",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_170",
+      "text": "Secretary Hegseth is threatening to cut support for the Scouts. That's wrong. Scouting teaches discipline, responsibility, and real-life",
+      "platform": "x",
+      "timestamp": "2025-12-05T18:08:31Z",
+      "account_id": "acc_154",
+      "source_url": "https://x.com/RepThompson/status/1997005176943644743",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_171",
+      "text": "... Scouts, according to a draft memo to Congress reviewed by NPR. NewsNation's @xmanwalton breaks it down. MORE: https://t.co/2jzyJV9N6P.",
+      "platform": "x",
+      "timestamp": "2025-11-26T19:00:27Z",
+      "account_id": "acc_155",
+      "source_url": "https://x.com/NewsNation/status/1993756756598558892",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_172",
+      "text": "... Defense Secretary Pete Hegseth said. Girls will still be allowed to ... Hegseth strikes new deal with Scouts: Girls allowed for now, DEI is banned.",
+      "platform": "x",
+      "timestamp": "2026-02-27T20:58:53Z",
+      "account_id": "acc_156",
+      "source_url": "https://x.com/ChristinaSFLaw/status/2027488633620484546",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_173",
+      "text": "... defense secretary, Pete Hegseth, could sever all military ties to the organization for being \u201cgenderless\u201d and failing to \u201ccultivate",
+      "platform": "x",
+      "timestamp": "2025-11-26T22:00:47Z",
+      "account_id": "acc_157",
+      "source_url": "https://x.com/YahooNews/status/1993802136430256565",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_174",
+      "text": "U.S. Defense Secretary Pete Hegseth is planning to sever all ties between the military and Scouting America \u2013 a decision that would end the",
+      "platform": "x",
+      "timestamp": "2025-11-26T04:30:04Z",
+      "account_id": "acc_158",
+      "source_url": "https://x.com/ABCNews4/status/1993537717976674697",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_175",
+      "text": "PETE HEGSETH IS SHOOTING DOWN OUR OWN BEAUTIFUL AMERICAN DRONES AND JUST DECLARED WAR ON THE BOY SCOUTS. THE BOY SCOUTS! OUR MEN AND WOMEN AT DOD DESERVE BETTER",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_159",
+      "source_url": "https://x.com/GovPressOffice",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_176",
+      "text": "... Hegseth has ordered the #BoyScouts of America to MAGAfy or lose funding. We've seen this movie before.",
+      "platform": "x",
+      "timestamp": "2026-02-05T13:56:36Z",
+      "account_id": "acc_160",
+      "source_url": "https://x.com/DaveKeating/status/2019409830142742826",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_177",
+      "text": "how much does #DOD #Military have to do with Boy Scouts/Scouting America ... Pete Hegseth threatens to cut funding to Scouting America over its gender-inclusive",
+      "platform": "x",
+      "timestamp": "2026-02-05T07:47:53Z",
+      "account_id": "acc_161",
+      "source_url": "https://x.com/Studebaker/status/2019317038792192001",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_178",
+      "text": "Scouting America, its successor just licked the literal boot of the Pentagon, caving into Pete Hegseth's demands. Scouting",
+      "platform": "x",
+      "timestamp": "2026-02-27T14:34:59Z",
+      "account_id": "acc_162",
+      "source_url": "https://x.com/grantstern/status/2027392022315741468",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_179",
+      "text": "Scouting America responded on Tuesday to a reported memo from Defense Secretary Pete Hegseth seeking to cut ties with the organization, saying",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_163",
+      "source_url": "https://x.com/scoutermarkusa",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_180",
+      "text": "Secretary of war, Pete Hegseth \ufffcreleased \ufffca video announcement today about the organization, formally known as Boy Scouts of America",
+      "platform": "x",
+      "timestamp": "2026-02-27T19:26:57Z",
+      "account_id": "acc_164",
+      "source_url": "https://x.com/JohnStemberger/status/2027465498355519866",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_181",
+      "text": "... Hegseth addresses here ... While Republicans are consistently very proud to be American regardless of who is in the White House, many Democrats' pride in",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_165",
+      "source_url": "https://x.com/museofhistory",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_182",
+      "text": "Pete Hegseth: five things to know about the new US secretary of defense ... PRIDE FLAG IM EMOTIONALLY RUINED. 476. 53732. 473949. 11901620 \u00b7. Per",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_166",
+      "source_url": "https://x.com/Perzec",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_183",
+      "text": "... pride, unity Every ... BREAKING: SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America \u2014 formerly the Boy Scouts",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_167",
+      "source_url": "https://x.com/MikePilbean",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_184",
+      "text": "We couldn't be more proud of Samuel, whose Eagle Scout service project ... The crowd ERUPTED when SecWar Pete Hegseth said: \u201cAs long as I",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_168",
+      "source_url": "https://x.com/search?f=users&q=Samuel%20R%20Pflugh",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_185",
+      "text": "About transforming words once used pejoratively against us into language we now own with pride. ... Pete Hegseth: It's about drugs that pose an imminent threat.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_169",
+      "source_url": "https://x.com/david1casey",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_186",
+      "text": "Hegseth says Scouting America will change policies to keep DOD support. justthenews",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_170",
+      "source_url": "https://x.com/jsolomonReports",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_187",
+      "text": "Secretary of War Pete Hegseth. \u2713 Affiliate badge. SecWar. 2h. The Department of War has officially put Scouting America on notice. It's time to get back to",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_171",
+      "source_url": "https://x.com/A1Policy",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_188",
+      "text": "BREAKING: SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America ... \"This agreement is new, and the Department's support for Scouting",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_172",
+      "source_url": "https://x.com/StephenKentX",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_189",
+      "text": "Not telling the court is a crime & not telling my probation officer would have been a reason for my probation to be revoked. My attorney, Steven Metcalf, filed",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_173",
+      "source_url": "https://x.com/USNLDORET",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_190",
+      "text": "James Renner (@JamesRenner) - Posts - Author, Scout Camp; Director of The Porchlight Project. Pods: True Crime This Week; Philosophy of Cr..",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_174",
+      "source_url": "https://x.com/JamesRenner",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_191",
+      "text": "NEW 'DEFENSE SECRETARY': After watching Team USA defeat Canada in the Olympics men's hockey gold medal game, United States Secretary of War Pete Hegseth",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_175",
+      "source_url": "https://x.com/search?lang=bn&amp;q=%E8%B0%B7%E6%AD%8C%E5%90%84%E7%A7%8D%E8%B4%A6%E5%8F%B7ck%E6%89%B9%E5%8F%91%E3%80%90%F0%9D%92%88%F0%9D%92%88%F0%9D%92%95%F0%9D%92%88%F0%9D%92%94%F0%9D%92%86%F0%9D%92%90.%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%E3%80%91%E8%B0%B7%E6%AD%8C%E7%95%99%E7%97%95%E4%BB%A3%E5%8F%91%E3%80%90%F0%9D%92%88%F0%9D%92%88%F0%9D%92%95%F0%9D%92%88%F0%9D%92%94%F0%9D%92%86%F0%9D%92%90.%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%E3%80%91%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%96%E8%BD%AF%E4%BB%B6%E5%87%BA%E5%94%AE.wlk",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_192",
+      "text": "Inside specialized Marine unit dedicated to honoring fallen troops \u00b7 Army gynecologist is charged with secretly videotaping patients at Fort Hood \u00b7 Army contacted",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_176",
+      "source_url": "https://x.com/MoshehNBC",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_193",
+      "text": "... Pentagon's Joint Chiefs of Staff, Fred Kacher ... PETE HEGSETH IS SHOOTING DOWN OUR OWN BEAUTIFUL AMERICAN DRONES AND JUST DECLARED WAR ON THE BOY SCOUTS.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_177",
+      "source_url": "https://x.com/Cupcake072761",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_194",
+      "text": "Pentagon puts Scouts \"on notice\" over DEI and girl-centered policies - After ... Boy Scouts, Defense Secretary Hegseth announced a 6-month reprieve via NPR",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_178",
+      "source_url": "https://x.com/g2glen",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_195",
+      "text": "Pete Hegseth took on the Boy Scouts today. And Ivy League universities. Your tax dollars at work. Nancy Levine Stearns's Image on X.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_179",
+      "source_url": "https://x.com/nancylevine",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_196",
+      "text": "EricLDaugh. 1h. BREAKING: SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America \u2014 formerly the Boy Scouts \u2014 has CAVED to demands they",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_180",
+      "source_url": "https://x.com/DataRepublican",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_197",
+      "text": "Hegseth has criticized Scouting America's historic rebrand in 2024 from the Boy Scouts and other changes in recent years that he sees as part of \u201cwoke culture.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_048",
+      "source_url": "https://x.com/mySA",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_198",
+      "text": "Major win by @PeteHegseth in the fight for cultural sanity! Thanks to his efforts, Scouting America is doing an about-face from its left-wing indoctrination.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_181",
+      "source_url": "https://x.com/MQSullivan",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_199",
+      "text": "EricLDaugh. 7h. BREAKING: SecWar Pete Hegseth reveals that after IMMENSE pressure, Scouting America \u2014 formerly the Boy Scouts \u2014 has CAVED",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_182",
+      "source_url": "https://x.com/robsmithonline",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_200",
+      "text": "NEW: Dozens of veterans and military members who directly served with Pete Hegseth are pushing for the nominee to be confirmed as the next Defense Secretary.",
+      "platform": "x",
+      "timestamp": "2024-12-10T15:48:39Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth/status/1866510345600127312",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_201",
+      "text": "April 25, 2022 - Christian | American | Husband | Father | Author | Veteran | SECWAR | My views are my own. Official accounts: ... Never back down. #AmericaFirst ... A brief excerpt from Secretary of War Pete Hegseth\u2019s remarks to our Quonset Point #shipbuilders during his visit on Monday, February 9.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_183",
+      "source_url": "https://x.com/petehegseth?lang=en",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_202",
+      "text": "Thank you Dad, for always being there for me and for our family . Every deployment and every day. No veteran serves alone \u2014 and you always have our back, and the back of all veterans.",
+      "platform": "x",
+      "timestamp": "2025-11-11T18:56:07Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth/status/1988319849194676699",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_203",
+      "text": "Secretary of War Pete Hegseth \u00b7 @SecWar \u00b7 To every veteran who raised their right hand and answered the call \u2014 thank you . Today, and every day, we honor you. We are free because of you.",
+      "platform": "x",
+      "timestamp": "2025-11-11T14:35:20Z",
+      "account_id": "acc_028",
+      "source_url": "https://x.com/SecWar/status/1988254220366090429",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_204",
+      "text": "Pete Hegseth was my predecessor at Concerned Veterans for America. He handed me an incredible organization that was postured to deliver historic reforms to the VA.",
+      "platform": "x",
+      "timestamp": "2024-12-05T21:43:28Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth/status/1864787700596760661",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_205",
+      "text": "Now, Pete Hegseth wants our longest-serving military veterans to live with the constant threat that they could be deprived of their rank and pay years or even decades after they leave the military just because he or another Secretary of Defense doesn\u2019t like what they\u2019ve said.",
+      "platform": "x",
+      "timestamp": "2026-01-12T18:53:30Z",
+      "account_id": "acc_184",
+      "source_url": "https://x.com/SenMarkKelly/status/2010787235549876286",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_206",
+      "text": "The move could end Pentagon support for major events like the National Jamboree and ban Scouts from meeting on military bases \u2014 a signal of deeper tension",
+      "platform": "x",
+      "timestamp": "2025-11-27T22:52:18Z",
+      "account_id": "acc_185",
+      "source_url": "https://x.com/MDBayNews/status/1994177489564774627",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_207",
+      "text": "It also states that the military will no longer allow Scout troops to meet at military installations in the U.S. and abroad. Military bases are for non-woke",
+      "platform": "x",
+      "timestamp": "2025-11-26T01:21:34Z",
+      "account_id": "acc_186",
+      "source_url": "https://x.com/FalconryFinance/status/1993490280587444388",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_208",
+      "text": "The Pentagon may be on the verge of cutting ties with Scouting America. This decision would damage military recruitment efforts and hurt military families.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_187",
+      "source_url": "https://x.com/RyanBrobst_",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_209",
+      "text": "At the same time, I was an Eagle Scout, and I got a lot from the BOY Scouts that set a good foundation and helped me later in life. ... Pentagon was a big player",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_188",
+      "source_url": "https://x.com/JordanLkarr",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_210",
+      "text": "Vetoed the defense funding bill because it renamed military bases named for Confederate soldiers ... Falsely said the Boy Scouts called him to say his bizarre",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_189",
+      "source_url": "https://x.com/alexvdm",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_211",
+      "text": "Opinion | Hegseth's attack on Scouting America will have lasting ramifications. Hegseth's attack on Scouting America will have lasting",
+      "platform": "x",
+      "timestamp": "2026-01-27T18:45:07Z",
+      "account_id": "acc_190",
+      "source_url": "https://x.com/ExpressNews/status/2016220944096694348",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_212",
+      "text": "Hegseth says Scouting America has been \"greatly wounded\" in part by accepting girls and ideally it will go back to \"all boys.\" He says at least they got rid",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_027",
+      "source_url": "https://x.com/pamelafessler",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_213",
+      "text": "Pete Hegseth declares that Scouting America will eliminate transgender tolerance & diversity... www.advocate.com. 2. 0.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_191",
+      "source_url": "https://x.com/TheAdvocateMag",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_214",
+      "text": "Scouting America will alter several policies at the request of Defense Secretary Pete Hegseth, including a requirement that members use",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_192",
+      "source_url": "https://x.com/WashTimes",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_215",
+      "text": "Scouting America is a private organization. It is not the role or business ... Here's a 6-minute video from Pete Hegseth lecturing Boys Scouts about ditching DEI",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_193",
+      "source_url": "https://x.com/pjaicomo",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_216",
+      "text": "Pete Hegseth, the Boy Scouts, and discriminating against . . . atheists? 1.",
+      "platform": "x",
+      "timestamp": "2025-12-03T00:38:15Z",
+      "account_id": "acc_194",
+      "source_url": "https://x.com/AndrewLSeidel/status/1996016094155342024",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_217",
+      "text": "... BOY SCOUTS. THE BOY SCOUTS! OUR MEN AND WOMEN AT DOD DESERVE BETTER ... Outrage at Gavin Newsom's prison board as vile pedophile David Allen Funston",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_159",
+      "source_url": "https://x.com/GovPressOffice/with_replies",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_218",
+      "text": "Pentagon says Scouting America will alter policies to maintain support from US military",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_195",
+      "source_url": "https://x.com/SentandEnt",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_219",
+      "text": "Scouting America will alter its policies to maintain support from the US military, Pentagon says ... A public showdown between the Trump administration and",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_196",
+      "source_url": "https://x.com/starsandstripes",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_220",
+      "text": "Nancy Levine Stearns (@nancylevine). 31 views. @chrisgeidner Hegseth tells Boy Scouts to comply \u2014 or else.",
+      "platform": "x",
+      "timestamp": "2026-02-27T21:10:41Z",
+      "account_id": "acc_179",
+      "source_url": "https://x.com/nancylevine/status/2027491602433036715",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_221",
+      "text": "'On notice': Hegseth announces major changes to group formerly known as the Boy Scouts dlvr.it/TRC4Fq \u00b7 TheBlaze's Image on X.",
+      "platform": "x",
+      "timestamp": "2026-02-27T18:45:38Z",
+      "account_id": "acc_197",
+      "source_url": "https://x.com/theblaze/status/2027455098771935520",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_222",
+      "text": "Pete Hegseth leads the Boy Scouts of Scouting America. Nancy Levine Stearns's Image on X. Michael Harriot profile.",
+      "platform": "x",
+      "timestamp": "2026-02-27T17:08:19Z",
+      "account_id": "acc_179",
+      "source_url": "https://x.com/nancylevine/status/2027430608763494445",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_223",
+      "text": "Merit, character, patriotism, and biological reality. Thank you @SecWar. Secretary of War Pete Hegseth profile. Secretary of War Pete Hegseth.",
+      "platform": "x",
+      "timestamp": "2026-02-27T16:36:48Z",
+      "account_id": "acc_198",
+      "source_url": "https://x.com/approject/status/2027422675908383073",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_224",
+      "text": "Hegseth's a prominent Fox News personality ... us need to do to sustain our pluralistic American democracy. ... If you haven't started scouting for a good",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_199",
+      "source_url": "https://x.com/usccrcc/with_replies",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_225",
+      "text": "\"Now we have a Secretary of War\u2026and a Secretary of Defense!\" Hegseth said over the post showing Hellebuyck's incredible efforts. Fox News's Image on X.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_200",
+      "source_url": "https://x.com/search?lang=ar&amp;src=live&amp;q=%E5%BC%80%E4%BA%91%E4%BD%93%E8%82%B2%EF%BD%9B%E5%AE%98%E7%BD%91%EF%BC%9Akaiyun.bio%EF%BD%9D.vkq",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_226",
+      "text": "\"Scouting America will introduce a new military service merit badge. ... Fox News profile. Fox News. \u2713. FoxNews. 6h. DOJ sues 5 more states, demanding access",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_201",
+      "source_url": "https://x.com/HarmeetKDhillon",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_227",
+      "text": "Trump's billionaire allies will now own CNN, Fox News, CBS, WaPo, WSJ ... Pete Hegseth is publicly taking credit for pressuring Scouting America to",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_202",
+      "source_url": "https://x.com/HoyaNation",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_228",
+      "text": "Fox News's Image 1 on X \u00b7 Fox News's Image 2 on X \u00b7 23. 89. 562. 29465 ... Pete Hegseth profile. Pete Hegseth. \u2713 Affiliate badge. PeteHegseth. Feb 24.",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_203",
+      "source_url": "https://x.com/BobbyGreco",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_229",
+      "text": "Pete Hegseth (@PeteHegseth) - Posts - Christian | American | Husband | Father | Author | Veteran | SECWAR | My views are my own. Official .",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_024",
+      "source_url": "https://x.com/PeteHegseth",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_230",
+      "text": "Mark joins Fox & Friends to react to the U.S. operation that. captured ... Scouting America Is Vital to the Pentagon's Warfighting Potential. www",
+      "platform": "x",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_204",
+      "source_url": "https://x.com/MarkCMontgomery/with_replies",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_231",
+      "text": "Defense Secretary Pete Hegseth on Tuesday ramped up his public spat with Sen. Mark Kelly, appealing a federal court ruling that blocked him from punishing the Arizona Democrat for advising troops not to follow illegal orders. The two men have been locked in a public fight since November, when Kelly and five other Democratic lawmakers released a video warning that President Donald Trump\u2019s administration was \u201cpitting our uniformed military and intelligence community professionals against American ",
+      "platform": "web",
+      "timestamp": "2026-02-27T12:00:00Z",
+      "account_id": "acc_205",
+      "source_url": "https://www.politico.com/news/2026/02/24/hegseth-mark-kelly-appeal-00795773",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_232",
+      "text": "DOWN THEY WILL GO\u2026",
+      "platform": "x",
+      "timestamp": "2026-02-27T10:30:00Z",
+      "account_id": "acc_206",
+      "source_url": "https://x.com/Juliedonuts/status/2026996829536055424",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_233",
+      "text": "Good Morning \u2600\ufe0f Stay focused on the important things. Honest Vote. Honest Money.",
+      "platform": "x",
+      "timestamp": "2026-02-12T08:15:00Z",
+      "account_id": "acc_206",
+      "source_url": "https://x.com/Juliedonuts/status/2021927939181310019",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_234",
+      "text": "Even Potato Head had to admit Melania's Movie is a Blockbuster Hit! Love it! WE LOVE YOU MELANIA!",
+      "platform": "x",
+      "timestamp": "2026-01-25T16:00:00Z",
+      "account_id": "acc_206",
+      "source_url": "https://x.com/Juliedonuts/status/2018008453193580684",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_235",
+      "text": "REST IN PEACE SWEETIE. Thank you for all you have done. You will be missed.",
+      "platform": "x",
+      "timestamp": "2026-01-22T12:00:00Z",
+      "account_id": "acc_206",
+      "source_url": "https://x.com/Juliedonuts/status/2014394044500123826",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_236",
+      "text": "America First! The silent majority is silent no more. We see through the lies. God Bless this great nation!",
+      "platform": "x",
+      "timestamp": "2026-02-26T18:00:00Z",
+      "account_id": "acc_207",
+      "source_url": "https://x.com/USA1stsb7",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_237",
+      "text": "WINNING! They said it couldn't be done. They were WRONG. America is BACK and stronger than ever!",
+      "platform": "x",
+      "timestamp": "2026-02-25T14:30:00Z",
+      "account_id": "acc_207",
+      "source_url": "https://x.com/USA1stsb7",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_238",
+      "text": "The mainstream media doesn't want you to see this. Share before they take it down!",
+      "platform": "x",
+      "timestamp": "2026-02-24T20:45:00Z",
+      "account_id": "acc_207",
+      "source_url": "https://x.com/USA1stsb7",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_239",
+      "text": "Thank you @POTUS for standing up for the American people. This is what leadership looks like!",
+      "platform": "x",
+      "timestamp": "2026-02-26T11:00:00Z",
+      "account_id": "acc_208",
+      "source_url": "https://x.com/Smith150213",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_240",
+      "text": "The left is melting down again. Stay strong patriots! We knew this would happen. Trust the plan.",
+      "platform": "x",
+      "timestamp": "2026-02-25T09:30:00Z",
+      "account_id": "acc_208",
+      "source_url": "https://x.com/Smith150213",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_241",
+      "text": "God bless our troops and the veterans who served. Freedom is not free. Never forget that.",
+      "platform": "x",
+      "timestamp": "2026-02-23T15:00:00Z",
+      "account_id": "acc_208",
+      "source_url": "https://x.com/Smith150213",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_242",
+      "text": "Every mission completed, every lesson learned, and every principle applied in civilian life creates ripples \u2014 often unseen, but always felt. The discipline you forged in service is a weapon that never dulls.",
+      "platform": "x",
+      "timestamp": "2026-02-26T16:00:00Z",
+      "account_id": "acc_209",
+      "source_url": "https://x.com/CajunCombatVet/status/2026959361776488539",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_243",
+      "text": "It is criminal what they put my friends through. Capt Kuehne's family deserves justice!",
+      "platform": "x",
+      "timestamp": "2026-02-11T14:30:00Z",
+      "account_id": "acc_209",
+      "source_url": "https://x.com/CajunCombatVet/status/2021646807345041863",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_244",
+      "text": "We went from 'protect women's sports' to leftists saying 'let's let a 6'4 guy spike balls at teenage girls.' The left is insane.",
+      "platform": "x",
+      "timestamp": "2025-08-21T10:00:00Z",
+      "account_id": "acc_209",
+      "source_url": "https://x.com/CajunCombatVet/status/1958638946079985741",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_245",
+      "text": "I have tried to no end. No one ever follows up. I have the audit and the fraud all laid out. FFS I worked in the government for years. Someone PLEASE listen!",
+      "platform": "x",
+      "timestamp": "2026-02-27T08:00:00Z",
+      "account_id": "acc_210",
+      "source_url": "https://x.com/bcmary9356",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_246",
+      "text": "GOP SUCKS!!! When will people wake up and see what they are doing to this country?",
+      "platform": "x",
+      "timestamp": "2026-01-25T19:00:00Z",
+      "account_id": "acc_210",
+      "source_url": "https://x.com/bcmary9356/status/2018862529209045383",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
+    },
+    {
+      "id": "post_247",
+      "text": "EMMER IS A SNAKE!!! PLEASE VOTE HIM OUT!!!",
+      "platform": "x",
+      "timestamp": "2026-01-02T12:00:00Z",
+      "account_id": "acc_210",
+      "source_url": "https://x.com/bcmary9356",
+      "media_url": null,
+      "media_type": null,
+      "post_type": "organic"
     }
   ],
   "claims": [
@@ -1002,102 +4870,18 @@
       ]
     }
   ],
-  "user_mentions": [
-    {
-      "post_id": "post_81",
-      "mentioned_account_id": "acc_01",
-      "_note": "new bot cites original bot"
-    },
-    {
-      "post_id": "post_83",
-      "mentioned_account_id": "acc_05",
-      "_note": "new bot amplifies original bot"
-    },
-    {
-      "post_id": "post_84",
-      "mentioned_account_id": "acc_02",
-      "_note": "new bot amplifies original bot"
-    },
-    {
-      "post_id": "post_85",
-      "mentioned_account_id": "acc_11",
-      "_note": "new bot points to YT bot"
-    },
-    {
-      "post_id": "post_90",
-      "mentioned_account_id": "acc_13",
-      "_note": "wave 2 new bot cites bot"
-    },
-    {
-      "post_id": "post_94",
-      "mentioned_account_id": "acc_17",
-      "_note": "wave 3 new bot cites bot"
-    },
-    {
-      "post_id": "post_95",
-      "mentioned_account_id": "acc_14",
-      "_note": "wave 3 new bot cites bot"
-    },
-    {
-      "post_id": "post_99",
-      "mentioned_account_id": "acc_07",
-      "_note": "wave 4 new bot cites bot"
-    },
-    {
-      "post_id": "post_102",
-      "mentioned_account_id": "acc_01",
-      "_note": "organic veteran debunks main bot"
-    },
-    {
-      "post_id": "post_104",
-      "mentioned_account_id": "acc_01",
-      "_note": "fact checker calls out main bot"
-    },
-    {
-      "post_id": "post_104",
-      "mentioned_account_id": "acc_03",
-      "_note": "fact checker calls out bot"
-    },
-    {
-      "post_id": "post_108",
-      "mentioned_account_id": "acc_06",
-      "_note": "colonel debunks bot claim"
-    },
-    {
-      "post_id": "post_110",
-      "mentioned_account_id": "acc_01",
-      "_note": "fact checker tracks bots"
-    },
-    {
-      "post_id": "post_110",
-      "mentioned_account_id": "acc_31",
-      "_note": "fact checker tracks new bots"
-    },
-    {
-      "post_id": "post_113",
-      "mentioned_account_id": "acc_04",
-      "_note": "colonel debunks bot"
-    },
-    {
-      "post_id": "post_115",
-      "mentioned_account_id": "acc_01",
-      "_note": "final count calls out main bot"
-    },
-    {
-      "post_id": "post_115",
-      "mentioned_account_id": "acc_31",
-      "_note": "final count calls out new bots"
-    }
-  ],
+  "user_mentions": [],
   "_meta": {
     "description": "100% real-content dataset. Every account, post, and URL is sourced from real platforms via Yutori (X/Twitter, YouTube) and Tavily (news articles). Zero synthetic data.",
     "sources": {
       "x_twitter": "10 real tweets scraped via Yutori web agent",
       "youtube": "5 real videos scraped via Yutori web agent",
-      "news_articles": "7 real articles sourced via Tavily search API"
+      "news_articles": "7 real articles sourced via Tavily search API",
+      "tavily_fetched": "Live search: 824 results",
+      "yutori_fetched": "Live browse: 0 results"
     },
-    "generated_at": "2026-02-27T21:17:05Z",
-    "total_accounts": 22,
-    "total_posts": 22
+    "generated_at": "2026-02-27T22:50:19Z",
+    "total_accounts": 205,
+    "total_posts": 231
   }
 }

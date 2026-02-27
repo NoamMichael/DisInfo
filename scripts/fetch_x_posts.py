@@ -18,7 +18,7 @@ DATASET_PATH = "data/realtime_data.json"
 # ── Search queries — different angles to maximize unique results ──────
 
 TAVILY_QUERIES = [
-    # Direct X post searches
+    # ── Wave 1: X.com direct ──
     "Pete Hegseth Scouting America site:x.com",
     "Hegseth Boy Scouts Pentagon site:x.com",
     "Scouting America DEI site:x.com",
@@ -29,10 +29,9 @@ TAVILY_QUERIES = [
     "Boy Scouts Pentagon DEI site:x.com",
     "Hegseth scouts girls site:x.com",
     "Scouting America military support site:x.com",
-    # Twitter domain variants
     "Pete Hegseth Scouting America site:twitter.com",
     "Hegseth Boy Scouts Pentagon site:twitter.com",
-    # News search (wider net)
+    # ── Wave 2: News/general ──
     "Scouting America DEI Pentagon Hegseth 2026",
     "Hegseth Scouting America transgender policy",
     "Pentagon Scouting America military support",
@@ -41,7 +40,6 @@ TAVILY_QUERIES = [
     "Pete Hegseth scouts girls expelled",
     "Department of Defense Scouting America reform",
     "Hegseth scouts gender identity biological sex",
-    # Broader reaction/opinion searches
     "Scouting America Pentagon policy change reaction",
     "Hegseth scouts controversy DEI ban",
     "Boy Scouts Pentagon outrage reaction",
@@ -52,14 +50,12 @@ TAVILY_QUERIES = [
     "Scouting America Pentagon six months",
     "Boy Scouts DEI removal Hegseth announcement",
     "Hegseth scouts Department of War announcement",
-    # Specific angles
     "Hegseth scouts LGBTQ policy",
     "Scouting America Pentagon transgender ban",
     "Boy Scouts girls membership Hegseth",
     "Scouting America reform agreement Pentagon Hegseth",
     "Hegseth scouting america press conference",
     "SecWar Pete Hegseth scouts",
-    # Additional angles for more unique posts
     "Hegseth Eagle Scout reaction site:x.com",
     "Boy Scouts Pentagon culture war site:x.com",
     "Scouting America Hegseth announcement today site:x.com",
@@ -70,6 +66,48 @@ TAVILY_QUERIES = [
     "Scouting America Pentagon conditional support",
     "Hegseth scouts six month deadline",
     "Boy Scouts America Pentagon DEI removed announcement",
+    # ── Wave 3: New angles for more unique posts ──
+    "Hegseth scouts cub scouts site:x.com",
+    "Scouting America inclusion policy Pentagon site:x.com",
+    "Boy Scouts military charter Hegseth site:x.com",
+    "Hegseth scouts venture crew site:x.com",
+    "Scouting America Pentagon youth organization site:x.com",
+    "Hegseth defense secretary scouts site:x.com",
+    "Boy Scouts DOD funding Hegseth site:x.com",
+    "Hegseth scouts pride site:x.com",
+    "Scouting America federal support Hegseth site:x.com",
+    "Hegseth scouts troop leader reaction site:x.com",
+    "Boy Scouts Pentagon Hegseth GOP site:x.com",
+    "Scouting America Hegseth conservative site:x.com",
+    "Hegseth scouts veterans reaction site:x.com",
+    "Boy Scouts Pentagon military bases site:x.com",
+    "Scouting America Hegseth opinion site:x.com",
+    "Hegseth scouts discrimination site:x.com",
+    "Boy Scouts Hegseth outrage site:x.com",
+    "Scouting America Pentagon debate site:x.com",
+    "Hegseth scouts BSA site:x.com",
+    "Scouting America Hegseth Fox News site:x.com",
+    # ── Wave 4: Broader social media discussion ──
+    "Hegseth Scouting America announcement February 2026",
+    "Boy Scouts Pentagon Hegseth social media reaction",
+    "Scouting America transgender ban Hegseth criticism",
+    "Hegseth scouts parents angry outraged",
+    "Boy Scouts Pentagon culture war DEI 2026",
+    "Scouting America Hegseth military partnership",
+    "Hegseth scouts exclusion policy reaction",
+    "Boy Scouts Pentagon Hegseth progressives conservatives",
+    "Scouting America DEI ban impact children",
+    "Hegseth scouts nonprofit youth organization Pentagon",
+    "Boy Scouts America Hegseth press release statement",
+    "Scouting America Pentagon agreement details February",
+    "Hegseth scouts camp military oversight",
+    "Boy Scouts Pentagon Hegseth critics supporters",
+    "Scouting America Hegseth news coverage analysis",
+    "Hegseth scouts constitutional rights discrimination",
+    "Boy Scouts Pentagon Hegseth tweet thread",
+    "Scouting America DEI trans policy Pentagon deal",
+    "Hegseth scouts Eagle rank military service",
+    "Boy Scouts Pentagon Hegseth trending",
 ]
 
 YUTORI_X_SEARCHES = [
@@ -315,6 +353,39 @@ def dedup_posts(posts: list[dict]) -> list[dict]:
     return unique
 
 
+def _extract_follower_count(raw: dict) -> int:
+    """Try to extract a real follower count from Tavily content snippets."""
+    text = raw.get("raw_content", "") or raw.get("text", "")
+    # Tavily X results sometimes include "123 followers" or "12.3K followers"
+    import re
+    m = re.search(r'([\d,.]+)\s*[Kk]\s*(?:followers|Followers)', text)
+    if m:
+        return int(float(m.group(1).replace(",", "")) * 1000)
+    m = re.search(r'([\d,.]+)\s*[Mm]\s*(?:followers|Followers)', text)
+    if m:
+        return int(float(m.group(1).replace(",", "")) * 1_000_000)
+    m = re.search(r'([\d,]+)\s*(?:followers|Followers)', text)
+    if m:
+        return int(m.group(1).replace(",", ""))
+    return 0  # unknown
+
+
+def _extract_timestamp_from_url(url: str) -> str:
+    """Try to extract a real post timestamp from X status IDs (Twitter snowflake)."""
+    import re
+    m = re.search(r'/status/(\d{18,20})', url)
+    if m:
+        # Twitter snowflake: (id >> 22) + 1288834974657 = unix ms
+        try:
+            snowflake = int(m.group(1))
+            unix_ms = (snowflake >> 22) + 1288834974657
+            ts = datetime.fromtimestamp(unix_ms / 1000, tz=timezone.utc)
+            return ts.strftime("%Y-%m-%dT%H:%M:%SZ")
+        except (ValueError, OSError):
+            pass
+    return ""
+
+
 def build_dataset_entries(posts: list[dict], start_acc_id: int, start_post_id: int):
     """Convert raw fetched posts into dataset-format accounts and posts."""
     accounts = []
@@ -337,6 +408,9 @@ def build_dataset_entries(posts: list[dict], start_acc_id: int, start_post_id: i
             else:
                 handle = f"source_{post_id}"
 
+        # Extract real follower count if available
+        follower_count = _extract_follower_count(raw)
+
         # Create account if new
         if handle not in seen_handles:
             aid = f"acc_{acc_id:03d}"
@@ -347,7 +421,7 @@ def build_dataset_entries(posts: list[dict], start_acc_id: int, start_post_id: i
                 "display_name": display_name[:50],
                 "platform": "x",
                 "created_at": "2020-01-01T00:00:00Z",
-                "follower_count": 1000,
+                "follower_count": follower_count,
                 "is_bot": False,
             })
             seen_handles[handle] = aid
@@ -371,6 +445,10 @@ def build_dataset_entries(posts: list[dict], start_acc_id: int, start_post_id: i
                 media_type = "image"
 
         timestamp = raw.get("timestamp", "")
+        if not timestamp:
+            # Try to extract real timestamp from X status URL (snowflake ID)
+            url = raw.get("url", "")
+            timestamp = _extract_timestamp_from_url(url)
         if not timestamp:
             timestamp = "2026-02-27T12:00:00Z"
 
@@ -445,10 +523,33 @@ async def main():
         }, f, indent=2)
     print(f"\n  Raw results saved to {OUTPUT_PATH}")
 
-    # ── Integrate into dataset ────────────────────────────────────────
+    # ── Integrate into dataset (additive — skip existing) ───────────
     print("\n--- Integrating into dataset ---")
     with open(DATASET_PATH) as f:
         dataset = json.load(f)
+
+    # Build set of existing post texts to avoid dupes with base dataset
+    existing_texts = set()
+    for p in dataset["posts"]:
+        text_key = hashlib.md5(p["text"][:100].lower().encode()).hexdigest()
+        existing_texts.add(text_key)
+    existing_urls = {p.get("source_url", "") for p in dataset["posts"] if p.get("source_url")}
+
+    # Filter out posts already in dataset
+    truly_new = []
+    for post in unique_posts:
+        text_key = hashlib.md5(post["text"][:100].lower().encode()).hexdigest()
+        url = post.get("url", "")
+        if text_key in existing_texts:
+            continue
+        if url and url in existing_urls:
+            continue
+        truly_new.append(post)
+        existing_texts.add(text_key)
+        if url:
+            existing_urls.add(url)
+
+    print(f"  {len(unique_posts)} unique fetched, {len(truly_new)} truly new (not already in dataset)")
 
     # Find next available IDs
     existing_acc_ids = [int(a["id"].split("_")[1]) for a in dataset["accounts"]]
@@ -456,7 +557,7 @@ async def main():
     next_acc = max(existing_acc_ids) + 1 if existing_acc_ids else 1
     next_post = max(existing_post_ids) + 1 if existing_post_ids else 1
 
-    new_accounts, new_posts = build_dataset_entries(unique_posts, next_acc, next_post)
+    new_accounts, new_posts = build_dataset_entries(truly_new, next_acc, next_post)
     dataset["accounts"].extend(new_accounts)
     dataset["posts"].extend(new_posts)
 

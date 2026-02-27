@@ -55,15 +55,16 @@ col_left, col_right = st.columns([2, 3])
 with col_left:
     st.subheader("Autonomous Pipeline")
     st.markdown(
-        "**8 autonomous agents**, 5 sponsor tools:\n"
+        "**9 autonomous agents**, 4 sponsor tools — 3 orthogonal scores:\n"
         "1. **SimilarityAgent** — TF-IDF text similarity (Neo4j)\n"
         "2. **ClusterAgent** — Connected-component detection (Neo4j)\n"
-        "3. **ScoringAgent** — Coordination heuristic scoring\n"
-        "4. **MediaAgent** — Media content analysis (Reka)\n"
-        "5. **VerificationAgent** — Claim fact-checking (Tavily)\n"
-        "6. **EntityAgent** — Entity extraction + classification (Pioneer/GLiNER-2)\n"
-        "7. **BrowsingAgent** — Deep verification (Yutori)\n"
-        "8. **MemoryAgent** — Campaign fingerprinting + recall (Neo4j)"
+        "3. **AccountTrustAgent** — FOLLOWS graph trust scoring (Neo4j)\n"
+        "4. **ScoringAgent** — Trust-weighted coordination scoring\n"
+        "5. **EmotionAgent** — Emotional intensity / manipulation scoring\n"
+        "6. **MediaAgent** — Media content analysis (Reka)\n"
+        "7. **VerificationAgent** — Claim fact-checking (Tavily)\n"
+        "8. **BrowsingAgent** — Deep verification (Yutori)\n"
+        "9. **MemoryAgent** — Campaign fingerprinting + recall (Neo4j)"
     )
 
     if st.button("Run Full Pipeline", type="primary", use_container_width=True):
@@ -72,31 +73,35 @@ with col_left:
 
         try:
             progress.progress(0, "Starting pipeline...")
-            status_text.info("Agents 1-3: SimilarityAgent -> ClusterAgent -> ScoringAgent...")
+            status_text.info("Agents 1-4: SimilarityAgent -> ClusterAgent -> AccountTrustAgent -> ScoringAgent...")
 
             from app.pipeline import run_detection
-            from app.agents import MediaAgent, VerificationAgent, BrowsingAgent, EntityAgent, MemoryAgent
+            from app.agents import AccountTrustAgent, EmotionAgent, MediaAgent, VerificationAgent, BrowsingAgent, MemoryAgent
 
             clusters = run_detection()
             st.session_state.clusters = clusters
             progress.progress(15, "Detection complete")
 
-            status_text.info("Agents 4-6: MediaAgent + VerificationAgent + EntityAgent (parallel)...")
+            status_text.info("Agent 5: EmotionAgent scoring emotional intensity...")
+            emotion_agent = EmotionAgent()
+            emotion_results = emotion_agent.run()
+            progress.progress(25, "Emotion scoring complete")
+
+            status_text.info("Agents 6-7: MediaAgent + VerificationAgent (parallel)...")
             media_agent = MediaAgent()
             verif_agent = VerificationAgent()
-            entity_agent = EntityAgent()
             loop = asyncio.new_event_loop()
 
-            media_results, claim_results, entity_results = {}, {}, {}
+            media_results, claim_results = {}, {}
             try:
-                media_results, claim_results, entity_results = loop.run_until_complete(
-                    asyncio.gather(media_agent.arun(), verif_agent.arun(), entity_agent.arun())
+                media_results, claim_results = loop.run_until_complete(
+                    asyncio.gather(media_agent.arun(), verif_agent.arun())
                 )
             except Exception as e:
                 st.warning(f"Some parallel agents had issues: {e}")
-            progress.progress(60, "Media + claims + entities analyzed")
+            progress.progress(60, "Media + claims analyzed")
 
-            status_text.info("Agent 7: BrowsingAgent dispatching to Snopes...")
+            status_text.info("Agent 8: BrowsingAgent dispatching to Snopes...")
             browse_agent = BrowsingAgent()
             yutori_result = {}
             try:
@@ -105,14 +110,11 @@ with col_left:
                 yutori_result = {"error": f"Yutori unavailable: {e}"}
             progress.progress(80, "Deep verification complete")
 
-            status_text.info("Agent 8: MemoryAgent fingerprinting campaigns...")
+            status_text.info("Agent 9: MemoryAgent fingerprinting campaigns...")
             memory_agent = MemoryAgent()
             memory_result = {}
             try:
-                memory_result = memory_agent.run(
-                    scored_clusters=clusters,
-                    entity_results=entity_results,
-                )
+                memory_result = memory_agent.run(scored_clusters=clusters)
             except Exception as e:
                 memory_result = {"error": f"Memory agent failed: {e}", "stored": [], "matches": []}
             loop.close()
@@ -122,7 +124,7 @@ with col_left:
                 "clusters": clusters,
                 "media": media_results,
                 "claims": claim_results,
-                "entities": entity_results,
+                "emotion": emotion_results,
                 "yutori": yutori_result,
                 "memory": memory_result,
             }
@@ -143,26 +145,38 @@ with col_left:
         media_ok = len([r for r in results["media"].values() if r.get("status") == "analyzed"])
         claims_ok = len([r for r in results["claims"].values() if "error" not in r])
         debunked = len([r for r in results["claims"].values() if r.get("status") == "debunked"])
-        entity_ok = len([r for r in results.get("entities", {}).values() if r.get("status") == "analyzed"])
-        entity_flagged = len([
-            r for r in results.get("entities", {}).values()
-            if r.get("classification", {}).get("label") in ("disinformation", "conspiracy_theory")
-        ])
+        emotion_data = results.get("emotion", {})
+        emotion_scores = [r["emotion_score"] for r in emotion_data.values() if r.get("status") == "analyzed"]
+        avg_emotion = sum(emotion_scores) / len(emotion_scores) if emotion_scores else 0
+        high_emotion = len([s for s in emotion_scores if s >= 50])
 
-        st.success(f"Pipeline complete — 5 sponsor tools executed autonomously")
+        st.success(f"Pipeline complete — 4 sponsor tools, 3 orthogonal scores")
+
+        # Three orthogonal scores — the headline
+        st.markdown("### Suspicion | Trust | Emotion")
+        score_cols = st.columns(3)
+        top_suspicion = max((c["score"] for c in results["clusters"]), default=0)
+        avg_trust_vals = [c["signals"].get("avg_trust", 0) for c in results["clusters"] if c.get("signals")]
+        avg_trust = sum(avg_trust_vals) / len(avg_trust_vals) if avg_trust_vals else 0
+        score_cols[0].metric("Suspicion (top cluster)", f"{top_suspicion}/100",
+                             help="Behavioral coordination — are accounts acting together?")
+        score_cols[1].metric("Trust (avg account)", f"{avg_trust:.0%}",
+                             help="Account credibility — follower graph, age, authority")
+        score_cols[2].metric("Emotion (avg post)", f"{avg_emotion:.0f}/100",
+                             help="Emotional manipulation — loaded language, urgency, caps")
+
         res_cols = st.columns(3)
         res_cols[0].metric("Suspicious Clusters", f"{suspicious}/{n_clusters}")
         res_cols[1].metric("Claims Checked", f"{claims_ok} ({debunked} debunked)")
-        res_cols[2].metric("Disinfo Flagged", f"{entity_flagged}/{entity_ok} posts")
+        res_cols[2].metric("High Emotion Posts", f"{high_emotion}/{len(emotion_scores)}")
 
         st.markdown("**Sponsor Tools Used:**")
         tools_md = (
             "| Tool | Role | Status |\n"
             "|------|------|--------|\n"
-            f"| Neo4j | Graph coordination detection | {n_clusters} clusters found |\n"
+            f"| Neo4j | Graph coordination detection + campaign memory | {n_clusters} clusters found |\n"
             f"| Reka | Media content analysis | {media_ok} posts analyzed |\n"
             f"| Tavily | Web claim verification | {claims_ok} claims checked |\n"
-            f"| Pioneer/GLiNER-2 | Entity extraction + classification | {entity_ok} posts, {entity_flagged} flagged |\n"
             f"| Yutori | Deep fact-check browsing | {'Dispatched' if results.get('yutori') else 'N/A'} |"
         )
         st.markdown(tools_md)
@@ -179,6 +193,8 @@ with col_right:
             OPTIONAL MATCH (p)-[:PART_OF_CAMPAIGN]->(n:Narrative)
             RETURN p.id AS id, p.platform AS platform, a.username AS username,
                    n.suspicion_score AS suspicion_score,
+                   coalesce(a.trust_score, 0.0) AS trust_score,
+                   coalesce(p.emotion_score, 0) AS emotion_score,
                    substring(p.text, 0, 60) AS text_preview,
                    p.text AS full_text,
                    p.source_url AS source_url,
@@ -197,12 +213,17 @@ with col_right:
             vis_nodes = []
             for n in nodes_data:
                 score = n.get("suspicion_score") or 0
+                trust = n.get("trust_score") or 0.0
+                emotion = n.get("emotion_score") or 0
                 if score >= 50:
                     color = {"background": "#ff2222", "border": "#cc0000"}
                 elif score >= 30:
                     color = {"background": "#ff8800", "border": "#cc6600"}
                 else:
                     color = {"background": "#22cc44", "border": "#119933"}
+
+                # Emotion glow: high-emotion posts get a thicker border
+                border_width = 2 + (emotion / 25)
 
                 platform_shape = {
                     "x": "dot", "twitter": "dot", "reddit": "square", "youtube": "triangle", "web": "diamond"
@@ -213,13 +234,19 @@ with col_right:
                 media_url = n.get("media_url") or ""
                 timestamp = str(n.get("timestamp") or "")
 
+                trust_pct = int(trust * 100)
                 vis_nodes.append({
                     "id": n["id"],
                     "label": n["username"][:15],
-                    "title": f"{n['text_preview']}...<br>Platform: {n['platform']}<br>Suspicion: {score}<br><i>Click to view post</i>",
+                    "title": (
+                        f"{n['text_preview']}...<br>Platform: {n['platform']}<br>"
+                        f"Suspicion: {score} | Trust: {trust_pct}% | Emotion: {emotion}<br>"
+                        f"<i>Click to view post</i>"
+                    ),
                     "color": color,
                     "shape": platform_shape,
                     "size": 12 + (score / 4),
+                    "borderWidth": border_width,
                     "fullText": full_text,
                     "sourceUrl": source_url,
                     "mediaUrl": media_url,
@@ -227,6 +254,8 @@ with col_right:
                     "platform": n["platform"],
                     "timestamp": timestamp,
                     "score": score,
+                    "trust": trust_pct,
+                    "emotion": emotion,
                 })
 
             vis_edges = []
@@ -317,8 +346,13 @@ with col_right:
                         document.getElementById('d-time').textContent = node.timestamp ? node.timestamp.split('.')[0].replace('T', ' ') : '';
 
                         var scoreBadge = document.getElementById('d-score');
-                        scoreBadge.textContent = 'Suspicion: ' + (node.score || 0);
-                        scoreBadge.style.background = node.score >= 50 ? '#da3633' : (node.score >= 30 ? '#d29922' : '#238636');
+                        var trustPct = node.trust || 0;
+                        var emotionVal = node.emotion || 0;
+                        scoreBadge.innerHTML = (
+                            '<span style="background:' + (node.score >= 50 ? '#da3633' : (node.score >= 30 ? '#d29922' : '#238636')) + ';padding:2px 6px;border-radius:8px;margin-right:4px;">Suspicion: ' + (node.score || 0) + '</span>' +
+                            '<span style="background:' + (trustPct >= 50 ? '#238636' : '#d29922') + ';padding:2px 6px;border-radius:8px;margin-right:4px;">Trust: ' + trustPct + '%</span>' +
+                            '<span style="background:' + (emotionVal >= 50 ? '#da3633' : (emotionVal >= 25 ? '#d29922' : '#238636')) + ';padding:2px 6px;border-radius:8px;">Emotion: ' + emotionVal + '</span>'
+                        );
                         scoreBadge.style.color = '#fff';
 
                         var links = '';
@@ -366,12 +400,13 @@ if st.session_state.pipeline_ran and st.session_state.clusters:
             f"{signals['total_posts']} posts from {signals['unique_accounts']} accounts | "
             f"Platforms: {', '.join(signals['platforms'])}", expanded=(score >= 30)
         ):
-            sig_cols = st.columns(5)
+            sig_cols = st.columns(6)
             sig_cols[0].metric("Text Similarity", f"{signals['avg_text_similarity']:.0%}")
             sig_cols[1].metric("Acct Age Spread", f"{signals['account_age_spread_hours']:.0f}h")
             sig_cols[2].metric("Post Window", f"{signals['posting_velocity_minutes']:.0f} min")
             sig_cols[3].metric("Avg Followers", f"{signals['avg_followers']:.0f}")
-            sig_cols[4].metric("Media Posts", signals["media_posts"])
+            sig_cols[4].metric("Avg Trust", f"{signals.get('avg_trust', 0):.0%}")
+            sig_cols[5].metric("Trust Multiplier", f"{signals.get('trust_multiplier', 1.0):.2f}x")
 
             st.markdown("**Posts in this cluster:**")
             for post in cluster["posts"]:
@@ -418,66 +453,61 @@ if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("medi
             else:
                 st.markdown(result.get("analysis", "No analysis available"))
 
-# ─── Entity Analysis (Pioneer/GLiNER-2) ────────────────────────────
-if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("entities"):
+# ─── Emotion Analysis ─────────────────────────────────────────────
+if st.session_state.pipeline_ran and st.session_state.pipeline_results.get("emotion"):
     st.divider()
-    st.subheader("Entity Extraction & Classification (Pioneer/GLiNER-2)")
+    st.subheader("Emotional Intensity Analysis")
 
-    entity_data = st.session_state.pipeline_results["entities"]
+    emotion_data = st.session_state.pipeline_results["emotion"]
+    emotion_posts = [r for r in emotion_data.values() if r.get("status") == "analyzed"]
+    emotion_scores_list = [r["emotion_score"] for r in emotion_posts]
 
-    # Summary stats
-    classifications = {}
-    all_entities_by_type = {}
-    for post_id, result in entity_data.items():
-        if result.get("status") != "analyzed":
-            continue
-        label = result.get("classification", {}).get("label", "unknown")
-        classifications[label] = classifications.get(label, 0) + 1
-        for etype, ents in result.get("entities", {}).items():
-            for ent in ents:
-                key = ent["text"]
-                if etype not in all_entities_by_type:
-                    all_entities_by_type[etype] = {}
-                all_entities_by_type[etype][key] = all_entities_by_type[etype].get(key, 0) + 1
+    if emotion_scores_list:
+        # Distribution buckets
+        low = len([s for s in emotion_scores_list if s < 25])
+        med = len([s for s in emotion_scores_list if 25 <= s < 50])
+        high = len([s for s in emotion_scores_list if 50 <= s < 75])
+        extreme = len([s for s in emotion_scores_list if s >= 75])
 
-    # Classification breakdown
-    class_cols = st.columns(len(classifications) if classifications else 1)
-    for i, (label, count) in enumerate(sorted(classifications.items(), key=lambda x: -x[1])):
-        icon = {"disinformation": "🚨", "conspiracy_theory": "⚠️", "news_report": "📰",
-                "personal_opinion": "💬", "satire": "😄", "legitimate_concern": "✅"}.get(label, "📝")
-        class_cols[i % len(class_cols)].metric(f"{icon} {label.replace('_', ' ').title()}", count)
+        dist_cols = st.columns(4)
+        dist_cols[0].metric("Low (0-24)", low)
+        dist_cols[1].metric("Medium (25-49)", med)
+        dist_cols[2].metric("High (50-74)", high)
+        dist_cols[3].metric("Extreme (75+)", extreme)
 
-    # Most-mentioned entities
-    if all_entities_by_type:
-        st.markdown("**Top Extracted Entities:**")
-        ent_cols = st.columns(min(len(all_entities_by_type), 4))
-        for i, (etype, entities) in enumerate(all_entities_by_type.items()):
-            top = sorted(entities.items(), key=lambda x: -x[1])[:5]
-            col = ent_cols[i % len(ent_cols)]
-            col.markdown(f"**{etype.replace('_', ' ').title()}**")
-            for name, count in top:
-                col.markdown(f"- {name} ({count}x)")
+        # Signal breakdown across all posts
+        all_breakdowns = [r["breakdown"] for r in emotion_posts if r.get("breakdown")]
+        if all_breakdowns:
+            avg_signals = {}
+            for key in all_breakdowns[0]:
+                avg_signals[key] = sum(b[key] for b in all_breakdowns) / len(all_breakdowns)
 
-    # Per-post details (expandable)
-    with st.expander("Per-Post Details", expanded=False):
-        for post_id, result in entity_data.items():
-            if result.get("status") != "analyzed":
-                continue
-            cls = result.get("classification", {})
-            label = cls.get("label", "unknown")
-            conf = cls.get("confidence", 0)
-            icon = {"disinformation": "🚨", "conspiracy_theory": "⚠️"}.get(label, "📝")
+            st.markdown("**Average Signal Strength Across All Posts:**")
+            sig_cols = st.columns(len(avg_signals))
+            signal_labels = {
+                "loaded_vocab": "Loaded Vocab",
+                "sentiment_extremity": "Sentiment",
+                "urgency": "Urgency",
+                "caps_ratio": "ALL CAPS",
+                "punctuation": "Punctuation",
+                "absolutism": "Absolutism",
+            }
+            for i, (key, val) in enumerate(avg_signals.items()):
+                sig_cols[i].metric(signal_labels.get(key, key), f"{val:.0%}")
 
-            entities_summary = []
-            for etype, ents in result.get("entities", {}).items():
-                for ent in ents:
-                    entities_summary.append(f"`{ent['text']}` ({etype})")
-
+    # Top emotional posts
+    sorted_emotion = sorted(emotion_posts, key=lambda r: r["emotion_score"], reverse=True)
+    with st.expander("Most Emotionally Charged Posts", expanded=True):
+        for r in sorted_emotion[:10]:
+            score = r["emotion_score"]
+            icon = "🔴" if score >= 50 else ("🟠" if score >= 25 else "🟢")
+            bd = r.get("breakdown", {})
+            top_signals = sorted(bd.items(), key=lambda x: -x[1])[:3]
+            signal_str = ", ".join(f"{signal_labels.get(k, k)}: {v:.0%}" for k, v in top_signals if v > 0)
             st.markdown(
-                f"{icon} **{post_id}** — **{label.replace('_', ' ')}** ({conf:.0%})  \n"
-                f"> _{result['post_text'][:120]}{'...' if len(result['post_text']) > 120 else ''}_  \n"
-                f"Entities: {', '.join(entities_summary[:8])}"
-                f"{'...' if len(entities_summary) > 8 else ''}"
+                f"{icon} **Emotion: {score}/100** — @{r['username']} ({r['platform']})  \n"
+                f"> _{r['post_text'][:140]}{'...' if len(r['post_text']) > 140 else ''}_  \n"
+                f"Signals: {signal_str or 'none'}"
             )
 
 # ─── Yutori Deep Verification ───────────────────────────────────────
@@ -595,5 +625,6 @@ if st.session_state.pipeline_ran:
 st.divider()
 st.caption(
     "Disinfo Detector | Autonomous Agents Hackathon 2026 | "
-    "Sponsor tools: Neo4j, Tavily, Reka, Yutori, Pioneer/Fastino"
+    "Sponsor tools: Neo4j, Tavily, Reka, Yutori | "
+    "Three scores: Suspicion | Trust | Emotion"
 )
