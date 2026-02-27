@@ -110,6 +110,37 @@
     {"id": "claim_05", "text": "Mainstream media is deliberately not covering the Cedar Valley water crisis", "category": "media_conspiracy"}
   ],
 
+  "user_mentions": [
+    {"post_id": "post_02", "mentioned_account_id": "acc_11", "_note": "bot amplifies YT bot: 'watch the video from @YT_UnfilteredNews'"},
+    {"post_id": "post_04", "mentioned_account_id": "acc_01", "_note": "bot amplifies bot: references acc_01's original post"},
+    {"post_id": "post_07", "mentioned_account_id": "acc_02", "_note": "bot amplifies bot"},
+    {"post_id": "post_45", "mentioned_account_id": "acc_03", "_note": "bot amplifies bot"},
+    {"post_id": "post_47", "mentioned_account_id": "acc_06", "_note": "bot amplifies bot"},
+    {"post_id": "post_08", "mentioned_account_id": "acc_01", "_note": "reddit bot references X bot cross-platform"},
+    {"post_id": "post_09", "mentioned_account_id": "acc_08", "_note": "reddit bot amplifies other reddit bot"},
+    {"post_id": "post_51", "mentioned_account_id": "acc_10", "_note": "reddit bot amplifies other reddit bot"},
+    {"post_id": "post_13", "mentioned_account_id": "acc_05", "_note": "wave 2: bot cites another bot as 'source'"},
+    {"post_id": "post_14", "mentioned_account_id": "acc_01", "_note": "wave 2: bot references original poster"},
+    {"post_id": "post_17", "mentioned_account_id": "acc_11", "_note": "wave 3: bot points to YT 'proof' video"},
+    {"post_id": "post_19", "mentioned_account_id": "acc_12", "_note": "wave 3: bot points to other YT bot"},
+    {"post_id": "post_53", "mentioned_account_id": "acc_12", "_note": "audio leak references other YT channel"},
+    {"post_id": "post_40", "mentioned_account_id": "acc_05", "_note": "wave 4: bot cites bot"},
+    {"post_id": "post_42", "mentioned_account_id": "acc_02", "_note": "wave 4: bot cites bot"},
+
+    {"post_id": "post_35", "mentioned_account_id": "acc_01", "_note": "organic user calls out main bot"},
+    {"post_id": "post_65", "mentioned_account_id": "acc_02", "_note": "organic user flags bot account"},
+    {"post_id": "post_66", "mentioned_account_id": "acc_01", "_note": "policy wonk debunks bot's claim"},
+    {"post_id": "post_71", "mentioned_account_id": "acc_01", "_note": "echo: fact-checker calls out bot"},
+    {"post_id": "post_71", "mentioned_account_id": "acc_03", "_note": "echo: fact-checker calls out bot"},
+    {"post_id": "post_71", "mentioned_account_id": "acc_11", "_note": "echo: fact-checker calls out YT bot"},
+    {"post_id": "post_74", "mentioned_account_id": "acc_01", "_note": "journalist investigation names main bot"},
+    {"post_id": "post_74", "mentioned_account_id": "acc_11", "_note": "journalist names YT bot channel"},
+    {"post_id": "post_73", "mentioned_account_id": "acc_01", "_note": "reader calls out bot as example"},
+
+    {"post_id": "post_63", "mentioned_account_id": "acc_21", "_note": "organic: policy wonk references journalist"},
+    {"post_id": "post_31", "mentioned_account_id": "acc_28", "_note": "organic: journalist references policy wonk's earlier post"}
+  ],
+
   "narratives": [
     {
       "id": "narr_01",

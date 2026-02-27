@@ -4,6 +4,16 @@ Autonomous agent that detects **coordinated disinformation campaigns** across so
 
 Instead of fact-checking individual claims, it identifies the *patterns* of coordinated inauthentic behavior: high-velocity posting, identical phrasing across accounts, newly-created accounts pushing a single narrative, and AI-generated media.
 
+## Design: Two-Layer Architecture
+
+This system is the **detection layer**, not the ingestion layer. It assumes data has already been scraped and loaded into the graph.
+
+**Layer 1 -- Data Ingestion (above us):** Yutori Scouts scrape X/Reddit/YouTube, pull posts, account metadata, follow graphs, and dump it all into Neo4j. At the hackathon we simulate this with a pre-seeded synthetic dataset. In production, Yutori would continuously feed new nodes and edges into the graph.
+
+**Layer 2 -- Detection Engine (us):** We take whatever is in the graph and analyze it. Source-agnostic -- doesn't matter if data came from Yutori, a custom scraper, or an API. Our job is to find structural patterns (follow cliques, mention amplification, text similarity), score them, flag suspicious media for multimodal analysis, verify claims, and remember patterns.
+
+This separation means Yutori serves **two roles**: ingestion (Scouts feeding the graph) and verification (Scouts checking fact-check sites against flagged claims). The detection engine itself works identically whether fed live data or a seeded dataset.
+
 ## Architecture
 
 ```

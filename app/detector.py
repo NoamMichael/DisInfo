@@ -15,7 +15,7 @@ import numpy as np
 
 from app.neo4j_client import run_query, run_write
 
-SIMILARITY_THRESHOLD = 0.45  # Pairs above this get SIMILAR_TO edges
+SIMILARITY_THRESHOLD = 0.35  # Pairs above this get SIMILAR_TO edges
 CLUSTER_MIN_SIZE = 3  # Minimum posts to form a suspicious cluster
 
 

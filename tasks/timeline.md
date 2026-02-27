@@ -15,7 +15,7 @@
 | P1 | Provision Neo4j AuraDB free instance | | [Done] | AuraDB free instance up, schema constraints created, smoke test passed |
 | P2 | Get all API keys (Yutori, Modulate, Reka, Fastino, Tavily) | | [Done] | All keys in `.env`, `.env.example` has placeholders |
 | P3 | Prepare synthetic dataset (JSON/CSV) | | [Done] | 30 accounts, 50 posts, 5 claims, 1 narrative, 8 media URLs. 4-wave campaign. |
-| P4 | Pre-install key packages locally to avoid wifi issues | | [ ] | neo4j, fastapi, streamlit, requests, numpy |
+| P4 | Pre-install key packages locally to avoid wifi issues | | [Done] | All packages installed and verified: neo4j 6.1.0, fastapi 0.133.1, streamlit 1.54.0, requests 2.32.5, numpy 2.4.2, scikit-learn 1.8.0, httpx 0.28.1, uvicorn 0.41.0 |
 
 ---
 
@@ -25,8 +25,8 @@
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 1.1 | Project scaffold: FastAPI app, folder structure, `.env` loading | | [ ] | 11:15 | Keep it minimal: `app/`, `scripts/`, `data/` |
-| 1.2 | Neo4j schema + seed data loader | | [ ] | 11:30 | Nodes: Post, Account, Claim, Narrative. Edges: POSTED_BY, SIMILAR_TO, MENTIONS. Load synthetic dataset. |
+| 1.1 | Project scaffold: FastAPI app, folder structure, `.env` loading | | [Done] | 11:15 | `app/`, `scripts/`, `data/`, `main.py` FastAPI entry point |
+| 1.2 | Neo4j schema + seed data loader | | [In Progress] | 11:30 | Nodes: Post, Account, Claim, Narrative. Edges: POSTED_BY, SIMILAR_TO, MENTIONS. Load synthetic dataset. |
 | 1.3 | Yutori API smoke test | | [ ] | 11:30 | Get a Scout to navigate to any URL and return content. If broken, switch to Tavily immediately. |
 | 1.4 | Modulate API smoke test | | [ ] | 11:30 | Send a short audio clip, get deepfake score back. If broken, note it and move on. |
 | 1.5 | Reka API smoke test | | [ ] | 11:30 | Send an image or video URL, get analysis back. |
