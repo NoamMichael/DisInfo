@@ -14,10 +14,8 @@
 |---|------|-------|--------|-------|
 | P1 | Provision Neo4j AuraDB free instance | | [Done] | AuraDB free instance up, schema constraints created, smoke test passed |
 | P2 | Get all API keys (Yutori, Modulate, Reka, Fastino, Tavily) | | [Done] | All keys in `.env`, `.env.example` has placeholders |
-| P3 | Prepare synthetic dataset (JSON/CSV) | | [In Progress] | ~50 posts, 5 accounts, 3-4 video URLs, timestamps |
-| P4 | Decide team role assignments | | [ ] | See "Team Roles" below |
-| P5 | Clone repo on all team laptops, confirm Python 3.10+ | | [ ] | |
-| P6 | Pre-install key packages locally to avoid wifi issues | | [ ] | neo4j, fastapi, streamlit, requests, numpy |
+| P3 | Prepare synthetic dataset (JSON/CSV) | | [Done] | 30 accounts, 50 posts, 5 claims, 1 narrative, 8 media URLs. 4-wave campaign. |
+| P4 | Pre-install key packages locally to avoid wifi issues | | [ ] | neo4j, fastapi, streamlit, requests, numpy |
 
 ---
 
@@ -77,7 +75,7 @@
 
 | # | Task | Owner | Status | Deadline | Notes |
 |---|------|-------|--------|----------|-------|
-| 4.1 | Happy-path demo walkthrough (run it 3x) | ALL | [ ] | 3:15 | If it breaks, fix it. If it's slow, cache it. |
+| 4.1 | Happy-path demo walkthrough (run it 3x) | | [ ] | 3:15 | If it breaks, fix it. If it's slow, cache it. |
 | 4.2 | UI cleanup: labels, colors, layout | | [ ] | 3:30 | Make the graph viz pop. Red = suspicious, green = verified. |
 | 4.3 | Error handling for flaky APIs | | [ ] | 3:30 | If any API times out, show "unavailable" gracefully, don't crash. |
 | 4.4 | Write demo script (what to say, what to click) | | [ ] | 3:45 | See "Demo Script" below. Practice once. |
@@ -94,20 +92,7 @@
 | 5.1 | Push final code to GitHub | | [ ] | 4:10 | Clean up any secrets from code. Check `.gitignore`. |
 | 5.2 | Write README.md (project description, setup, screenshots) | | [ ] | 4:20 | Keep it short. 1 paragraph + architecture diagram + screenshot. |
 | 5.3 | Submit to Devpost | | [ ] | 4:25 | Link GitHub repo. List all sponsor tools used. |
-| 5.4 | Final demo rehearsal | ALL | [ ] | 4:30 | One more run-through while waiting. |
-
----
-
-## Team Roles (Assign Before 11 AM)
-
-| Role | Responsibilities | Suggested Skills |
-|------|-----------------|------------------|
-| **Graph Lead** | Neo4j schema, seed data, Cypher queries, clustering logic | Backend, databases |
-| **Media Lead** | Modulate + Reka integrations, audio/video processing | API integration, media handling |
-| **Verification Lead** | Yutori + Fastino + Tavily integrations, scoring heuristics | API integration, LLM prompting |
-| **UI Lead** | Streamlit dashboard, graph visualization, demo script | Frontend, visualization |
-
-Everyone helps everyone. These are primary owners, not silos.
+| 5.4 | Final demo rehearsal | | [ ] | 4:30 | One more run-through while waiting. |
 
 ---
 
