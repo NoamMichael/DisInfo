@@ -179,7 +179,11 @@ with col_right:
             OPTIONAL MATCH (p)-[:PART_OF_CAMPAIGN]->(n:Narrative)
             RETURN p.id AS id, p.platform AS platform, a.username AS username,
                    n.suspicion_score AS suspicion_score,
-                   substring(p.text, 0, 60) AS text_preview
+                   substring(p.text, 0, 60) AS text_preview,
+                   p.text AS full_text,
+                   p.source_url AS source_url,
+                   p.media_url AS media_url,
+                   p.timestamp AS timestamp
         """)
 
         edges_data = run_query("""
@@ -201,16 +205,28 @@ with col_right:
                     color = {"background": "#22cc44", "border": "#119933"}
 
                 platform_shape = {
-                    "x": "dot", "twitter": "dot", "reddit": "square", "youtube": "triangle"
+                    "x": "dot", "twitter": "dot", "reddit": "square", "youtube": "triangle", "web": "diamond"
                 }.get(n["platform"], "dot")
+
+                source_url = n.get("source_url") or ""
+                full_text = (n.get("full_text") or "")
+                media_url = n.get("media_url") or ""
+                timestamp = str(n.get("timestamp") or "")
 
                 vis_nodes.append({
                     "id": n["id"],
                     "label": n["username"][:15],
-                    "title": f"{n['text_preview']}...<br>Platform: {n['platform']}<br>Suspicion: {score}",
+                    "title": f"{n['text_preview']}...<br>Platform: {n['platform']}<br>Suspicion: {score}<br><i>Click to view post</i>",
                     "color": color,
                     "shape": platform_shape,
                     "size": 12 + (score / 4),
+                    "fullText": full_text,
+                    "sourceUrl": source_url,
+                    "mediaUrl": media_url,
+                    "username": n["username"],
+                    "platform": n["platform"],
+                    "timestamp": timestamp,
+                    "score": score,
                 })
 
             vis_edges = []
@@ -228,10 +244,49 @@ with col_right:
             <html>
             <head>
                 <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-                <style>#graph {{width:100%;height:500px;border:1px solid #333;border-radius:8px;background:#0e1117;}}</style>
+                <style>
+                    #graph {{width:100%;height:450px;border:1px solid #333;border-radius:8px 8px 0 0;background:#0e1117;}}
+                    #detail {{
+                        display:none;width:100%;min-height:80px;padding:12px 16px;
+                        background:#161b22;border:1px solid #333;border-top:none;border-radius:0 0 8px 8px;
+                        color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;
+                        box-sizing:border-box;
+                    }}
+                    #detail .header {{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}}
+                    #detail .username {{color:#58a6ff;font-weight:600;font-size:14px;}}
+                    #detail .platform {{
+                        background:#30363d;color:#8b949e;padding:2px 8px;border-radius:12px;font-size:11px;
+                    }}
+                    #detail .score-badge {{
+                        padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;
+                    }}
+                    #detail .text {{color:#c9d1d9;line-height:1.5;margin:8px 0;white-space:pre-wrap;}}
+                    #detail .link {{
+                        display:inline-block;margin-top:8px;padding:6px 14px;
+                        background:#238636;color:#fff;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;
+                        cursor:pointer;
+                    }}
+                    #detail .link:hover {{background:#2ea043;}}
+                    #detail .link.media {{background:#1f6feb;}}
+                    #detail .link.media:hover {{background:#388bfd;}}
+                    #detail .meta {{color:#8b949e;font-size:11px;margin-top:6px;}}
+                    #detail .close-btn {{
+                        cursor:pointer;color:#8b949e;font-size:18px;float:right;margin:-4px 0 0 8px;
+                    }}
+                    #detail .close-btn:hover {{color:#e6edf3;}}
+                </style>
             </head>
             <body style="margin:0;background:#0e1117;">
                 <div id="graph"></div>
+                <div id="detail">
+                    <span class="close-btn" onclick="document.getElementById('detail').style.display='none'">&times;</span>
+                    <div class="header">
+                        <span><span class="username" id="d-user"></span> <span class="platform" id="d-plat"></span> <span class="score-badge" id="d-score"></span></span>
+                        <span class="meta" id="d-time"></span>
+                    </div>
+                    <div class="text" id="d-text"></div>
+                    <span id="d-links"></span>
+                </div>
                 <script>
                     var nodes = new vis.DataSet({json.dumps(vis_nodes)});
                     var edges = new vis.DataSet({json.dumps(vis_edges)});
@@ -245,19 +300,53 @@ with col_right:
                         edges:{{smooth:{{type:'continuous'}}}},
                         interaction:{{hover:true,tooltipDelay:100}}
                     }};
-                    new vis.Network(document.getElementById('graph'), {{nodes:nodes,edges:edges}}, options);
+                    var network = new vis.Network(document.getElementById('graph'), {{nodes:nodes,edges:edges}}, options);
+
+                    network.on("click", function(params) {{
+                        if (params.nodes.length === 0) {{
+                            document.getElementById('detail').style.display = 'none';
+                            return;
+                        }}
+                        var nodeId = params.nodes[0];
+                        var node = nodes.get(nodeId);
+                        if (!node) return;
+
+                        document.getElementById('d-user').textContent = '@' + node.username;
+                        document.getElementById('d-plat').textContent = node.platform;
+                        document.getElementById('d-text').textContent = node.fullText || node.label;
+                        document.getElementById('d-time').textContent = node.timestamp ? node.timestamp.split('.')[0].replace('T', ' ') : '';
+
+                        var scoreBadge = document.getElementById('d-score');
+                        scoreBadge.textContent = 'Suspicion: ' + (node.score || 0);
+                        scoreBadge.style.background = node.score >= 50 ? '#da3633' : (node.score >= 30 ? '#d29922' : '#238636');
+                        scoreBadge.style.color = '#fff';
+
+                        var links = '';
+                        var isReal = function(url) {{ return url && url.indexOf('example.com') === -1; }};
+                        if (isReal(node.sourceUrl)) {{
+                            links += '<a class="link" href="' + node.sourceUrl + '" target="_blank">Open Source Article &#8599;</a> ';
+                        }}
+                        if (isReal(node.mediaUrl) && node.mediaUrl !== node.sourceUrl) {{
+                            links += '<a class="link media" href="' + node.mediaUrl + '" target="_blank">View Media &#8599;</a> ';
+                        }}
+                        if (!isReal(node.sourceUrl) && !isReal(node.mediaUrl)) {{
+                            links += '<span class="meta">Synthetic post — no external link</span>';
+                        }}
+                        document.getElementById('d-links').innerHTML = links;
+                        document.getElementById('detail').style.display = 'block';
+                    }});
                 </script>
             </body>
             </html>
             """
-            components.html(html, height=520)
+            components.html(html, height=620)
 
             st.markdown(
                 "**Legend:** "
                 "🔴 High suspicion (50+) | "
                 "🟠 Medium (30-49) | "
                 "🟢 Low (<30) | "
-                "● X/Twitter | ■ Reddit | ▲ YouTube"
+                "● X/Twitter | ■ Reddit | ▲ YouTube | ◆ Web/News"
             )
     else:
         st.info("Click **Run Full Pipeline** to analyze the social media graph.")

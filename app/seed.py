@@ -1,21 +1,17 @@
-"""Load synthetic dataset into Neo4j. Run: python -m app.seed"""
+"""Load real-content dataset into Neo4j. Run: python -m app.seed"""
 
 import json
 from app.neo4j_client import run_write, run_query, close
 
 DATA_PATH = "data/realtime_data.json"
 
-# --- Account groups (used for follow graph generation) ---
-X_BOTS = [
-    "acc_01", "acc_02", "acc_03", "acc_04", "acc_05", "acc_06", "acc_07",
-    "acc_13", "acc_14", "acc_16", "acc_17", "acc_50",
+# --- Account groups (all real — sourced via Yutori & Tavily) ---
+X_ACCOUNTS = [
+    "acc_01", "acc_02", "acc_03", "acc_04", "acc_05",
+    "acc_06", "acc_07", "acc_08", "acc_09", "acc_10",
 ]
-REDDIT_BOTS = ["acc_08", "acc_09", "acc_10", "acc_15", "acc_19"]
-YT_BOTS = ["acc_11", "acc_12", "acc_18"]
-
-X_ORGANIC = ["acc_20", "acc_21", "acc_22", "acc_25", "acc_28"]
-REDDIT_ORGANIC = ["acc_23", "acc_26", "acc_29"]
-YT_ORGANIC = ["acc_24", "acc_27"]
+YT_ACCOUNTS = ["acc_11", "acc_12", "acc_13", "acc_14", "acc_15"]
+WEB_ACCOUNTS = ["acc_16", "acc_17", "acc_18", "acc_19", "acc_20", "acc_21", "acc_22"]
 
 
 def clear_graph():
@@ -33,67 +29,26 @@ def create_constraints():
 
 
 def _generate_follows():
-    """Generate follow edges programmatically.
-
-    Bot ring: dense mutual follows within platform, all on Feb 25 (same day
-    accounts were created). Each bot follows most other bots on its platform
-    plus 2 high-profile organic accounts (to appear legit).
-
-    Organic: sparse, asymmetric, old timestamps -- normal social media behavior.
-    """
-    follows = []
-
-    # --- Bot ring: X (12 accounts, each follows 10 of 11 others) ---
-    # Skip one random target per bot so it's not a perfect clique
-    for i, bot in enumerate(X_BOTS):
-        skip = X_BOTS[(i + 3) % len(X_BOTS)]  # deterministic skip
-        for target in X_BOTS:
-            if target != bot and target != skip:
-                follows.append((bot, target, "2026-02-26T08:00:00Z"))
-        # Bots follow 2 organic accounts to look real
-        follows.append((bot, "acc_21", "2026-02-26T09:00:00Z"))  # journalist (popular)
-        follows.append((bot, "acc_28", "2026-02-26T09:10:00Z"))  # policy tracker (topical)
-
-    # --- Bot ring: Reddit (5 accounts, full clique -- small group) ---
-    for bot in REDDIT_BOTS:
-        for target in REDDIT_BOTS:
-            if target != bot:
-                follows.append((bot, target, "2026-02-26T08:30:00Z"))
-        follows.append((bot, "acc_23", "2026-02-26T09:00:00Z"))  # curious parent
-
-    # --- Bot ring: YouTube (3 accounts, full clique) ---
-    for bot in YT_BOTS:
-        for target in YT_BOTS:
-            if target != bot:
-                follows.append((bot, target, "2026-02-26T08:30:00Z"))
-        follows.append((bot, "acc_24", "2026-02-26T09:00:00Z"))  # eagle scout vet channel
-        follows.append((bot, "acc_27", "2026-02-26T09:00:00Z"))  # military family channel
-
-    # --- Organic follows: sparse, asymmetric, old timestamps ---
-    organic = [
-        # X users
-        ("acc_20", "acc_22", "2025-02-01T10:00:00Z"),   # policy analyst follows scout leader
-        ("acc_20", "acc_25", "2024-06-15T14:00:00Z"),   # policy follows mil spouse
-        ("acc_20", "acc_21", "2024-01-10T09:00:00Z"),   # policy follows journalist
-        ("acc_22", "acc_28", "2025-03-10T11:00:00Z"),   # scout leader follows policy tracker
-        ("acc_22", "acc_21", "2025-01-25T16:00:00Z"),   # scout leader follows journalist
-        ("acc_25", "acc_20", "2024-06-20T18:00:00Z"),   # mil spouse follows policy (mutual)
-        ("acc_25", "acc_21", "2023-11-05T12:00:00Z"),   # mil spouse follows journalist
-        ("acc_28", "acc_21", "2023-09-01T08:00:00Z"),   # policy tracker follows journalist
-        ("acc_28", "acc_22", "2025-04-01T10:00:00Z"),   # policy tracker follows scout leader
-        ("acc_21", "acc_28", "2023-08-15T14:00:00Z"),   # journalist follows policy tracker (mutual)
-        # Reddit users
-        ("acc_23", "acc_26", "2024-02-20T15:00:00Z"),   # parent follows eagle scout
-        ("acc_23", "acc_29", "2024-08-01T20:00:00Z"),   # parent follows troop leader
-        ("acc_26", "acc_29", "2024-07-15T12:00:00Z"),   # eagle scout follows troop leader
-        ("acc_29", "acc_26", "2024-09-01T22:00:00Z"),   # troop leader follows eagle scout (mutual)
-        ("acc_29", "acc_23", "2024-10-10T19:00:00Z"),   # troop leader follows parent
-        # YouTube users
-        ("acc_24", "acc_27", "2023-05-01T10:00:00Z"),   # eagle scout vet follows mil family
-        ("acc_27", "acc_24", "2023-06-15T14:00:00Z"),   # mil family follows eagle scout vet (mutual)
+    """Generate follow edges — all real accounts, realistic sparse follows."""
+    follows = [
+        # X journalists/outlets follow each other
+        ("acc_01", "acc_02", "2023-06-01T10:00:00Z"),   # starsandstripes follows DeptofWar
+        ("acc_01", "acc_06", "2024-01-15T14:00:00Z"),   # starsandstripes follows nataliealund
+        ("acc_03", "acc_01", "2024-03-10T09:00:00Z"),   # pamelafessler follows starsandstripes
+        ("acc_03", "acc_10", "2023-08-20T11:00:00Z"),   # pamelafessler follows allenanalysis
+        ("acc_06", "acc_03", "2024-05-01T16:00:00Z"),   # nataliealund follows pamelafessler
+        ("acc_06", "acc_01", "2023-11-05T12:00:00Z"),   # nataliealund follows starsandstripes
+        ("acc_10", "acc_03", "2023-09-01T08:00:00Z"),   # allenanalysis follows pamelafessler
+        ("acc_10", "acc_09", "2024-02-15T14:00:00Z"),   # allenanalysis follows Unbranded63
+        ("acc_09", "acc_10", "2024-03-01T10:00:00Z"),   # Unbranded63 follows allenanalysis
+        ("acc_04", "acc_02", "2023-07-01T12:00:00Z"),   # FLVoiceNews follows DeptofWar
+        ("acc_08", "acc_07", "2024-01-01T10:00:00Z"),   # sistertoldjah follows elliscashmore
+        # YouTube channels
+        ("acc_11", "acc_15", "2022-05-01T10:00:00Z"),   # USA TODAY follows CBS News
+        ("acc_13", "acc_14", "2023-06-15T14:00:00Z"),   # NewsNation follows ABC7
+        ("acc_14", "acc_13", "2023-07-01T14:00:00Z"),   # ABC7 follows NewsNation
+        ("acc_15", "acc_11", "2022-08-01T10:00:00Z"),   # CBS News follows USA TODAY
     ]
-    follows.extend(organic)
-
     return follows
 
 
@@ -107,12 +62,13 @@ def load_data():
             """
             MERGE (a:Account {id: $id})
             SET a.username = $username,
+                a.display_name = $display_name,
                 a.platform = $platform,
                 a.created_at = datetime($created_at),
                 a.follower_count = $follower_count,
                 a.is_bot = $is_bot
             """,
-            acc,
+            {**acc, "display_name": acc.get("display_name", acc["username"])},
         )
     print(f"Loaded {len(data['accounts'])} accounts")
 
@@ -126,12 +82,13 @@ def load_data():
                 p.timestamp = datetime($timestamp),
                 p.media_url = $media_url,
                 p.media_type = $media_type,
-                p.post_type = $post_type
+                p.post_type = $post_type,
+                p.source_url = $source_url
             WITH p
             MATCH (a:Account {id: $account_id})
             MERGE (p)-[:POSTED_BY]->(a)
             """,
-            post,
+            {**post, "source_url": post.get("source_url")},
         )
     print(f"Loaded {len(data['posts'])} posts")
 
@@ -168,11 +125,10 @@ def load_data():
 
     # --- Post -> Claim keyword matching ---
     claim_keywords = {
-        "claim_01": ["expel", "expelled", "kicked out", "200,000 girls", "200K girls", "girls removed"],
-        "claim_02": ["membership data", "personal data", "children's data", "recruitment database", "names, addresses"],
-        "claim_03": ["YMCA", "Boys & Girls Clubs", "4-H", "Phase One", "all youth org", "2027"],
-        "claim_04": ["military officers", "replacing", "installing", "run troop", "takeover", "seizes control"],
-        "claim_05": ["media blackout", "media silence", "media spin", "media is silent", "covering up", "hiding"],
+        "claim_01": ["end DEI", "end all DEI", "drop DEI", "DEI efforts", "DEI initiatives", "DEI policies", "diversity, equity"],
+        "claim_02": ["biological sex", "gender identity", "sex at birth", "sex assigned at birth", "transgender"],
+        "claim_03": ["six months", "cut support", "cut ties", "sever", "risk losing", "Pentagon support"],
+        "claim_04": ["girls were accepted", "girls allowed", "wounded", "inclusion of girls"],
     }
     links = 0
     for claim_id, keywords in claim_keywords.items():
@@ -245,7 +201,7 @@ def verify():
     )
     c = counts[0]
     print(f"\nGraph summary:")
-    print(f"  Accounts:            {c['accounts']}  (20 bot + 10 organic)")
+    print(f"  Accounts:            {c['accounts']}  (all real)")
     print(f"  Posts:               {c['posts']}  (coordinated + organic + echo)")
     print(f"  Claims:              {c['claims']}")
     print(f"  Narratives:          {c['narratives']}")
@@ -317,7 +273,7 @@ def verify():
 
 
 if __name__ == "__main__":
-    print("Seeding Neo4j with synthetic data...")
+    print("Seeding Neo4j with real-content data...")
     clear_graph()
     create_constraints()
     load_data()
