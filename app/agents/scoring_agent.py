@@ -183,6 +183,10 @@ class ScoringAgent(Agent):
         connectivity_discount = min(15, int(avg_edges * 1.5))
         score -= connectivity_discount
 
+        # Floor: accounts following >15K get at least 52 suspicion
+        if avg_following >= 15000:
+            score = max(52, score)
+
         score = max(0, min(100, score))
 
         signals = {
