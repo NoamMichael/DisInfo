@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 from app.agents.base import Agent
-from app.neo4j_client import run_write
+from app.neo4j_client import run_query, run_write
 
 
 def _to_epoch(val) -> float | None:
@@ -105,6 +105,32 @@ class ScoringAgent(Agent):
         # 7. Media
         media_posts = [p for p in posts if p.get("media_url")]
 
+        # 8. Following counts (ReLU at 5000 — no penalty below, linear increase above)
+        following_counts = []
+        seen_for_following = set()
+        for p in posts:
+            aid = p.get("account_id", "")
+            if aid in seen_for_following:
+                continue
+            seen_for_following.add(aid)
+            following_counts.append(p.get("following_count", 0) or 0)
+        avg_following = float(np.mean(following_counts)) if following_counts else 0
+
+        # 9. Graph connectivity — more edges = more trustworthy = less suspicious
+        edge_counts = []
+        seen_for_edges = set()
+        for p in posts:
+            aid = p.get("account_id", "")
+            if aid in seen_for_edges:
+                continue
+            seen_for_edges.add(aid)
+            rows = run_query(
+                "MATCH (a:Account {id: $id})-[r]-() RETURN count(r) AS edges",
+                {"id": aid},
+            )
+            edge_counts.append(rows[0]["edges"] if rows else 0)
+        avg_edges = float(np.mean(edge_counts)) if edge_counts else 0
+
         # --- Scoring ---
         score = 0
 
@@ -146,7 +172,18 @@ class ScoringAgent(Agent):
         if media_posts:
             score += min(5, len(media_posts) * 2)
 
-        score = min(100, score)
+        # High following count (ReLU at 5000): 0-30 pts
+        # No penalty below 5000. Linear ramp above: 10K=5pts, 15K=10pts, 35K=30pts
+        relu_following = max(0, avg_following - 5000)
+        score += min(30, int(relu_following / 1000))
+
+        # Low connectivity discount: -0 to -15 pts
+        # Well-connected accounts (many edges) are trustworthy — reduce suspicion
+        # 0 edges = no discount, 5+ edges = -10pts, 10+ edges = -15pts
+        connectivity_discount = min(15, int(avg_edges * 1.5))
+        score -= connectivity_discount
+
+        score = max(0, min(100, score))
 
         signals = {
             "avg_text_similarity": round(avg_sim, 3),
@@ -155,6 +192,10 @@ class ScoringAgent(Agent):
             "platforms": list(platforms),
             "unique_accounts": len(unique_accounts),
             "avg_followers": round(avg_followers, 1),
+            "avg_following": round(avg_following, 1),
+            "avg_edges": round(avg_edges, 1),
+            "following_penalty": min(30, int(relu_following / 1000)),
+            "connectivity_discount": connectivity_discount,
             "media_posts": len(media_posts),
             "total_posts": len(posts),
         }

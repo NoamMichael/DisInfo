@@ -126,6 +126,26 @@ def _sentiment_extremity(words: list[str]) -> float:
     return min(1.0, ratio * 10.0)
 
 
+def _has_caps_adjectives(text: str) -> bool:
+    """Detect all-caps words (3+ letters) that aren't acronyms/handles.
+
+    Catches emotionally charged caps like IMMENSE, CAVED, DROPPED, HAMMER,
+    DISGUSTED, FORCED, etc.
+    """
+    # Skip known acronyms and proper nouns that are always caps
+    _SKIP = frozenset(
+        "USA FBI CIA DOD DOJ DEI CNN NPR CBS ABC NBC SEC GOP DNA NFL NBA "
+        "NATO PDF API URL NYC DNA UNESCO LGBTQ BSA YMCA CDC NEW AP PDF "
+        "USATODAY SECWAR BREAKING THREAD UPDATE".split()
+    )
+    # Find all-caps words with 3+ letters
+    caps_words = re.findall(r'\b([A-Z]{3,})\b', text)
+    for w in caps_words:
+        if w not in _SKIP:
+            return True
+    return False
+
+
 def compute_emotion_score(text: str) -> dict:
     """Compute emotion/manipulation intensity for a single text.
 
@@ -140,6 +160,7 @@ def compute_emotion_score(text: str) -> dict:
     urgency = _urgency_score(text_lower)
     absolutism = _absolutism_score(words)
     sentiment = _sentiment_extremity(words)
+    caps_adjective = _has_caps_adjectives(text)
 
     # Weighted combination (weights sum to 1.0)
     raw = (
@@ -153,6 +174,10 @@ def compute_emotion_score(text: str) -> dict:
 
     score = int(round(min(100, max(0, raw * 100))))
 
+    # Caps adjective bonus: +70 if any all-caps emotional words detected
+    if caps_adjective:
+        score = min(100, score + 70)
+
     return {
         "score": score,
         "breakdown": {
@@ -162,6 +187,7 @@ def compute_emotion_score(text: str) -> dict:
             "caps_ratio": round(caps, 3),
             "punctuation": round(punctuation, 3),
             "absolutism": round(absolutism, 3),
+            "caps_adjective_bonus": 70 if caps_adjective else 0,
         },
     }
 

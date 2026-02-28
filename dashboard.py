@@ -170,16 +170,6 @@ with col_left:
         res_cols[1].metric("Claims Checked", f"{claims_ok} ({debunked} debunked)")
         res_cols[2].metric("High Emotion Posts", f"{high_emotion}/{len(emotion_scores)}")
 
-        st.markdown("**Sponsor Tools Used:**")
-        tools_md = (
-            "| Tool | Role | Status |\n"
-            "|------|------|--------|\n"
-            f"| Neo4j | Graph coordination detection + campaign memory | {n_clusters} clusters found |\n"
-            f"| Reka | Media content analysis | {media_ok} posts analyzed |\n"
-            f"| Tavily | Web claim verification | {claims_ok} claims checked |\n"
-            f"| Yutori | Deep fact-check browsing | {'Dispatched' if results.get('yutori') else 'N/A'} |"
-        )
-        st.markdown(tools_md)
 
 # ─── Network Graph ───────────────────────────────────────────────────
 with col_right:

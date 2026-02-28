@@ -23,6 +23,31 @@ We use **Tavily** and **Yutori** to ingest real posts from X, YouTube, and news 
 
 The sourcing script (`scripts/fetch_x_posts.py`) runs Tavily and Yutori in parallel, deduplicates against the existing dataset, and appends only truly new posts — so it can be run repeatedly to grow the dataset.
 
+#### Cross-Verification Loop: Tavily ↔ Yutori
+
+Tavily and Yutori don't just source data independently — they **verify each other**. Search API metadata (follower counts, following counts) is often incomplete or wrong. The verification loop fixes this:
+
+```
+  ┌──────────────────────────────────────────────────────────────┐
+  │              Tavily ↔ Yutori Verification Loop               │
+  │                                                              │
+  │  1. TAVILY sources posts + account metadata via web search   │
+  │       ↓                                                      │
+  │  2. YUTORI browses each X profile to verify real counts      │
+  │       ↓                                                      │
+  │  3. Mismatches detected → dataset corrected with ground      │
+  │     truth from Yutori's live DOM reads                       │
+  │       ↓                                                      │
+  │  4. Corrected data feeds into scoring agents — accounts      │
+  │     with high following counts (>5K) get flagged,            │
+  │     well-connected accounts get trust discounts              │
+  └──────────────────────────────────────────────────────────────┘
+```
+
+This matters because scoring signals like the **following-count ReLU** (suspicion ramps above 5K following) and the **connectivity discount** (more graph edges = more trusted) depend on accurate account data. Without cross-verification, accounts like `@its_The_Dr` (18.8K following in reality, 958 per Tavily) would be scored incorrectly.
+
+The verification script (`scripts/verify_accounts.py`) batches all X accounts into Yutori browsing tasks, polls for results, and patches the dataset with ground-truth counts.
+
 #### Layer 2: Autonomous Detection
 
 Nine autonomous agents orchestrate the detection pipeline:
@@ -133,7 +158,10 @@ python -m scripts.build_real_dataset
 # 2. Fetch 100+ more real posts via Tavily + Yutori
 python -m scripts.fetch_x_posts
 
-# 3. Load into Neo4j
+# 3. Cross-verify account data (Yutori browses real X profiles)
+python -m scripts.verify_accounts
+
+# 4. Load into Neo4j
 python -m app.seed
 ```
 
@@ -235,6 +263,7 @@ data/
   sourced_x_posts.json     # Raw Tavily/Yutori fetch results
 scripts/
   fetch_x_posts.py         # Live data sourcing (Tavily + Yutori)
+  verify_accounts.py       # Cross-verify account data (Yutori → X profiles)
   build_real_dataset.py    # Base dataset from hand-verified posts
   source_realtime_urls.py  # URL sourcing utility
   neo4j_schema.cypher      # Graph schema
